@@ -1,0 +1,29 @@
+[workspace]
+channels = [
+  "conda-forge",
+]
+name = "nlp"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[activation.env]
+HF_HUB_OFFLINE = "1"
+TRANSFORMERS_OFFLINE = "1"
+PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION = "python"
+
+[tasks]
+build-db = "python create_database.py"
+rag = "python query_data.py"
+rag-eval = "python query_data.py --eval"
+full-eval = "python query_no_memory.py --eval"
+summary = "python query_summary_memory.py"
+summary-eval = "python query_summary_memory.py --eval"
+
+[dependencies]
+python = "3.12.*"
+pip = "*"
+numpy = ">=1.26,<3"
+requests = ">=2.32,<3"
+python-dotenv = ">=1.0,<2"
+sentence-transformers = ">=3.0,<6"
+pytorch = ">=2.5,<2.7"
