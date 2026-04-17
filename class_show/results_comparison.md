@@ -1,29 +1,41 @@
-# CSIT5520 Result Demo: Long-Context QA Baselines
+# CSIT5520 Result Demo: Comparing Memory Strategies
 
-![Result overview figure](./figures/results_overview.png)
+## Figure 1. GPT-4o memory strategy comparison
 
-## Figure 1. Overview of long-context QA results under GPT-4o and GPT-5.4
+![GPT-4o memory strategy figure](./figures/gpt4o_memory_strategies.png)
 
-The figure summarizes three baselines: `full_context / no-memory`, `raw RAG`, and `summary memory`.
-It follows the class-show style of a single figure plus short interpretation rather than splitting the discussion into separate comparison slides.
+Under `GPT-4o`, the key comparison is between `raw RAG` and `summary memory`, because both are retrieval-style memory baselines.
 
-### Main Reading
+- `summary memory` improves over `raw RAG` in both quality and retrieval:
+  - Accuracy: `85.2% (52/61)` vs `82.0% (50/61)`
+  - Hit Rate: `91.8% (56/61)` vs `85.2% (52/61)`
+- `full_context / no-memory` is still the strongest upper bound:
+  - Accuracy: `91.8% (56/61)`
+- Cost tradeoff:
+  - `raw RAG` is the cheapest at `1228.1` prompt tokens
+  - `summary memory` is in the middle at `4587.2`
+  - `full_context` is the most expensive at `36709.6`
 
-- For `GPT-4o`, `summary memory` already outperforms `raw RAG`:
-  - `52/61` vs `50/61`
-- For `GPT-4o`, `full_context` is still the strongest baseline:
-  - `56/61`
-- In cost terms:
-  - `raw RAG` is the cheapest
-  - `summary memory` is in the middle
-  - `full_context` is the most expensive, at about `36.7k` prompt tokens
+So for `GPT-4o`, the summary-based memory design is already a better retrieval baseline than raw chunk retrieval, even though it does not yet surpass the full-document upper bound.
 
-### Additional Observation from GPT-5.4
+## Figure 2. GPT-5.4 memory strategy comparison
 
-- `GPT-5.4` improves all three baselines over `GPT-4o`
-- The strongest result is that `summary memory` reaches the same accuracy as `full_context`:
-  - `58/61`
-- This suggests that with a stronger backbone model, structured memory retrieval can close the gap to the full-document upper bound
+![GPT-5.4 memory strategy figure](./figures/gpt54_memory_strategies.png)
+
+Under `GPT-5.4`, the strongest result is that `summary memory` reaches the same answer accuracy as `full_context`.
+
+- `summary memory` vs `raw RAG`:
+  - Accuracy: `95.1% (58/61)` vs `91.8% (56/61)`
+  - Hit Rate: `98.4% (60/61)` vs `86.9% (53/61)`
+- `summary memory` vs `full_context`:
+  - Same accuracy: `58/61`
+  - Much lower prompt cost: `6903.6` vs `36708.6`
+- Latency in this run:
+  - `summary memory`: `13.12s`
+  - `raw RAG`: `14.05s`
+  - `full_context`: `15.89s`
+
+This is the clearest evidence that a stronger backbone model can make structured memory retrieval competitive with the full-context upper bound.
 
 ## Metrics Table
 
@@ -36,8 +48,9 @@ It follows the class-show style of a single figure plus short interpretation rat
 | GPT-5.4 | Raw RAG | 91.8% (56/61) | 86.9% (53/61) | 1258.9 | 1287.2 | 14.05s |
 | GPT-5.4 | Summary Memory | 95.1% (58/61) | 98.4% (60/61) | 6903.6 | 6923.7 | 13.12s |
 
-## Notes
+## Takeaway
 
-- `GPT-4o summary memory` compression ratio: `0.283`
-- `GPT-5.4 summary memory` compression ratio: `1.118`
-- The `GPT-5.4 summary memory` evaluation had `1` timeout during the run
+- The topic is not model-vs-model comparison by itself.
+- The real theme is how different memory strategies behave under each model.
+- In both models, `summary memory` is better than `raw RAG`.
+- In `GPT-5.4`, `summary memory` becomes especially strong because it matches `full_context` accuracy while using far fewer prompt tokens.
