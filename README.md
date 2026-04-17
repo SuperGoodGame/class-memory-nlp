@@ -2,11 +2,23 @@
 
 This directory now contains three aligned baselines over `alice_in_wonderland.md`:
 
-- `query_no_memory.py`: full-context / no-memory baseline
-- `query_data.py`: raw chunk retrieval baseline
-- `query_summary_memory.py`: structured summary-memory baseline
+- `nlp_baselines/query_no_memory.py`: full-context / no-memory baseline
+- `nlp_baselines/query_data.py`: raw chunk retrieval baseline
+- `nlp_baselines/query_summary_memory.py`: structured summary-memory baseline
 
-All three use the same remote chat API wrapper in [api_utils.py](/home/jovyan/test/myfile/class_memory/nlp/api_utils.py). Embeddings stay local through `sentence-transformers`, and retrieval uses a small local persisted vector index instead of Chroma.
+All three use the same remote chat API wrapper in `nlp_baselines/api_utils.py`. Embeddings stay local through `sentence-transformers`, and retrieval uses a small local persisted vector index instead of Chroma.
+
+## Layout
+
+```text
+nlp/
+├── nlp_baselines/      # core package and runnable baseline modules
+├── data/               # source text data
+├── class_show/         # report assets and plotting script
+├── README.md
+├── pixi.toml
+└── pixi.lock
+```
 
 ## Environment
 
@@ -80,7 +92,7 @@ pixi run summary -- --refresh-summaries --rebuild-summary --eval
 
 ## Notes
 
-- `create_database.py` now uses local sentence-transformer embeddings instead of OpenAI embeddings.
-- `compare_embeddings.py` is also local-only now.
+- `nlp_baselines/create_database.py` now uses local sentence-transformer embeddings instead of OpenAI embeddings.
+- `nlp_baselines/compare_embeddings.py` is also local-only now.
 - Retrieval no longer depends on `chromadb`; it uses a lightweight local vector store persisted under `chroma/` and `chroma_summary/`.
 - The summary baseline is implemented as `structured summaries + supporting raw chunks`, not summary-only retrieval. This is intentional, because summary-only retrieval tends to lose exact facts and often underperforms raw RAG on detail questions.

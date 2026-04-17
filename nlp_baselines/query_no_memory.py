@@ -1,8 +1,8 @@
 import argparse
 from dataclasses import dataclass
 
-from api_utils import chat_completion, describe_chat_target
-from data_utils import load_text
+from .api_utils import chat_completion, describe_chat_target
+from .data_utils import load_text
 
 DATA_PATH = "data/books/alice_in_wonderland.md"
 

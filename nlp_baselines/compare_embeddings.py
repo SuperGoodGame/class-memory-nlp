@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from embeddings_utils import cosine_similarity, get_embeddings
+from .embeddings_utils import cosine_similarity, get_embeddings
 
 
 def main() -> None:

@@ -12,12 +12,12 @@ TRANSFORMERS_OFFLINE = "1"
 PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION = "python"
 
 [tasks]
-build-db = "python create_database.py"
-rag = "python query_data.py"
-rag-eval = "python query_data.py --eval"
-full-eval = "python query_no_memory.py --eval"
-summary = "python query_summary_memory.py"
-summary-eval = "python query_summary_memory.py --eval"
+build-db = "python -m nlp_baselines.create_database"
+rag = "python -m nlp_baselines.query_data"
+rag-eval = "python -m nlp_baselines.query_data --eval"
+full-eval = "python -m nlp_baselines.query_no_memory --eval"
+summary = "python -m nlp_baselines.query_summary_memory"
+summary-eval = "python -m nlp_baselines.query_summary_memory --eval"
 
 [dependencies]
 python = "3.12.*"

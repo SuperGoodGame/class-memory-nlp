@@ -2,12 +2,12 @@ import argparse
 import os
 import shutil
 
-from api_utils import chat_completion, describe_chat_target
-from data_utils import TextChunk, load_text, split_text
-from embeddings_utils import DEFAULT_EMBEDDING_MODEL
-from eval_utils import check_accuracy, check_hit, pad
-from query_no_memory import EVAL_DATASET
-from vector_store import LocalVectorStore
+from .api_utils import chat_completion, describe_chat_target
+from .data_utils import TextChunk, load_text, split_text
+from .embeddings_utils import DEFAULT_EMBEDDING_MODEL
+from .eval_utils import check_accuracy, check_hit, pad
+from .query_no_memory import EVAL_DATASET
+from .vector_store import LocalVectorStore
 
 
 CHROMA_PATH = "chroma"

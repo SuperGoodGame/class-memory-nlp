@@ -6,7 +6,7 @@ from dataclasses import dataclass
 
 import numpy as np
 
-from embeddings_utils import DEFAULT_EMBEDDING_MODEL, get_embeddings
+from .embeddings_utils import DEFAULT_EMBEDDING_MODEL, get_embeddings
 
 
 RECORDS_FILENAME = "records.json"

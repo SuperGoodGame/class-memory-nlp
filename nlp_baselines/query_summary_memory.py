@@ -5,22 +5,22 @@ import json
 import os
 import shutil
 
-from api_utils import chat_completion, describe_chat_target
-from data_utils import TextChunk, load_text, split_text
-from embeddings_utils import DEFAULT_EMBEDDING_MODEL
-from eval_utils import check_accuracy, check_hit, pad
-from query_no_memory import EVAL_DATASET
-from query_data import CHROMA_PATH as RAW_CHROMA_PATH
-from query_data import build_db as build_raw_db
-from query_data import retrieve as retrieve_raw
-from summary_utils import (
+from .api_utils import chat_completion, describe_chat_target
+from .data_utils import TextChunk, load_text, split_text
+from .embeddings_utils import DEFAULT_EMBEDDING_MODEL
+from .eval_utils import check_accuracy, check_hit, pad
+from .query_no_memory import EVAL_DATASET
+from .query_data import CHROMA_PATH as RAW_CHROMA_PATH
+from .query_data import build_db as build_raw_db
+from .query_data import retrieve as retrieve_raw
+from .summary_utils import (
     SUMMARY_SCHEMA,
     format_summary_record,
     keyword_overlap_score,
     parse_summary_output,
     summary_output_needs_retry,
 )
-from vector_store import LocalVectorStore, RetrievedRecord
+from .vector_store import LocalVectorStore, RetrievedRecord
 
 
 DATA_PATH = "data/books/alice_in_wonderland.md"

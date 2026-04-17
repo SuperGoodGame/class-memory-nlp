@@ -4,9 +4,9 @@ import argparse
 import os
 import shutil
 
-from data_utils import load_text, split_text
-from embeddings_utils import DEFAULT_EMBEDDING_MODEL, get_embeddings
-from vector_store import LocalVectorStore
+from .data_utils import load_text, split_text
+from .embeddings_utils import DEFAULT_EMBEDDING_MODEL, get_embeddings
+from .vector_store import LocalVectorStore
 
 
 CHROMA_PATH = "chroma"
