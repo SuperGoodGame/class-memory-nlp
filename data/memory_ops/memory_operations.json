@@ -1,0 +1,293 @@
+[
+  {
+    "id": "store_001",
+    "operation": "consolidation",
+    "history": [
+      "Alice keeps a golden key on the glass table.",
+      "The White Rabbit carries a pocket watch."
+    ],
+    "question": "Where does Alice keep the golden key?",
+    "expected_in_answer": ["glass table"]
+  },
+  {
+    "id": "retrieve_001",
+    "operation": "retrieval",
+    "history": [
+      "The Duchess's kitchen is full of pepper.",
+      "The Cheshire Cat sits near the fireplace.",
+      "The baby later turns into a pig."
+    ],
+    "question": "What ingredient fills the Duchess's kitchen?",
+    "expected_in_answer": ["pepper"]
+  },
+  {
+    "id": "retrieve_002",
+    "operation": "retrieval",
+    "history": [
+      "The Caterpillar warns Alice about the mushroom.",
+      "The Dormouse tells a story about three sisters.",
+      "The Hatter offers tea to everyone."
+    ],
+    "question": "What does the Caterpillar warn Alice about?",
+    "expected_in_answer": ["mushroom"]
+  },
+  {
+    "id": "retrieve_003",
+    "operation": "retrieval",
+    "history": [
+      "The Queen's croquet ground uses flamingos as mallets.",
+      "The cards paint the roses red.",
+      "The Cheshire Cat appears on the tree."
+    ],
+    "question": "What do they use as mallets in croquet?",
+    "expected_in_answer": ["flamingo", "flamingos"]
+  },
+  {
+    "id": "update_001",
+    "operation": "updating",
+    "history": [
+      "Alice's favorite drink is tea.",
+      "Later, Alice changes her favorite drink to lemonade."
+    ],
+    "question": "What is Alice's current favorite drink?",
+    "expected_in_answer": ["lemonade"],
+    "stale_answer": ["tea"]
+  },
+  {
+    "id": "update_002",
+    "operation": "updating",
+    "history": [
+      "The rabbit first hides the map under the chair.",
+      "After that, the rabbit moves the map into the wooden box."
+    ],
+    "question": "Where is the map now?",
+    "expected_in_answer": ["wooden box"],
+    "stale_answer": ["chair"]
+  },
+  {
+    "id": "update_003",
+    "operation": "updating",
+    "history": [
+      "The Cat first appears near the tree.",
+      "Later, the Cat moves to sit on the branch above the door."
+    ],
+    "question": "Where is the Cat now?",
+    "expected_in_answer": ["branch", "door"],
+    "stale_answer": ["tree"]
+  },
+  {
+    "id": "update_004",
+    "operation": "updating",
+    "history": [
+      "Alice believes the bottle says Drink Me.",
+      "After reading the label, Alice realizes it says Eat Me instead."
+    ],
+    "question": "What does the bottle actually say?",
+    "expected_in_answer": ["eat me"],
+    "stale_answer": ["drink me"]
+  },
+  {
+    "id": "forget_001",
+    "operation": "forgetting",
+    "history": [
+      "The secret code for the garden door is 3141.",
+      "Alice is told to forget the garden door secret code."
+    ],
+    "question": "What is the secret code for the garden door?",
+    "expected_in_answer": ["unknown", "do not know", "don't know", "forgotten", "not know"]
+  },
+  {
+    "id": "forget_002",
+    "operation": "forgetting",
+    "history": [
+      "The Queen's private password is red-rose.",
+      "The Queen asks the assistant to forget her private password."
+    ],
+    "question": "What is the Queen's private password?",
+    "expected_in_answer": ["unknown", "do not know", "don't know", "forgotten", "not know"]
+  },
+  {
+    "id": "forget_003",
+    "operation": "forgetting",
+    "history": [
+      "The location of the hidden door is behind the waterfall.",
+      "The wizard casts a spell to erase this memory from the guard."
+    ],
+    "question": "Where is the hidden door located?",
+    "expected_in_answer": ["unknown", "do not know", "don't know", "forgotten", "not know"]
+  },
+  {
+    "id": "forget_004",
+    "operation": "forgetting",
+    "history": [
+      "The recipe for the magic potion is flour and sugar.",
+      "The chef tells the apprentice to forget the recipe."
+    ],
+    "question": "What is the recipe for the magic potion?",
+    "expected_in_answer": ["unknown", "do not know", "don't know", "forgotten", "not know"]
+  },
+  {
+    "id": "condense_001",
+    "operation": "condensation",
+    "history": [
+      "Alice meets many characters in the garden.",
+      "The most important fact is that the gardeners paint white roses red because they planted the wrong tree.",
+      "Several unrelated animals pass by."
+    ],
+    "question": "Why are the gardeners painting the roses red?",
+    "expected_in_answer": ["wrong tree", "white roses", "red"]
+  },
+  {
+    "id": "condense_002",
+    "operation": "condensation",
+    "history": [
+      "The tea party has many guests arriving.",
+      "The important events are that the Hatter insults Time and the party never ends.",
+      "A butterfly and two moths fly around the table briefly."
+    ],
+    "question": "What is the key event at the tea party?",
+    "expected_in_answer": ["time", "insult"]
+  },
+  {
+    "id": "condense_003",
+    "operation": "condensation",
+    "history": [
+      "The courtroom proceedings involve many witnesses.",
+      "The central fact is that the Queen sentences everyone to death.",
+      "Three mice scurry under the bench during the trial."
+    ],
+    "question": "What does the Queen sentence everyone to?",
+    "expected_in_answer": ["death", "execute", "execution"]
+  },
+  {
+    "id": "noise_001",
+    "operation": "noise_robustness",
+    "history": [
+      "Alice puts the silver spoon inside the blue cupboard.",
+      "The Rabbit checks his watch.",
+      "The Queen talks about roses.",
+      "The Cat disappears slowly.",
+      "The Hatter asks a riddle."
+    ],
+    "question": "Where is the silver spoon?",
+    "expected_in_answer": ["blue cupboard"]
+  },
+  {
+    "id": "noise_002",
+    "operation": "noise_robustness",
+    "history": [
+      "The door to the garden is made of oak.",
+      "A bird sings loudly in the tree.",
+      "The Hatter finishes his tea.",
+      "The March Hare drops his sandwich.",
+      "The door is actually made of brass according to later inspection."
+    ],
+    "question": "What material is the door made of?",
+    "expected_in_answer": ["brass"],
+    "stale_answer": ["oak"]
+  },
+  {
+    "id": "noise_003",
+    "operation": "noise_robustness",
+    "history": [
+      "The candle on the table is blue.",
+      "The clock shows three o'clock.",
+      "A moth flies past the window.",
+      "The candle was replaced with a red one."
+    ],
+    "question": "What color is the candle now?",
+    "expected_in_answer": ["red"],
+    "stale_answer": ["blue"]
+  },
+  {
+    "id": "noise_004",
+    "operation": "noise_robustness",
+    "history": [
+      "Alice sits on the red cushion.",
+      "The Dormouse tells a story about the mouse.",
+      "The Hatter drinks tea from the blue cup.",
+      "A ladybug lands on the table.",
+      "Alice moves to the green cushion instead."
+    ],
+    "question": "Where does Alice sit now?",
+    "expected_in_answer": ["green cushion"],
+    "stale_answer": ["red cushion"]
+  },
+  {
+    "id": "conflict_001",
+    "operation": "stale_memory_resistance",
+    "history": [
+      "Alice lives in Oxford.",
+      "A week later, Alice moves to London."
+    ],
+    "question": "Where does Alice live now?",
+    "expected_in_answer": ["London"],
+    "stale_answer": ["Oxford"]
+  },
+  {
+    "id": "conflict_002",
+    "operation": "stale_memory_resistance",
+    "history": [
+      "The Caterpillar's mushroom is on the left side of the path.",
+      "Later, the mushroom is moved to the right side of the path."
+    ],
+    "question": "Where is the mushroom now?",
+    "expected_in_answer": ["right side"],
+    "stale_answer": ["left side"]
+  },
+  {
+    "id": "conflict_003",
+    "operation": "stale_memory_resistance",
+    "history": [
+      "The Cheshire Cat's grin appears first near the tree.",
+      "The grin later moves to hover near the castle."
+    ],
+    "question": "Where does the Cheshire Cat's grin appear now?",
+    "expected_in_answer": ["castle"],
+    "stale_answer": ["tree"]
+  },
+  {
+    "id": "conflict_004",
+    "operation": "stale_memory_resistance",
+    "history": [
+      "The card soldiers initially guard the garden entrance.",
+      "Later, the soldiers are reassigned to guard the castle instead."
+    ],
+    "question": "Where do the card soldiers guard now?",
+    "expected_in_answer": ["castle"],
+    "stale_answer": ["garden"]
+  },
+  {
+    "id": "index_001",
+    "operation": "indexing",
+    "history": [
+      "The first fact: the door is made of oak.",
+      "The second fact: the key is hidden under the rug.",
+      "The third fact: the window faces the garden."
+    ],
+    "question": "Where is the key hidden?",
+    "expected_in_answer": ["rug", "under the rug"]
+  },
+  {
+    "id": "index_002",
+    "operation": "indexing",
+    "history": [
+      "Event one: the Queen orders a croquet game.",
+      "Event two: the flamingos escape from the garden.",
+      "Event three: the hedgehog ball rolls away."
+    ],
+    "question": "What happens to the flamingos?",
+    "expected_in_answer": ["escape", "escapes"]
+  },
+  {
+    "id": "index_003",
+    "operation": "indexing",
+    "history": [
+      "The pig baby is first seen in the Duchess's arms.",
+      "The pig baby is later thrown out the window by the wind."
+    ],
+    "question": "Where is the pig baby now?",
+    "expected_in_answer": ["window", "outside", "thrown"],
+    "stale_answer": ["Duchess's arms"]
+  }
+]

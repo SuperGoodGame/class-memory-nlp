@@ -12,9 +12,15 @@ All three use the same remote chat API wrapper in `nlp_baselines/api_utils.py`. 
 
 ```text
 nlp/
-├── nlp_baselines/      # core package and runnable baseline modules
-├── data/               # source text data
-├── class_show/         # report assets and plotting script
+├── nlp_baselines/          # core package and runnable baseline modules
+│   ├── query_no_memory.py        # full-context / no-memory baseline
+│   ├── query_data.py             # raw chunk retrieval baseline
+│   ├── query_summary_memory.py    # structured summary-memory baseline
+│   └── evaluate_memory_ops.py    # memory operations benchmark
+├── data/
+│   ├── books/                    # Alice in Wonderland source text
+│   └── memory_ops/               # memory operations benchmark dataset
+├── class_show/           # report assets and plotting script
 ├── README.md
 ├── pixi.toml
 └── pixi.lock
@@ -89,6 +95,18 @@ Force refresh:
 ```bash
 pixi run summary -- --refresh-summaries --rebuild-summary --eval
 ```
+
+## Run The Memory Operations Benchmark
+
+This benchmark complements the AliceQA long-document setting with controlled multi-turn memory episodes. It evaluates whether each method can handle memory consolidation, retrieval, updating, forgetting, condensation, noise, and stale-memory conflicts.
+
+```bash
+pixi run memory-full-eval
+pixi run memory-rag-eval
+pixi run memory-summary-eval
+```
+
+The benchmark reports overall accuracy, per-operation accuracy, average token usage, latency, and stale error rate.
 
 ## Notes
 

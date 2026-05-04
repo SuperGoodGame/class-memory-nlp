@@ -18,6 +18,9 @@ rag-eval = "python -m nlp_baselines.query_data --eval"
 full-eval = "python -m nlp_baselines.query_no_memory --eval"
 summary = "python -m nlp_baselines.query_summary_memory"
 summary-eval = "python -m nlp_baselines.query_summary_memory --eval"
+memory-full-eval = "python -m nlp_baselines.evaluate_memory_ops --method full"
+memory-rag-eval = "python -m nlp_baselines.evaluate_memory_ops --method rag"
+memory-summary-eval = "python -m nlp_baselines.evaluate_memory_ops --method summary"
 
 [dependencies]
 python = "3.12.*"
