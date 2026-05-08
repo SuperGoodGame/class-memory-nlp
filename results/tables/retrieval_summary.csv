@@ -1,0 +1,4 @@
+dataset,method,hit_rate,hits,total,avg_context_chars,avg_context_tokens_approx,avg_retrieved_records,avg_retrieval_latency
+AliceQA-61,Raw RAG,86.88524590163934,53,61,5997.393442622951,1499.3483606557377,5.0,0.034706913056920786
+AliceQA-61,Summary Memory,100.0,61,61,27787.983606557376,6946.995901639344,9.0,0.021952765886900854
+AliceQA-61,Full Context,,,61,143932,35983,1,

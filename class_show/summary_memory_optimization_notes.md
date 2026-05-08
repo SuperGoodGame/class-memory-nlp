@@ -2,7 +2,7 @@
 
 ## 一句话结论
 
-Summary Memory 的核心改进不是“用摘要替代原文”，而是把长文本转成可检索的结构化长期记忆，再用原文片段补充证据。它相比 Raw RAG 更容易命中关键信息，相比 Full Context 大幅降低 prompt 成本。
+Summary Memory 的核心改进是把长文本转成可检索的结构化长期记忆，并用原文片段补充证据。它相比 Raw RAG 更容易命中关键信息，相比 Full Context 大幅降低 prompt 成本。
 
 在 GPT-5.4 实验中，Summary Memory 达到与 Full Context 相同的 `95.1%` 准确率，但平均 prompt tokens 从 `36708.6` 降到 `6903.6`，只用了约 `18.8%` 的上下文成本，约等于节省 `81.2%` prompt tokens。
 

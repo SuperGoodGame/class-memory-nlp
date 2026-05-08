@@ -1,0 +1,5 @@
+dataset,method,score_name,score,correct_or_hits,total,avg_answer_score,avg_context_chars,avg_context_tokens_approx,avg_retrieval_latency,avg_generation_latency
+narrativeqa,Raw RAG,hit,10.0,5,50,0.10683825447740279,4786.46,1196.6,0.43578693866729734,0.0
+narrativeqa,Summary Memory (structured),hit,16.0,8,50,0.1611976810661913,34640.36,8660.06,0.4930525588989258,0.0
+qasper,Raw RAG,hit,24.0,12,50,0.258729775111588,4752.48,1188.24,0.07829353332519531,0.0
+qasper,Summary Memory (structured),hit,36.0,18,50,0.36376013066482904,29078.3,7269.58,0.09930213451385499,0.0

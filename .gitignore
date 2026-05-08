@@ -7,3 +7,4 @@ summary_cache
 __pycache__/
 logs/
 nlp0416.zip
+data/longbench/source/

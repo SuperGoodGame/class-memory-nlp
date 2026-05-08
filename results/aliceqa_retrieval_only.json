@@ -1,0 +1,2240 @@
+{
+  "dataset": "AliceQA-61",
+  "total_questions": 61,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "raw_k": 4,
+  "summary_k": 3,
+  "max_support_chunks": 6,
+  "approx_token_rule": "characters / 4",
+  "summary_compression_ratio": 1.1178233339602532,
+  "full_context": {
+    "context_chars_per_query": 143932,
+    "context_tokens_approx_per_query": 35983
+  },
+  "summary": [
+    {
+      "method": "Raw RAG",
+      "hit_rate": 86.88524590163934,
+      "hits": 53,
+      "total": 61,
+      "avg_context_chars": 5997.393442622951,
+      "avg_context_tokens_approx": 1499.3483606557377,
+      "avg_retrieved_records": 5.0,
+      "avg_retrieval_latency": 0.034706913056920786
+    },
+    {
+      "method": "Summary Memory",
+      "hit_rate": 100.0,
+      "hits": 61,
+      "total": 61,
+      "avg_context_chars": 27787.983606557376,
+      "avg_context_tokens_approx": 6946.995901639344,
+      "avg_retrieved_records": 9.0,
+      "avg_retrieval_latency": 0.021952765886900854
+    }
+  ],
+  "rows": {
+    "raw_rag": [
+      {
+        "id": 1,
+        "query": "What unusual combination made Alice realize the Rabbit was extraordinary before she followed it?",
+        "description": "Rabbit anomaly: pocket + watch",
+        "expected": [
+          "waistcoat-pocket",
+          "watch"
+        ],
+        "hit": true,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 1.6312661170959473,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 2,
+        "query": "What was written on the jar Alice picked up while falling?",
+        "description": "Falling scene object label",
+        "expected": [
+          "orange marmalade"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.013736963272094727,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 3,
+        "query": "Why did Alice avoid dropping the marmalade jar?",
+        "description": "Reason for keeping the jar",
+        "expected": [
+          "killing somebody underneath",
+          "kill somebody underneath"
+        ],
+        "hit": true,
+        "context_chars": 6005,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.011726140975952148,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 4,
+        "query": "What two grand geographical words did Alice say while falling, even though she did not understand them?",
+        "description": "Geography terms during fall",
+        "expected": [
+          "latitude",
+          "longitude"
+        ],
+        "hit": true,
+        "context_chars": 6005,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.01129293441772461,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 5,
+        "query": "Which two countries did Alice wonder about while imagining she might come out on the other side of the earth?",
+        "description": "Antipodes speculation",
+        "expected": [
+          "new zealand",
+          "australia"
+        ],
+        "hit": true,
+        "context_chars": 6005,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.009377479553222656,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": true
+      },
+      {
+        "id": 6,
+        "query": "What pair of reversed questions did Alice drowsily repeat to herself about animals in the air?",
+        "description": "Drowsy self-questioning",
+        "expected": [
+          "do cats eat bats",
+          "do bats eat cats"
+        ],
+        "hit": false,
+        "context_chars": 6004,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.013455390930175781,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": false
+      },
+      {
+        "id": 7,
+        "query": "What kind of table did Alice find in the hall before discovering the little key?",
+        "description": "Hall furniture detail",
+        "expected": [
+          "three-legged table",
+          "glass"
+        ],
+        "hit": true,
+        "context_chars": 6005,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.00986480712890625,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 8,
+        "query": "How high was the little door behind the curtain?",
+        "description": "Door size",
+        "expected": [
+          "fifteen inches",
+          "15 inches"
+        ],
+        "hit": true,
+        "context_chars": 6004,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.008054018020629883,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 9,
+        "query": "Before drinking from the bottle, what warning word did Alice look for on it?",
+        "description": "Bottle safety check",
+        "expected": [
+          "poison"
+        ],
+        "hit": true,
+        "context_chars": 6008,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.008510589599609375,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 10,
+        "query": "What mixed flavor did the bottle taste like? Name at least two items.",
+        "description": "Bottle flavor list",
+        "expected": [
+          "cherry-tart",
+          "custard",
+          "pine-apple",
+          "roast turkey",
+          "toffee",
+          "hot buttered toast"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.010243892669677734,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 11,
+        "query": "After drinking, about how tall did Alice become when she thought she could fit through the little door?",
+        "description": "Post-drink size",
+        "expected": [
+          "ten inches",
+          "10 inches"
+        ],
+        "hit": true,
+        "context_chars": 6003,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.008390665054321289,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": true
+      },
+      {
+        "id": 12,
+        "query": "What words were beautifully marked in currants on the cake?",
+        "description": "Cake inscription",
+        "expected": [
+          "eat me"
+        ],
+        "hit": false,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.010297775268554688,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": false
+      },
+      {
+        "id": 13,
+        "query": "When Alice grew enormously, what practical gift did she imagine sending to her own feet every Christmas?",
+        "description": "Gift to her feet",
+        "expected": [
+          "a new pair of boots",
+          "boots"
+        ],
+        "hit": true,
+        "context_chars": 6004,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.01332712173461914,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 14,
+        "query": "What incorrect multiplication answer did Alice give for four times five while doubting who she was?",
+        "description": "Faulty arithmetic",
+        "expected": [
+          "twelve",
+          "12"
+        ],
+        "hit": false,
+        "context_chars": 6005,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007321596145629883,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": false
+      },
+      {
+        "id": 15,
+        "query": "Which animal did Alice first try addressing in French with 'Où est ma chatte?'",
+        "description": "French line target",
+        "expected": [
+          "mouse"
+        ],
+        "hit": true,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.009845495223999023,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 16,
+        "query": "What specific kind of dog did Alice describe while trying to talk to the Mouse?",
+        "description": "Dog description",
+        "expected": [
+          "terrier",
+          "bright-eyed terrier"
+        ],
+        "hit": true,
+        "context_chars": 6005,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.008435249328613281,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 17,
+        "query": "Who proposed the Caucus-race as a way to get everyone dry?",
+        "description": "Caucus-race proposer",
+        "expected": [
+          "dodo"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007058620452880859,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 18,
+        "query": "According to the Dodo, who won the Caucus-race?",
+        "description": "Race result",
+        "expected": [
+          "everybody",
+          "all must have prizes"
+        ],
+        "hit": true,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006998300552368164,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 19,
+        "query": "What item from Alice's pocket was ceremonially presented back to her as a prize?",
+        "description": "Prize irony",
+        "expected": [
+          "thimble"
+        ],
+        "hit": true,
+        "context_chars": 6003,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.00900411605834961,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 20,
+        "query": "What did Alice say the Mouse's sad tale looked like to her?",
+        "description": "Tale/tail pun",
+        "expected": [
+          "long tail",
+          "tail"
+        ],
+        "hit": true,
+        "context_chars": 6005,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007170438766479492,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 21,
+        "query": "What mistaken name did the White Rabbit call Alice when sending her to fetch gloves and a fan?",
+        "description": "Mistaken identity",
+        "expected": [
+          "mary ann"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.00809335708618164,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 22,
+        "query": "What name was engraved on the brass plate at the Rabbit's house?",
+        "description": "House nameplate",
+        "expected": [
+          "w rabbit",
+          "w. rabbit"
+        ],
+        "hit": true,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.01007223129272461,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 23,
+        "query": "What did Pat say was in the window when the Rabbit asked him?",
+        "description": "Window confusion",
+        "expected": [
+          "an arm",
+          "arm"
+        ],
+        "hit": false,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006272077560424805,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": false
+      },
+      {
+        "id": 24,
+        "query": "What did the Rabbit's helpers throw through the window that later changed form?",
+        "description": "Pebbles into cakes",
+        "expected": [
+          "pebbles"
+        ],
+        "hit": false,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006406068801879883,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": false
+      },
+      {
+        "id": 25,
+        "query": "What did those pebbles turn into after landing on the floor?",
+        "description": "Transformation of pebbles",
+        "expected": [
+          "cakes",
+          "little cakes"
+        ],
+        "hit": true,
+        "context_chars": 6008,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006963968276977539,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 26,
+        "query": "Which creature did Alice identify as Bill when she kicked down the chimney intruder?",
+        "description": "Bill's identity",
+        "expected": [
+          "lizard",
+          "bill"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.009467601776123047,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 27,
+        "query": "What large creature did Alice compare the puppy's play to when trying not to be run over?",
+        "description": "Puppy comparison",
+        "expected": [
+          "cart-horse",
+          "cart horse"
+        ],
+        "hit": true,
+        "context_chars": 6005,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.008085012435913086,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 28,
+        "query": "What was the Caterpillar doing when Alice first saw it on the mushroom?",
+        "description": "Caterpillar first appearance",
+        "expected": [
+          "smoking",
+          "hookah"
+        ],
+        "hit": true,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007002115249633789,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 29,
+        "query": "Which poem did the Caterpillar ask Alice to repeat?",
+        "description": "Requested recitation",
+        "expected": [
+          "you are old father william",
+          "father william"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006011962890625,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": true
+      },
+      {
+        "id": 30,
+        "query": "How tall did Alice say was 'such a wretched height' when speaking to the Caterpillar?",
+        "description": "Wretched height",
+        "expected": [
+          "three inches",
+          "3 inches"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.008561372756958008,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 31,
+        "query": "According to the Caterpillar, what would one side of the mushroom do and what would the other side do?",
+        "description": "Mushroom dual effect",
+        "expected": [
+          "grow taller",
+          "grow shorter"
+        ],
+        "hit": true,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007000446319580078,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 32,
+        "query": "Which bird insisted that Alice must be a serpent because of her long neck?",
+        "description": "Serpent accusation",
+        "expected": [
+          "pigeon"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007113933563232422,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 33,
+        "query": "Who brought the invitation from the Queen to the Duchess's house?",
+        "description": "Invitation messenger",
+        "expected": [
+          "fish-footman",
+          "fish footman"
+        ],
+        "hit": false,
+        "context_chars": 6008,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007184028625488281,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": false
+      },
+      {
+        "id": 34,
+        "query": "What overwhelming ingredient filled the Duchess's kitchen air and soup?",
+        "description": "Kitchen atmosphere",
+        "expected": [
+          "pepper"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.008683443069458008,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 35,
+        "query": "Into what animal did the Duchess's baby finally turn?",
+        "description": "Baby transformation",
+        "expected": [
+          "pig"
+        ],
+        "hit": true,
+        "context_chars": 6008,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006011247634887695,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 36,
+        "query": "What direction did the Cheshire Cat give for finding the Hatter and the March Hare?",
+        "description": "Route from the Cat",
+        "expected": [
+          "that direction",
+          "hatter",
+          "march hare"
+        ],
+        "hit": true,
+        "context_chars": 6008,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.009386062622070312,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 37,
+        "query": "How did the Cheshire Cat distinguish itself from a dog when arguing that it was mad?",
+        "description": "Madness logic",
+        "expected": [
+          "growl when i'm pleased",
+          "wag my tail when i'm angry",
+          "purring"
+        ],
+        "hit": true,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.008009195327758789,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 38,
+        "query": "What was unusual about the March Hare's house roof and chimneys?",
+        "description": "March Hare house detail",
+        "expected": [
+          "thatched with fur",
+          "chimneys were shaped like ears"
+        ],
+        "hit": true,
+        "context_chars": 6008,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006291389465332031,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 39,
+        "query": "What drink did the March Hare offer even though none was actually on the table?",
+        "description": "Tea-party rudeness",
+        "expected": [
+          "wine"
+        ],
+        "hit": true,
+        "context_chars": 6008,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007097721099853516,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 40,
+        "query": "What impossible riddle did the Hatter ask Alice at the tea party?",
+        "description": "Tea-party riddle",
+        "expected": [
+          "why is a raven like a writing-desk",
+          "raven",
+          "writing-desk"
+        ],
+        "hit": true,
+        "context_chars": 6008,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006654262542724609,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 41,
+        "query": "What did the Hatter say was wrong with the watch after Alice answered the day of the month?",
+        "description": "Watch complaint",
+        "expected": [
+          "two days wrong"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006398677825927734,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 42,
+        "query": "What did the Hatter blame for damaging the watch mechanism?",
+        "description": "Watch explanation",
+        "expected": [
+          "butter",
+          "crumbs"
+        ],
+        "hit": true,
+        "context_chars": 6008,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.0061109066009521484,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 43,
+        "query": "At the tea party, what time did the Hatter say it always was?",
+        "description": "Permanent tea-time",
+        "expected": [
+          "six o'clock",
+          "tea-time",
+          "tea time"
+        ],
+        "hit": true,
+        "context_chars": 6008,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006033658981323242,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 44,
+        "query": "What three names did the Dormouse give for the sisters in its story?",
+        "description": "Dormouse story names",
+        "expected": [
+          "elsie",
+          "lacie",
+          "tillie"
+        ],
+        "hit": true,
+        "context_chars": 5739,
+        "context_tokens_approx": 1435,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006911516189575195,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 45,
+        "query": "What did the three sisters live on at the bottom of the well?",
+        "description": "Treacle-well story",
+        "expected": [
+          "treacle"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.005994081497192383,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 46,
+        "query": "What strange M-words did the Dormouse list when describing what the sisters drew?",
+        "description": "M-word drawing list",
+        "expected": [
+          "mouse-traps",
+          "moon",
+          "memory",
+          "muchness"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.0075969696044921875,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 47,
+        "query": "Why were the gardeners painting the roses red?",
+        "description": "Rose painting reason",
+        "expected": [
+          "white one in by mistake",
+          "white rose-tree",
+          "heads cut off"
+        ],
+        "hit": true,
+        "context_chars": 6004,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007470846176147461,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 48,
+        "query": "What were used as the balls and mallets in the Queen's croquet game?",
+        "description": "Croquet equipment",
+        "expected": [
+          "hedgehogs",
+          "flamingoes"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.008106470108032227,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 49,
+        "query": "What punishment did the White Rabbit say the Duchess faced, and for what reason?",
+        "description": "Duchess sentence",
+        "expected": [
+          "execution",
+          "boxed the queen's ears"
+        ],
+        "hit": true,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.00758051872253418,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 50,
+        "query": "What line from Alice caused the Queen to stop listening angrily during croquet?",
+        "description": "Alice self-correction before Queen",
+        "expected": [
+          "likely to win",
+          "hardly worth while finishing the game"
+        ],
+        "hit": false,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.00826406478881836,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": false
+      },
+      {
+        "id": 51,
+        "query": "What three parties argued over how to remove the Cheshire Cat's headless head problem?",
+        "description": "Cat execution dispute",
+        "expected": [
+          "executioner",
+          "king",
+          "queen"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007384777069091797,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 52,
+        "query": "What did the Queen say a Mock Turtle was made from?",
+        "description": "Mock Turtle definition",
+        "expected": [
+          "mock turtle soup"
+        ],
+        "hit": true,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006865978240966797,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 53,
+        "query": "Why did the Mock Turtle say their schoolmaster was called Tortoise?",
+        "description": "Tortoise pun",
+        "expected": [
+          "because he taught us"
+        ],
+        "hit": true,
+        "context_chars": 6003,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007023334503173828,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 54,
+        "query": "What were the first branches of arithmetic in the Mock Turtle's school?",
+        "description": "Mock arithmetic",
+        "expected": [
+          "ambition",
+          "distraction",
+          "uglification",
+          "derision"
+        ],
+        "hit": true,
+        "context_chars": 6003,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.007033348083496094,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 55,
+        "query": "What profession or creature taught Drawling, Stretching, and Fainting in Coils?",
+        "description": "Drawling-master identity",
+        "expected": [
+          "conger-eel",
+          "eel"
+        ],
+        "hit": true,
+        "context_chars": 6004,
+        "context_tokens_approx": 1501,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006329059600830078,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 56,
+        "query": "In the Lobster Quadrille, what happens immediately after the dancers change lobsters and retire in order?",
+        "description": "Dance sequence step",
+        "expected": [
+          "throw the lobsters",
+          "out to sea"
+        ],
+        "hit": true,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.009583711624145508,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 57,
+        "query": "What song did the Mock Turtle sing just before the trial began?",
+        "description": "Mock Turtle song",
+        "expected": [
+          "beautiful soup",
+          "soup of the evening"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.005997896194458008,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 58,
+        "query": "Who served as the judge at the trial, and what made the role look awkward?",
+        "description": "Judge identity and appearance",
+        "expected": [
+          "king",
+          "crown over the wig"
+        ],
+        "hit": true,
+        "context_chars": 6007,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.0065000057220458984,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 59,
+        "query": "What were the jurors writing down on their slates before the trial began, according to the Gryphon?",
+        "description": "Jurors' preparation",
+        "expected": [
+          "their names"
+        ],
+        "hit": true,
+        "context_chars": 6008,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.009795427322387695,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 60,
+        "query": "Who stole the tarts according to the accusation read aloud in court?",
+        "description": "Formal accusation",
+        "expected": [
+          "knave of hearts"
+        ],
+        "hit": true,
+        "context_chars": 6006,
+        "context_tokens_approx": 1502,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.008217811584472656,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 61,
+        "query": "What three different dates were given for when the tea had begun?",
+        "description": "Contradictory tea dates",
+        "expected": [
+          "fourteenth",
+          "fifteenth",
+          "sixteenth",
+          "14",
+          "15",
+          "16"
+        ],
+        "hit": false,
+        "context_chars": 5739,
+        "context_tokens_approx": 1435,
+        "retrieved_records": 5,
+        "retrieval_latency": 0.006177425384521484,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": false
+      }
+    ],
+    "summary_memory": [
+      {
+        "id": 1,
+        "query": "What unusual combination made Alice realize the Rabbit was extraordinary before she followed it?",
+        "description": "Rabbit anomaly: pocket + watch",
+        "expected": [
+          "waistcoat-pocket",
+          "watch"
+        ],
+        "hit": true,
+        "context_chars": 25393,
+        "context_tokens_approx": 6348,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.08899140357971191,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 2,
+        "query": "What was written on the jar Alice picked up while falling?",
+        "description": "Falling scene object label",
+        "expected": [
+          "orange marmalade"
+        ],
+        "hit": true,
+        "context_chars": 25150,
+        "context_tokens_approx": 6288,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020007848739624023,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 3,
+        "query": "Why did Alice avoid dropping the marmalade jar?",
+        "description": "Reason for keeping the jar",
+        "expected": [
+          "killing somebody underneath",
+          "kill somebody underneath"
+        ],
+        "hit": true,
+        "context_chars": 23726,
+        "context_tokens_approx": 5932,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.0204925537109375,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": true
+      },
+      {
+        "id": 4,
+        "query": "What two grand geographical words did Alice say while falling, even though she did not understand them?",
+        "description": "Geography terms during fall",
+        "expected": [
+          "latitude",
+          "longitude"
+        ],
+        "hit": true,
+        "context_chars": 27550,
+        "context_tokens_approx": 6888,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020789146423339844,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 5,
+        "query": "Which two countries did Alice wonder about while imagining she might come out on the other side of the earth?",
+        "description": "Antipodes speculation",
+        "expected": [
+          "new zealand",
+          "australia"
+        ],
+        "hit": true,
+        "context_chars": 27631,
+        "context_tokens_approx": 6908,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02159881591796875,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 6,
+        "query": "What pair of reversed questions did Alice drowsily repeat to herself about animals in the air?",
+        "description": "Drowsy self-questioning",
+        "expected": [
+          "do cats eat bats",
+          "do bats eat cats"
+        ],
+        "hit": true,
+        "context_chars": 27809,
+        "context_tokens_approx": 6952,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02036261558532715,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 7,
+        "query": "What kind of table did Alice find in the hall before discovering the little key?",
+        "description": "Hall furniture detail",
+        "expected": [
+          "three-legged table",
+          "glass"
+        ],
+        "hit": true,
+        "context_chars": 26721,
+        "context_tokens_approx": 6680,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02024674415588379,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 8,
+        "query": "How high was the little door behind the curtain?",
+        "description": "Door size",
+        "expected": [
+          "fifteen inches",
+          "15 inches"
+        ],
+        "hit": true,
+        "context_chars": 26858,
+        "context_tokens_approx": 6714,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.01979207992553711,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 9,
+        "query": "Before drinking from the bottle, what warning word did Alice look for on it?",
+        "description": "Bottle safety check",
+        "expected": [
+          "poison"
+        ],
+        "hit": true,
+        "context_chars": 26724,
+        "context_tokens_approx": 6681,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020078420639038086,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 10,
+        "query": "What mixed flavor did the bottle taste like? Name at least two items.",
+        "description": "Bottle flavor list",
+        "expected": [
+          "cherry-tart",
+          "custard",
+          "pine-apple",
+          "roast turkey",
+          "toffee",
+          "hot buttered toast"
+        ],
+        "hit": true,
+        "context_chars": 26409,
+        "context_tokens_approx": 6602,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020263671875,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 11,
+        "query": "After drinking, about how tall did Alice become when she thought she could fit through the little door?",
+        "description": "Post-drink size",
+        "expected": [
+          "ten inches",
+          "10 inches"
+        ],
+        "hit": true,
+        "context_chars": 25434,
+        "context_tokens_approx": 6358,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02078080177307129,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 12,
+        "query": "What words were beautifully marked in currants on the cake?",
+        "description": "Cake inscription",
+        "expected": [
+          "eat me"
+        ],
+        "hit": true,
+        "context_chars": 28274,
+        "context_tokens_approx": 7068,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02035236358642578,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 13,
+        "query": "When Alice grew enormously, what practical gift did she imagine sending to her own feet every Christmas?",
+        "description": "Gift to her feet",
+        "expected": [
+          "a new pair of boots",
+          "boots"
+        ],
+        "hit": true,
+        "context_chars": 29007,
+        "context_tokens_approx": 7252,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021017074584960938,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 14,
+        "query": "What incorrect multiplication answer did Alice give for four times five while doubting who she was?",
+        "description": "Faulty arithmetic",
+        "expected": [
+          "twelve",
+          "12"
+        ],
+        "hit": true,
+        "context_chars": 26859,
+        "context_tokens_approx": 6715,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021169662475585938,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 15,
+        "query": "Which animal did Alice first try addressing in French with 'Où est ma chatte?'",
+        "description": "French line target",
+        "expected": [
+          "mouse"
+        ],
+        "hit": true,
+        "context_chars": 27970,
+        "context_tokens_approx": 6992,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020428895950317383,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 16,
+        "query": "What specific kind of dog did Alice describe while trying to talk to the Mouse?",
+        "description": "Dog description",
+        "expected": [
+          "terrier",
+          "bright-eyed terrier"
+        ],
+        "hit": true,
+        "context_chars": 26023,
+        "context_tokens_approx": 6506,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02093029022216797,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 17,
+        "query": "Who proposed the Caucus-race as a way to get everyone dry?",
+        "description": "Caucus-race proposer",
+        "expected": [
+          "dodo"
+        ],
+        "hit": true,
+        "context_chars": 26996,
+        "context_tokens_approx": 6749,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021779298782348633,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 18,
+        "query": "According to the Dodo, who won the Caucus-race?",
+        "description": "Race result",
+        "expected": [
+          "everybody",
+          "all must have prizes"
+        ],
+        "hit": true,
+        "context_chars": 26343,
+        "context_tokens_approx": 6586,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02057957649230957,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 19,
+        "query": "What item from Alice's pocket was ceremonially presented back to her as a prize?",
+        "description": "Prize irony",
+        "expected": [
+          "thimble"
+        ],
+        "hit": true,
+        "context_chars": 25674,
+        "context_tokens_approx": 6418,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02102351188659668,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 20,
+        "query": "What did Alice say the Mouse's sad tale looked like to her?",
+        "description": "Tale/tail pun",
+        "expected": [
+          "long tail",
+          "tail"
+        ],
+        "hit": true,
+        "context_chars": 28598,
+        "context_tokens_approx": 7150,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020343780517578125,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 21,
+        "query": "What mistaken name did the White Rabbit call Alice when sending her to fetch gloves and a fan?",
+        "description": "Mistaken identity",
+        "expected": [
+          "mary ann"
+        ],
+        "hit": true,
+        "context_chars": 25394,
+        "context_tokens_approx": 6348,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.0208127498626709,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 22,
+        "query": "What name was engraved on the brass plate at the Rabbit's house?",
+        "description": "House nameplate",
+        "expected": [
+          "w rabbit",
+          "w. rabbit"
+        ],
+        "hit": true,
+        "context_chars": 25720,
+        "context_tokens_approx": 6430,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02061748504638672,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 23,
+        "query": "What did Pat say was in the window when the Rabbit asked him?",
+        "description": "Window confusion",
+        "expected": [
+          "an arm",
+          "arm"
+        ],
+        "hit": true,
+        "context_chars": 25720,
+        "context_tokens_approx": 6430,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02067852020263672,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 24,
+        "query": "What did the Rabbit's helpers throw through the window that later changed form?",
+        "description": "Pebbles into cakes",
+        "expected": [
+          "pebbles"
+        ],
+        "hit": true,
+        "context_chars": 25721,
+        "context_tokens_approx": 6430,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02047896385192871,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 25,
+        "query": "What did those pebbles turn into after landing on the floor?",
+        "description": "Transformation of pebbles",
+        "expected": [
+          "cakes",
+          "little cakes"
+        ],
+        "hit": true,
+        "context_chars": 25593,
+        "context_tokens_approx": 6398,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.01997542381286621,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 26,
+        "query": "Which creature did Alice identify as Bill when she kicked down the chimney intruder?",
+        "description": "Bill's identity",
+        "expected": [
+          "lizard",
+          "bill"
+        ],
+        "hit": true,
+        "context_chars": 25720,
+        "context_tokens_approx": 6430,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02035808563232422,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 27,
+        "query": "What large creature did Alice compare the puppy's play to when trying not to be run over?",
+        "description": "Puppy comparison",
+        "expected": [
+          "cart-horse",
+          "cart horse"
+        ],
+        "hit": true,
+        "context_chars": 28061,
+        "context_tokens_approx": 7015,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021842241287231445,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 28,
+        "query": "What was the Caterpillar doing when Alice first saw it on the mushroom?",
+        "description": "Caterpillar first appearance",
+        "expected": [
+          "smoking",
+          "hookah"
+        ],
+        "hit": true,
+        "context_chars": 28715,
+        "context_tokens_approx": 7179,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.0204010009765625,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 29,
+        "query": "Which poem did the Caterpillar ask Alice to repeat?",
+        "description": "Requested recitation",
+        "expected": [
+          "you are old father william",
+          "father william"
+        ],
+        "hit": true,
+        "context_chars": 26508,
+        "context_tokens_approx": 6627,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020468950271606445,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 30,
+        "query": "How tall did Alice say was 'such a wretched height' when speaking to the Caterpillar?",
+        "description": "Wretched height",
+        "expected": [
+          "three inches",
+          "3 inches"
+        ],
+        "hit": true,
+        "context_chars": 28716,
+        "context_tokens_approx": 7179,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021077632904052734,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 31,
+        "query": "According to the Caterpillar, what would one side of the mushroom do and what would the other side do?",
+        "description": "Mushroom dual effect",
+        "expected": [
+          "grow taller",
+          "grow shorter"
+        ],
+        "hit": true,
+        "context_chars": 28715,
+        "context_tokens_approx": 7179,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020715951919555664,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 32,
+        "query": "Which bird insisted that Alice must be a serpent because of her long neck?",
+        "description": "Serpent accusation",
+        "expected": [
+          "pigeon"
+        ],
+        "hit": true,
+        "context_chars": 24508,
+        "context_tokens_approx": 6127,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020966053009033203,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 33,
+        "query": "Who brought the invitation from the Queen to the Duchess's house?",
+        "description": "Invitation messenger",
+        "expected": [
+          "fish-footman",
+          "fish footman"
+        ],
+        "hit": true,
+        "context_chars": 27528,
+        "context_tokens_approx": 6882,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02064800262451172,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 34,
+        "query": "What overwhelming ingredient filled the Duchess's kitchen air and soup?",
+        "description": "Kitchen atmosphere",
+        "expected": [
+          "pepper"
+        ],
+        "hit": true,
+        "context_chars": 27265,
+        "context_tokens_approx": 6816,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02056574821472168,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 35,
+        "query": "Into what animal did the Duchess's baby finally turn?",
+        "description": "Baby transformation",
+        "expected": [
+          "pig"
+        ],
+        "hit": true,
+        "context_chars": 28465,
+        "context_tokens_approx": 7116,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020229578018188477,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 36,
+        "query": "What direction did the Cheshire Cat give for finding the Hatter and the March Hare?",
+        "description": "Route from the Cat",
+        "expected": [
+          "that direction",
+          "hatter",
+          "march hare"
+        ],
+        "hit": true,
+        "context_chars": 27309,
+        "context_tokens_approx": 6827,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021587133407592773,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 37,
+        "query": "How did the Cheshire Cat distinguish itself from a dog when arguing that it was mad?",
+        "description": "Madness logic",
+        "expected": [
+          "growl when i'm pleased",
+          "wag my tail when i'm angry",
+          "purring"
+        ],
+        "hit": true,
+        "context_chars": 29722,
+        "context_tokens_approx": 7430,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021313905715942383,
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": true
+      },
+      {
+        "id": 38,
+        "query": "What was unusual about the March Hare's house roof and chimneys?",
+        "description": "March Hare house detail",
+        "expected": [
+          "thatched with fur",
+          "chimneys were shaped like ears"
+        ],
+        "hit": true,
+        "context_chars": 26736,
+        "context_tokens_approx": 6684,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02088165283203125,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 39,
+        "query": "What drink did the March Hare offer even though none was actually on the table?",
+        "description": "Tea-party rudeness",
+        "expected": [
+          "wine"
+        ],
+        "hit": true,
+        "context_chars": 30201,
+        "context_tokens_approx": 7550,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021424293518066406,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 40,
+        "query": "What impossible riddle did the Hatter ask Alice at the tea party?",
+        "description": "Tea-party riddle",
+        "expected": [
+          "why is a raven like a writing-desk",
+          "raven",
+          "writing-desk"
+        ],
+        "hit": true,
+        "context_chars": 29177,
+        "context_tokens_approx": 7294,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020860910415649414,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 41,
+        "query": "What did the Hatter say was wrong with the watch after Alice answered the day of the month?",
+        "description": "Watch complaint",
+        "expected": [
+          "two days wrong"
+        ],
+        "hit": true,
+        "context_chars": 30526,
+        "context_tokens_approx": 7632,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.0217282772064209,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 42,
+        "query": "What did the Hatter blame for damaging the watch mechanism?",
+        "description": "Watch explanation",
+        "expected": [
+          "butter",
+          "crumbs"
+        ],
+        "hit": true,
+        "context_chars": 27726,
+        "context_tokens_approx": 6932,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02097177505493164,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 43,
+        "query": "At the tea party, what time did the Hatter say it always was?",
+        "description": "Permanent tea-time",
+        "expected": [
+          "six o'clock",
+          "tea-time",
+          "tea time"
+        ],
+        "hit": true,
+        "context_chars": 30792,
+        "context_tokens_approx": 7698,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021396398544311523,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 44,
+        "query": "What three names did the Dormouse give for the sisters in its story?",
+        "description": "Dormouse story names",
+        "expected": [
+          "elsie",
+          "lacie",
+          "tillie"
+        ],
+        "hit": true,
+        "context_chars": 29129,
+        "context_tokens_approx": 7282,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02108168601989746,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 45,
+        "query": "What did the three sisters live on at the bottom of the well?",
+        "description": "Treacle-well story",
+        "expected": [
+          "treacle"
+        ],
+        "hit": true,
+        "context_chars": 28135,
+        "context_tokens_approx": 7034,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020349502563476562,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 46,
+        "query": "What strange M-words did the Dormouse list when describing what the sisters drew?",
+        "description": "M-word drawing list",
+        "expected": [
+          "mouse-traps",
+          "moon",
+          "memory",
+          "muchness"
+        ],
+        "hit": true,
+        "context_chars": 26526,
+        "context_tokens_approx": 6632,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02068185806274414,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 47,
+        "query": "Why were the gardeners painting the roses red?",
+        "description": "Rose painting reason",
+        "expected": [
+          "white one in by mistake",
+          "white rose-tree",
+          "heads cut off"
+        ],
+        "hit": true,
+        "context_chars": 25797,
+        "context_tokens_approx": 6449,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.019634723663330078,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 48,
+        "query": "What were used as the balls and mallets in the Queen's croquet game?",
+        "description": "Croquet equipment",
+        "expected": [
+          "hedgehogs",
+          "flamingoes"
+        ],
+        "hit": true,
+        "context_chars": 30530,
+        "context_tokens_approx": 7632,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021914243698120117,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 49,
+        "query": "What punishment did the White Rabbit say the Duchess faced, and for what reason?",
+        "description": "Duchess sentence",
+        "expected": [
+          "execution",
+          "boxed the queen's ears"
+        ],
+        "hit": true,
+        "context_chars": 30051,
+        "context_tokens_approx": 7513,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020542383193969727,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 50,
+        "query": "What line from Alice caused the Queen to stop listening angrily during croquet?",
+        "description": "Alice self-correction before Queen",
+        "expected": [
+          "likely to win",
+          "hardly worth while finishing the game"
+        ],
+        "hit": true,
+        "context_chars": 30747,
+        "context_tokens_approx": 7687,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021023988723754883,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 51,
+        "query": "What three parties argued over how to remove the Cheshire Cat's headless head problem?",
+        "description": "Cat execution dispute",
+        "expected": [
+          "executioner",
+          "king",
+          "queen"
+        ],
+        "hit": true,
+        "context_chars": 27683,
+        "context_tokens_approx": 6921,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02142333984375,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 52,
+        "query": "What did the Queen say a Mock Turtle was made from?",
+        "description": "Mock Turtle definition",
+        "expected": [
+          "mock turtle soup"
+        ],
+        "hit": true,
+        "context_chars": 28690,
+        "context_tokens_approx": 7172,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020220279693603516,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 53,
+        "query": "Why did the Mock Turtle say their schoolmaster was called Tortoise?",
+        "description": "Tortoise pun",
+        "expected": [
+          "because he taught us"
+        ],
+        "hit": true,
+        "context_chars": 29394,
+        "context_tokens_approx": 7348,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.0206298828125,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 54,
+        "query": "What were the first branches of arithmetic in the Mock Turtle's school?",
+        "description": "Mock arithmetic",
+        "expected": [
+          "ambition",
+          "distraction",
+          "uglification",
+          "derision"
+        ],
+        "hit": true,
+        "context_chars": 27017,
+        "context_tokens_approx": 6754,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020784616470336914,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 55,
+        "query": "What profession or creature taught Drawling, Stretching, and Fainting in Coils?",
+        "description": "Drawling-master identity",
+        "expected": [
+          "conger-eel",
+          "eel"
+        ],
+        "hit": true,
+        "context_chars": 29117,
+        "context_tokens_approx": 7279,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020785093307495117,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 56,
+        "query": "In the Lobster Quadrille, what happens immediately after the dancers change lobsters and retire in order?",
+        "description": "Dance sequence step",
+        "expected": [
+          "throw the lobsters",
+          "out to sea"
+        ],
+        "hit": true,
+        "context_chars": 29704,
+        "context_tokens_approx": 7426,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021293163299560547,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 57,
+        "query": "What song did the Mock Turtle sing just before the trial began?",
+        "description": "Mock Turtle song",
+        "expected": [
+          "beautiful soup",
+          "soup of the evening"
+        ],
+        "hit": true,
+        "context_chars": 29371,
+        "context_tokens_approx": 7343,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.020892620086669922,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 58,
+        "query": "Who served as the judge at the trial, and what made the role look awkward?",
+        "description": "Judge identity and appearance",
+        "expected": [
+          "king",
+          "crown over the wig"
+        ],
+        "hit": true,
+        "context_chars": 32076,
+        "context_tokens_approx": 8019,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021573781967163086,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 59,
+        "query": "What were the jurors writing down on their slates before the trial began, according to the Gryphon?",
+        "description": "Jurors' preparation",
+        "expected": [
+          "their names"
+        ],
+        "hit": true,
+        "context_chars": 31162,
+        "context_tokens_approx": 7790,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.022544145584106445,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 60,
+        "query": "Who stole the tarts according to the accusation read aloud in court?",
+        "description": "Formal accusation",
+        "expected": [
+          "knave of hearts"
+        ],
+        "hit": true,
+        "context_chars": 29732,
+        "context_tokens_approx": 7433,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.021350383758544922,
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      {
+        "id": 61,
+        "query": "What three different dates were given for when the tea had begun?",
+        "description": "Contradictory tea dates",
+        "expected": [
+          "fourteenth",
+          "fifteenth",
+          "sixteenth",
+          "14",
+          "15",
+          "16"
+        ],
+        "hit": true,
+        "context_chars": 30519,
+        "context_tokens_approx": 7630,
+        "retrieved_records": 9,
+        "summary_records": 3,
+        "support_chunks": 6,
+        "retrieval_latency": 0.02136373519897461,
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      }
+    ]
+  }
+}

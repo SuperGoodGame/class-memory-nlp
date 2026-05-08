@@ -57,7 +57,7 @@ Raw RAG 是 baseline：
 
 ### 3.3 Structured Summary Memory
 
-Summary Memory 不是简单调用 summary API。它是一条 memory construction and retrieval pipeline：
+Summary Memory 是一条 memory construction and retrieval pipeline：
 
 1. 把长文档切成较大的 section。
 2. 对每个 section 生成结构化 JSON memory record。
@@ -268,8 +268,8 @@ Purpose:
 应该主动讨论这些限制：
 
 - AliceQA-61 是小规模手工数据集。
-- LongBench 只跑 sampled subset，不是 full benchmark。
-- 本地 Gemma 4 不是 frontier model，所以绝对准确率可能不高。
+- LongBench 只跑 sampled subset，规模小于 full benchmark。
+- 本地 Gemma 4 与 frontier model 能力不同，所以绝对准确率可能不高。
 - Summary Memory 有一次性 preprocessing cost。
 - Full Context 可以用 prompt cache / KV cache，但 active context 仍然更长。
 - Summary quality 会影响 downstream retrieval 和 generation。

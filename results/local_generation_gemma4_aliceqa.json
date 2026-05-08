@@ -1,0 +1,3475 @@
+{
+  "dataset": "AliceQA-61",
+  "total_questions": 61,
+  "local_model": "gemma4-31b-gguf",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "raw_k": 4,
+  "summary_k": 3,
+  "max_support_chunks": 6,
+  "max_tokens": 128,
+  "max_context_chars": 8000,
+  "disable_thinking": true,
+  "nli_groundedness": false,
+  "summary": [
+    {
+      "dataset": "AliceQA-61",
+      "local_model": "gemma4-31b-gguf",
+      "method": "Raw RAG",
+      "accuracy": 72.1311475409836,
+      "correct": 44,
+      "total": 61,
+      "retrieval_hit_rate": 86.88524590163934,
+      "retrieval_hits": 53,
+      "avg_context_chars": 4795.7213114754095,
+      "avg_context_tokens_approx": 1198.950819672131,
+      "avg_generation_latency": 14.25081386331652,
+      "avg_total_latency": 14.250933846489328,
+      "avg_prompt_tokens": 1369.377049180328,
+      "avg_completion_tokens": 13.37704918032787,
+      "avg_total_tokens": 1382.7540983606557,
+      "empty_answers": 0,
+      "errors": []
+    },
+    {
+      "dataset": "AliceQA-61",
+      "local_model": "gemma4-31b-gguf",
+      "method": "Summary Memory",
+      "accuracy": 90.1639344262295,
+      "correct": 55,
+      "total": 61,
+      "retrieval_hit_rate": 90.1639344262295,
+      "retrieval_hits": 55,
+      "avg_context_chars": 7997.803278688524,
+      "avg_context_tokens_approx": 1999.8032786885246,
+      "avg_generation_latency": 39.74421188088714,
+      "avg_total_latency": 39.74435862165983,
+      "avg_prompt_tokens": 1959.8852459016393,
+      "avg_completion_tokens": 62.16393442622951,
+      "avg_total_tokens": 2022.049180327869,
+      "empty_answers": 0,
+      "errors": []
+    }
+  ],
+  "rows": [
+    {
+      "method": "Raw RAG",
+      "answer": "Alice realized the Rabbit was extraordinary when it took a watch out of its waistcoat-pocket.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 9.972292423248291,
+      "total_latency": 9.972408533096313,
+      "prompt_tokens": 1329,
+      "completion_tokens": 19,
+      "total_tokens": 1348,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 1,
+      "query": "What unusual combination made Alice realize the Rabbit was extraordinary before she followed it?",
+      "description": "Rabbit anomaly: pocket + watch",
+      "expected_keywords": [
+        "waistcoat-pocket",
+        "watch"
+      ],
+      "expected_in_docs": [
+        "waistcoat-pocket",
+        "watch"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice realized the Rabbit was extraordinary because he had pink eyes, wore a waistcoat-pocket, and took a watch out of that pocket.\n\n**Supporting Excerpt:**\n\"After noticing a White Rabbit with pink eyes, a waistcoat-pocket, and a watch, and hearing it say it will be late, she follows it...\" [Support 1]",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 31.73629379272461,
+      "total_latency": 31.73641872406006,
+      "prompt_tokens": 1992,
+      "completion_tokens": 72,
+      "total_tokens": 2064,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 1,
+      "query": "What unusual combination made Alice realize the Rabbit was extraordinary before she followed it?",
+      "description": "Rabbit anomaly: pocket + watch",
+      "expected_keywords": [
+        "waistcoat-pocket",
+        "watch"
+      ],
+      "expected_in_docs": [
+        "waistcoat-pocket",
+        "watch"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "“ORANGE MARMALADE”",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 12.33629560470581,
+      "total_latency": 12.336400985717773,
+      "prompt_tokens": 1310,
+      "completion_tokens": 8,
+      "total_tokens": 1318,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 2,
+      "query": "What was written on the jar Alice picked up while falling?",
+      "description": "Falling scene object label",
+      "expected_keywords": [
+        "orange marmalade"
+      ],
+      "expected_in_docs": [
+        "orange marmalade"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The jar Alice picked up while falling was labelled “ORANGE MARMALADE.”\n\n**Supporting Excerpt:**\n[Memory 2] \"...Alice takes a jar labelled “ORANGE MARMALADE,” finds it empty, and puts it into a cupboard instead of dropping it.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 24.91008472442627,
+      "total_latency": 24.91019558906555,
+      "prompt_tokens": 1964,
+      "completion_tokens": 57,
+      "total_tokens": 2021,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 2,
+      "query": "What was written on the jar Alice picked up while falling?",
+      "description": "Falling scene object label",
+      "expected_keywords": [
+        "orange marmalade"
+      ],
+      "expected_in_docs": [
+        "orange marmalade"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Alice avoided dropping the jar for fear of killing somebody underneath.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 12.221459865570068,
+      "total_latency": 12.221581935882568,
+      "prompt_tokens": 1342,
+      "completion_tokens": 13,
+      "total_tokens": 1355,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 3,
+      "query": "Why did Alice avoid dropping the marmalade jar?",
+      "description": "Reason for keeping the jar",
+      "expected_keywords": [
+        "killing somebody underneath",
+        "kill somebody underneath"
+      ],
+      "expected_in_docs": [
+        "killing somebody underneath",
+        "kill somebody underneath"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice avoided dropping the marmalade jar because she found it to be empty, so she put it into a cupboard instead.\n\n**Supporting Excerpt:**\n\"Alice takes a jar labelled “ORANGE MARMALADE,” finds it empty, and puts it into a cupboard instead of dropping it.\" ([Memory 1])",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 26.682972192764282,
+      "total_latency": 26.68308186531067,
+      "prompt_tokens": 1963,
+      "completion_tokens": 65,
+      "total_tokens": 2028,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 3,
+      "query": "Why did Alice avoid dropping the marmalade jar?",
+      "description": "Reason for keeping the jar",
+      "expected_keywords": [
+        "killing somebody underneath",
+        "kill somebody underneath"
+      ],
+      "expected_in_docs": [
+        "killing somebody underneath",
+        "kill somebody underneath"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Latitude and Longitude.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 8.980421304702759,
+      "total_latency": 8.980531454086304,
+      "prompt_tokens": 1371,
+      "completion_tokens": 6,
+      "total_tokens": 1377,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 4,
+      "query": "What two grand geographical words did Alice say while falling, even though she did not understand them?",
+      "description": "Geography terms during fall",
+      "expected_keywords": [
+        "latitude",
+        "longitude"
+      ],
+      "expected_in_docs": [
+        "latitude",
+        "longitude"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The two grand geographical words Alice said were \"Latitude\" and \"Longitude.\"\n\n**Supporting excerpt:**\n[Memory 1] exact_facts: Alice had no idea what \"Latitude\" or \"Longitude\" was, but thought they were \"nice grand words to say.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 26.236949920654297,
+      "total_latency": 26.237187147140503,
+      "prompt_tokens": 1965,
+      "completion_tokens": 56,
+      "total_tokens": 2021,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 4,
+      "query": "What two grand geographical words did Alice say while falling, even though she did not understand them?",
+      "description": "Geography terms during fall",
+      "expected_keywords": [
+        "latitude",
+        "longitude"
+      ],
+      "expected_in_docs": [
+        "latitude",
+        "longitude"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "New Zealand or Australia.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 10.189138174057007,
+      "total_latency": 10.189255714416504,
+      "prompt_tokens": 1412,
+      "completion_tokens": 6,
+      "total_tokens": 1418,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 5,
+      "query": "Which two countries did Alice wonder about while imagining she might come out on the other side of the earth?",
+      "description": "Antipodes speculation",
+      "expected_keywords": [
+        "new zealand",
+        "australia"
+      ],
+      "expected_in_docs": [
+        "new zealand",
+        "australia"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice wondered if she had arrived in New Zealand or Australia.\n\n**Supporting Excerpt:**\n\"Please, Ma'am, is this New Zealand or Australia?\" ([Memory 1])",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 20.437641382217407,
+      "total_latency": 20.437764883041382,
+      "prompt_tokens": 1978,
+      "completion_tokens": 39,
+      "total_tokens": 2017,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 5,
+      "query": "Which two countries did Alice wonder about while imagining she might come out on the other side of the earth?",
+      "description": "Antipodes speculation",
+      "expected_keywords": [
+        "new zealand",
+        "australia"
+      ],
+      "expected_in_docs": [
+        "new zealand",
+        "australia"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 10.212687253952026,
+      "total_latency": 10.212821245193481,
+      "prompt_tokens": 1475,
+      "completion_tokens": 7,
+      "total_tokens": 1482,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 6,
+      "query": "What pair of reversed questions did Alice drowsily repeat to herself about animals in the air?",
+      "description": "Drowsy self-questioning",
+      "expected_keywords": [
+        "do cats eat bats",
+        "do bats eat cats"
+      ],
+      "expected_in_docs": [
+        "do cats eat bats",
+        "do bats eat cats"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "I don't know. (The provided structured memory and supporting excerpts focus on Alice's interactions with the Caterpillar and the Mouse, but do not mention her questions about animals in the air.)",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 21.120733976364136,
+      "total_latency": 21.120853185653687,
+      "prompt_tokens": 1965,
+      "completion_tokens": 40,
+      "total_tokens": 2005,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 6,
+      "query": "What pair of reversed questions did Alice drowsily repeat to herself about animals in the air?",
+      "description": "Drowsy self-questioning",
+      "expected_keywords": [
+        "do cats eat bats",
+        "do bats eat cats"
+      ],
+      "expected_in_docs": [
+        "do cats eat bats",
+        "do bats eat cats"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "A little three-legged table made of solid glass.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 12.30639386177063,
+      "total_latency": 12.306499481201172,
+      "prompt_tokens": 1294,
+      "completion_tokens": 12,
+      "total_tokens": 1306,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 7,
+      "query": "What kind of table did Alice find in the hall before discovering the little key?",
+      "description": "Hall furniture detail",
+      "expected_keywords": [
+        "three-legged table",
+        "glass"
+      ],
+      "expected_in_docs": [
+        "three-legged table",
+        "glass"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice found a glass table.\n\n**Supporting Excerpt:**\n\"[Memory 1] exact_facts: Alice could see the key plainly through the glass table.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 18.449003219604492,
+      "total_latency": 18.44910216331482,
+      "prompt_tokens": 1892,
+      "completion_tokens": 34,
+      "total_tokens": 1926,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 7,
+      "query": "What kind of table did Alice find in the hall before discovering the little key?",
+      "description": "Hall furniture detail",
+      "expected_keywords": [
+        "three-legged table",
+        "glass"
+      ],
+      "expected_in_docs": [
+        "three-legged table",
+        "glass"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The little door was about fifteen inches high.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4802,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 9.563349485397339,
+      "total_latency": 9.563446760177612,
+      "prompt_tokens": 1311,
+      "completion_tokens": 10,
+      "total_tokens": 1321,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 8,
+      "query": "How high was the little door behind the curtain?",
+      "description": "Door size",
+      "expected_keywords": [
+        "fifteen inches",
+        "15 inches"
+      ],
+      "expected_in_docs": [
+        "fifteen inches",
+        "15 inches"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The little door behind the curtain was about fifteen inches high.\n\n**Supporting Excerpt:**\n\"On a second circuit she notices a low curtain; behind it is a little door about fifteen inches high.\" ([Memory 2])",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 22.173840284347534,
+      "total_latency": 22.17394495010376,
+      "prompt_tokens": 1935,
+      "completion_tokens": 47,
+      "total_tokens": 1982,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 8,
+      "query": "How high was the little door behind the curtain?",
+      "description": "Door size",
+      "expected_keywords": [
+        "fifteen inches",
+        "15 inches"
+      ],
+      "expected_in_docs": [
+        "fifteen inches",
+        "15 inches"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Alice looked to see whether it was marked “poison.”",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 12.537914752960205,
+      "total_latency": 12.538033962249756,
+      "prompt_tokens": 1368,
+      "completion_tokens": 12,
+      "total_tokens": 1380,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 9,
+      "query": "Before drinking from the bottle, what warning word did Alice look for on it?",
+      "description": "Bottle safety check",
+      "expected_keywords": [
+        "poison"
+      ],
+      "expected_in_docs": [
+        "poison"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice looked for the word \"poison\" on the bottle to ensure it was not marked as such before drinking.\n\n**Supporting Excerpt:**\n\"Alice refuses to drink immediately and first checks whether it is marked 'poison.'; Finding no 'poison' mark, she tastes and then finishes the bottle.\" (Memory 1)",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 27.629827737808228,
+      "total_latency": 27.629941701889038,
+      "prompt_tokens": 1916,
+      "completion_tokens": 66,
+      "total_tokens": 1982,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 9,
+      "query": "Before drinking from the bottle, what warning word did Alice look for on it?",
+      "description": "Bottle safety check",
+      "expected_keywords": [
+        "poison"
+      ],
+      "expected_in_docs": [
+        "poison"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The bottle had a mixed flavour of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 16.80956506729126,
+      "total_latency": 16.809694051742554,
+      "prompt_tokens": 1387,
+      "completion_tokens": 30,
+      "total_tokens": 1417,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 10,
+      "query": "What mixed flavor did the bottle taste like? Name at least two items.",
+      "description": "Bottle flavor list",
+      "expected_keywords": [
+        "cherry-tart",
+        "custard",
+        "pine-apple",
+        "roast turkey",
+        "toffee",
+        "hot buttered toast"
+      ],
+      "expected_in_docs": [
+        "cherry-tart",
+        "custard",
+        "pine-apple",
+        "roast turkey",
+        "toffee",
+        "hot buttered toast"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The bottle tasted like a mixture of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast.\n\n**Supporting Excerpt:**\n\"The drink tastes like a mixture of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast.\" ([Memory 1])",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 29.220381021499634,
+      "total_latency": 29.220499992370605,
+      "prompt_tokens": 1910,
+      "completion_tokens": 72,
+      "total_tokens": 1982,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 10,
+      "query": "What mixed flavor did the bottle taste like? Name at least two items.",
+      "description": "Bottle flavor list",
+      "expected_keywords": [
+        "cherry-tart",
+        "custard",
+        "pine-apple",
+        "roast turkey",
+        "toffee",
+        "hot buttered toast"
+      ],
+      "expected_in_docs": [
+        "cherry-tart",
+        "custard",
+        "pine-apple",
+        "roast turkey",
+        "toffee",
+        "hot buttered toast"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Alice was ten inches high.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4801,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 9.64922046661377,
+      "total_latency": 9.649325132369995,
+      "prompt_tokens": 1341,
+      "completion_tokens": 7,
+      "total_tokens": 1348,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 11,
+      "query": "After drinking, about how tall did Alice become when she thought she could fit through the little door?",
+      "description": "Post-drink size",
+      "expected_keywords": [
+        "ten inches",
+        "10 inches"
+      ],
+      "expected_in_docs": [
+        "ten inches",
+        "10 inches"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice became \"only ten inches high.\"\n\n**Supporting Excerpt:**\n\"[Memory 2] ...Alice begins shrinking 'like a telescope' and becomes only ten inches high.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 20.014095306396484,
+      "total_latency": 20.014199256896973,
+      "prompt_tokens": 1901,
+      "completion_tokens": 37,
+      "total_tokens": 1938,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 11,
+      "query": "After drinking, about how tall did Alice become when she thought she could fit through the little door?",
+      "description": "Post-drink size",
+      "expected_keywords": [
+        "ten inches",
+        "10 inches"
+      ],
+      "expected_in_docs": [
+        "ten inches",
+        "10 inches"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The provided text does not state which words were marked in currants; it only mentions that the cake was \"beautifully marked in currants.\"",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 14.540167808532715,
+      "total_latency": 14.540265798568726,
+      "prompt_tokens": 1355,
+      "completion_tokens": 28,
+      "total_tokens": 1383,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 12,
+      "query": "What words were beautifully marked in currants on the cake?",
+      "description": "Cake inscription",
+      "expected_keywords": [
+        "eat me"
+      ],
+      "expected_in_docs": [
+        "eat me"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The words \"EAT ME\" were beautifully marked in currants on the cake.\n\n**Supporting Excerpts:**\n* **[Memory 1]:** \"The cake had the words 'EAT ME' marked in currants.\"\n* **[Support 1]:** \"The words “EAT ME” are beautifully marked on the cake in currants.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 30.522319793701172,
+      "total_latency": 30.5224289894104,
+      "prompt_tokens": 1887,
+      "completion_tokens": 74,
+      "total_tokens": 1961,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 12,
+      "query": "What words were beautifully marked in currants on the cake?",
+      "description": "Cake inscription",
+      "expected_keywords": [
+        "eat me"
+      ],
+      "expected_in_docs": [
+        "eat me"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "A new pair of boots.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 10.017402410507202,
+      "total_latency": 10.017515420913696,
+      "prompt_tokens": 1310,
+      "completion_tokens": 7,
+      "total_tokens": 1317,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 13,
+      "query": "When Alice grew enormously, what practical gift did she imagine sending to her own feet every Christmas?",
+      "description": "Gift to her feet",
+      "expected_keywords": [
+        "a new pair of boots",
+        "boots"
+      ],
+      "expected_in_docs": [
+        "a new pair of boots",
+        "boots"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice imagined sending boots to her feet every Christmas.\n\n**Supporting Excerpt:**\n\"While imagining sending boots to her feet every Christmas, Alice jokes about the address: “Alice’s Right Foot, Esq., Hearthrug, near the Fender, (with Alice’s love).”\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 25.513909339904785,
+      "total_latency": 25.514032125473022,
+      "prompt_tokens": 1910,
+      "completion_tokens": 59,
+      "total_tokens": 1969,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 13,
+      "query": "When Alice grew enormously, what practical gift did she imagine sending to her own feet every Christmas?",
+      "description": "Gift to her feet",
+      "expected_keywords": [
+        "a new pair of boots",
+        "boots"
+      ],
+      "expected_in_docs": [
+        "a new pair of boots",
+        "boots"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 9.68169355392456,
+      "total_latency": 9.681832313537598,
+      "prompt_tokens": 1366,
+      "completion_tokens": 7,
+      "total_tokens": 1373,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 14,
+      "query": "What incorrect multiplication answer did Alice give for four times five while doubting who she was?",
+      "description": "Faulty arithmetic",
+      "expected_keywords": [
+        "twelve",
+        "12"
+      ],
+      "expected_in_docs": [
+        "twelve",
+        "12"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice stated that four times five is twelve.\n\n**Supporting Excerpt:**\n[Memory 1] \"Alice's mistaken multiplication answers are 'four times five is twelve' and 'four times six is thirteen.'\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 21.64620089530945,
+      "total_latency": 21.646327018737793,
+      "prompt_tokens": 1910,
+      "completion_tokens": 45,
+      "total_tokens": 1955,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 14,
+      "query": "What incorrect multiplication answer did Alice give for four times five while doubting who she was?",
+      "description": "Faulty arithmetic",
+      "expected_keywords": [
+        "twelve",
+        "12"
+      ],
+      "expected_in_docs": [
+        "twelve",
+        "12"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The Mouse.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 9.966235399246216,
+      "total_latency": 9.96638798713684,
+      "prompt_tokens": 1446,
+      "completion_tokens": 4,
+      "total_tokens": 1450,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 15,
+      "query": "Which animal did Alice first try addressing in French with 'Où est ma chatte?'",
+      "description": "French line target",
+      "expected_keywords": [
+        "mouse"
+      ],
+      "expected_in_docs": [
+        "mouse"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice first tried addressing the Mouse in French with 'Où est ma chatte?'\n\n**Supporting Excerpt:**\n[Memory 1] \"She says in French, 'Où est ma chatte?' which makes the Mouse leap from the water and tremble with fright.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 24.77211332321167,
+      "total_latency": 24.77223253250122,
+      "prompt_tokens": 2009,
+      "completion_tokens": 57,
+      "total_tokens": 2066,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 15,
+      "query": "Which animal did Alice first try addressing in French with 'Où est ma chatte?'",
+      "description": "French line target",
+      "expected_keywords": [
+        "mouse"
+      ],
+      "expected_in_docs": [
+        "mouse"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "A little bright-eyed terrier with long curly brown hair.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 11.998552560806274,
+      "total_latency": 11.998685121536255,
+      "prompt_tokens": 1434,
+      "completion_tokens": 13,
+      "total_tokens": 1447,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 16,
+      "query": "What specific kind of dog did Alice describe while trying to talk to the Mouse?",
+      "description": "Dog description",
+      "expected_keywords": [
+        "terrier",
+        "bright-eyed terrier"
+      ],
+      "expected_in_docs": [
+        "terrier",
+        "bright-eyed terrier"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice described a \"little bright-eyed terrier\" with \"long curly brown hair\" that belonged to a farmer.\n\n**Supporting Excerpts:**\n* \"Alice describes the dog as 'a nice little dog near our house,' 'a little bright-eyed terrier' with 'long curly brown hair.' The dog belongs to a farmer.\" [Memory 1]\n* \"Alice describes a farmer's dog that fetches thrown things, sits up and begs for dinner, kills rats, and is said by the farmer to be worth a hundred pounds.\" [Support 1]",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 44.38689684867859,
+      "total_latency": 44.387011766433716,
+      "prompt_tokens": 2007,
+      "completion_tokens": 118,
+      "total_tokens": 2125,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 16,
+      "query": "What specific kind of dog did Alice describe while trying to talk to the Mouse?",
+      "description": "Dog description",
+      "expected_keywords": [
+        "terrier",
+        "bright-eyed terrier"
+      ],
+      "expected_in_docs": [
+        "terrier",
+        "bright-eyed terrier"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The Dodo.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 9.79884648323059,
+      "total_latency": 9.798954725265503,
+      "prompt_tokens": 1360,
+      "completion_tokens": 5,
+      "total_tokens": 1365,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 17,
+      "query": "Who proposed the Caucus-race as a way to get everyone dry?",
+      "description": "Caucus-race proposer",
+      "expected_keywords": [
+        "dodo"
+      ],
+      "expected_in_docs": [
+        "dodo"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Dodo proposed the Caucus-race.\n\n**Supporting excerpts:**\n* \"the best thing to get us dry would be a Caucus-race.\"\n* \"The Dodo proposes a 'Caucus-race' as a remedy.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 25.7186439037323,
+      "total_latency": 25.718766689300537,
+      "prompt_tokens": 2032,
+      "completion_tokens": 50,
+      "total_tokens": 2082,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 17,
+      "query": "Who proposed the Caucus-race as a way to get everyone dry?",
+      "description": "Caucus-race proposer",
+      "expected_keywords": [
+        "dodo"
+      ],
+      "expected_in_docs": [
+        "dodo"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Everybody.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 8.768284797668457,
+      "total_latency": 8.768383502960205,
+      "prompt_tokens": 1367,
+      "completion_tokens": 3,
+      "total_tokens": 1370,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 18,
+      "query": "According to the Dodo, who won the Caucus-race?",
+      "description": "Race result",
+      "expected_keywords": [
+        "everybody",
+        "all must have prizes"
+      ],
+      "expected_in_docs": [
+        "everybody",
+        "all must have prizes"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Dodo declared that \"Everybody has won, and all must have prizes.\"\n\n**Supporting excerpt:**\n\"Everybody has won, and all must have prizes.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 19.565801858901978,
+      "total_latency": 19.56593918800354,
+      "prompt_tokens": 1973,
+      "completion_tokens": 34,
+      "total_tokens": 2007,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 18,
+      "query": "According to the Dodo, who won the Caucus-race?",
+      "description": "Race result",
+      "expected_keywords": [
+        "everybody",
+        "all must have prizes"
+      ],
+      "expected_in_docs": [
+        "everybody",
+        "all must have prizes"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "A thimble.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4802,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 9.803020238876343,
+      "total_latency": 9.80315637588501,
+      "prompt_tokens": 1342,
+      "completion_tokens": 5,
+      "total_tokens": 1347,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 19,
+      "query": "What item from Alice's pocket was ceremonially presented back to her as a prize?",
+      "description": "Prize irony",
+      "expected_keywords": [
+        "thimble"
+      ],
+      "expected_in_docs": [
+        "thimble"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "I don't know. (The provided structured memory and excerpts mention the little golden key, the \"DRINK ME\" bottle, and the \"EAT ME\" cake, but they do not mention an item from Alice's pocket being presented back to her as a prize.)",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 26.38388156890869,
+      "total_latency": 26.384019374847412,
+      "prompt_tokens": 1901,
+      "completion_tokens": 58,
+      "total_tokens": 1959,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 19,
+      "query": "What item from Alice's pocket was ceremonially presented back to her as a prize?",
+      "description": "Prize irony",
+      "expected_keywords": [
+        "thimble"
+      ],
+      "expected_in_docs": [
+        "thimble"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Alice's idea of the tale was something like this: “Fury said to a mouse, That he met in the house, ‘Let us both go to law: I will prosecute you.—Come, I’ll take no denial; We must have a trial: For really this morning I’ve”",
+      "accuracy": false,
+      "retrieval_hit": true,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 24.766336917877197,
+      "total_latency": 24.76647138595581,
+      "prompt_tokens": 1427,
+      "completion_tokens": 63,
+      "total_tokens": 1490,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 20,
+      "query": "What did Alice say the Mouse's sad tale looked like to her?",
+      "description": "Tale/tail pun",
+      "expected_keywords": [
+        "long tail",
+        "tail"
+      ],
+      "expected_in_docs": [
+        "long tail",
+        "tail"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice imagined the Mouse's \"tale\" (a play on the word \"tail\") as a poem about a character named \"Fury\" prosecuting a mouse and condemning it to death.\n\n**Supporting Excerpt:**\n\"[Support 1] Alice imagines the Mouse’s 'tale' as a poem about 'Fury' prosecuting a mouse and condemning it to death.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 32.62450122833252,
+      "total_latency": 32.624608278274536,
+      "prompt_tokens": 1993,
+      "completion_tokens": 75,
+      "total_tokens": 2068,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 20,
+      "query": "What did Alice say the Mouse's sad tale looked like to her?",
+      "description": "Tale/tail pun",
+      "expected_keywords": [
+        "long tail",
+        "tail"
+      ],
+      "expected_in_docs": [
+        "long tail",
+        "tail"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Mary Ann",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 8.930451154708862,
+      "total_latency": 8.930550813674927,
+      "prompt_tokens": 1364,
+      "completion_tokens": 3,
+      "total_tokens": 1367,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 21,
+      "query": "What mistaken name did the White Rabbit call Alice when sending her to fetch gloves and a fan?",
+      "description": "Mistaken identity",
+      "expected_keywords": [
+        "mary ann"
+      ],
+      "expected_in_docs": [
+        "mary ann"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The White Rabbit called Alice \"Mary Ann.\"\n\n**Supporting excerpt:**\n“Why, Mary Ann, what are you doing out here? Run home this moment, and fetch me a pair of gloves and a fan! Quick, now!”",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 21.939275979995728,
+      "total_latency": 21.939401626586914,
+      "prompt_tokens": 1996,
+      "completion_tokens": 49,
+      "total_tokens": 2045,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 21,
+      "query": "What mistaken name did the White Rabbit call Alice when sending her to fetch gloves and a fan?",
+      "description": "Mistaken identity",
+      "expected_keywords": [
+        "mary ann"
+      ],
+      "expected_in_docs": [
+        "mary ann"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "“W. RABBIT”",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 10.255865573883057,
+      "total_latency": 10.256032466888428,
+      "prompt_tokens": 1382,
+      "completion_tokens": 7,
+      "total_tokens": 1389,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 22,
+      "query": "What name was engraved on the brass plate at the Rabbit's house?",
+      "description": "House nameplate",
+      "expected_keywords": [
+        "w rabbit",
+        "w. rabbit"
+      ],
+      "expected_in_docs": [
+        "w rabbit",
+        "w. rabbit"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The name engraved on the brass plate was \"W. RABBIT.\"\n\n**Supporting Excerpt:**\n\"Alice reaches a neat little house with a bright brass plate engraved 'W. RABBIT' and goes in without knocking.\" ([Memory 1])",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 23.28523325920105,
+      "total_latency": 23.285349369049072,
+      "prompt_tokens": 1980,
+      "completion_tokens": 52,
+      "total_tokens": 2032,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 22,
+      "query": "What name was engraved on the brass plate at the Rabbit's house?",
+      "description": "House nameplate",
+      "expected_keywords": [
+        "w rabbit",
+        "w. rabbit"
+      ],
+      "expected_in_docs": [
+        "w rabbit",
+        "w. rabbit"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 11.574065923690796,
+      "total_latency": 11.574167728424072,
+      "prompt_tokens": 1380,
+      "completion_tokens": 7,
+      "total_tokens": 1387,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 23,
+      "query": "What did Pat say was in the window when the Rabbit asked him?",
+      "description": "Window confusion",
+      "expected_keywords": [
+        "an arm",
+        "arm"
+      ],
+      "expected_in_docs": [
+        "an arm",
+        "arm"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Pat said there was an arm in the window.\n\n**Supporting Excerpt:**\n\"Sure, it’s an arm, yer honour!\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 18.129318237304688,
+      "total_latency": 18.12943434715271,
+      "prompt_tokens": 1998,
+      "completion_tokens": 30,
+      "total_tokens": 2028,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 23,
+      "query": "What did Pat say was in the window when the Rabbit asked him?",
+      "description": "Window confusion",
+      "expected_keywords": [
+        "an arm",
+        "arm"
+      ],
+      "expected_in_docs": [
+        "an arm",
+        "arm"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 12.059793949127197,
+      "total_latency": 12.059896230697632,
+      "prompt_tokens": 1347,
+      "completion_tokens": 7,
+      "total_tokens": 1354,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 24,
+      "query": "What did the Rabbit's helpers throw through the window that later changed form?",
+      "description": "Pebbles into cakes",
+      "expected_keywords": [
+        "pebbles"
+      ],
+      "expected_in_docs": [
+        "pebbles"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Rabbit's helpers threw a barrowful of little pebbles through the window, which later changed form into little cakes.\n\n**Supporting Excerpt:**\n\"the Rabbit says, 'A barrowful will do, to begin with,' and little pebbles are thrown in through the window.; The pebbles transform into little cakes on the floor.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 32.34234046936035,
+      "total_latency": 32.342466831207275,
+      "prompt_tokens": 1981,
+      "completion_tokens": 70,
+      "total_tokens": 2051,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 24,
+      "query": "What did the Rabbit's helpers throw through the window that later changed form?",
+      "description": "Pebbles into cakes",
+      "expected_keywords": [
+        "pebbles"
+      ],
+      "expected_in_docs": [
+        "pebbles"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The pebbles turned into little cakes.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 11.389065504074097,
+      "total_latency": 11.389191627502441,
+      "prompt_tokens": 1362,
+      "completion_tokens": 8,
+      "total_tokens": 1370,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 25,
+      "query": "What did those pebbles turn into after landing on the floor?",
+      "description": "Transformation of pebbles",
+      "expected_keywords": [
+        "cakes",
+        "little cakes"
+      ],
+      "expected_in_docs": [
+        "cakes",
+        "little cakes"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "After landing on the floor, the pebbles turned into little cakes.\n\n**Supporting Excerpt:**\n[Memory 1] \"The pebbles transform into little cakes on the floor.\" / \"Alice observes that the pebbles were 'all turning into little cakes.'\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 23.306455612182617,
+      "total_latency": 23.306569576263428,
+      "prompt_tokens": 1970,
+      "completion_tokens": 52,
+      "total_tokens": 2022,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 25,
+      "query": "What did those pebbles turn into after landing on the floor?",
+      "description": "Transformation of pebbles",
+      "expected_keywords": [
+        "cakes",
+        "little cakes"
+      ],
+      "expected_in_docs": [
+        "cakes",
+        "little cakes"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Alice identified the little animal scratching and scrambling about in the chimney as Bill.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 12.595555543899536,
+      "total_latency": 12.595661878585815,
+      "prompt_tokens": 1389,
+      "completion_tokens": 16,
+      "total_tokens": 1405,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 26,
+      "query": "Which creature did Alice identify as Bill when she kicked down the chimney intruder?",
+      "description": "Bill's identity",
+      "expected_keywords": [
+        "lizard",
+        "bill"
+      ],
+      "expected_in_docs": [
+        "lizard",
+        "bill"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice identified Bill as a little Lizard.\n\n**Supporting Excerpt:**\n\"Bill is specifically 'the poor little Lizard, Bill.'\" ([Memory 1])",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 19.984665393829346,
+      "total_latency": 19.984783172607422,
+      "prompt_tokens": 1985,
+      "completion_tokens": 33,
+      "total_tokens": 2018,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 26,
+      "query": "Which creature did Alice identify as Bill when she kicked down the chimney intruder?",
+      "description": "Bill's identity",
+      "expected_keywords": [
+        "lizard",
+        "bill"
+      ],
+      "expected_in_docs": [
+        "lizard",
+        "bill"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Alice compared the puppy's play to having a game of play with a cart-horse.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 15.244117736816406,
+      "total_latency": 15.24422311782837,
+      "prompt_tokens": 1291,
+      "completion_tokens": 20,
+      "total_tokens": 1311,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 27,
+      "query": "What large creature did Alice compare the puppy's play to when trying not to be run over?",
+      "description": "Puppy comparison",
+      "expected_keywords": [
+        "cart-horse",
+        "cart horse"
+      ],
+      "expected_in_docs": [
+        "cart-horse",
+        "cart horse"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice compared the puppy's play to having a game of play with a cart-horse.\n\n**Supporting Excerpt:**\n\"Alice thinks the game is 'very like having a game of play with a cart-horse.'\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 21.595813751220703,
+      "total_latency": 21.595924377441406,
+      "prompt_tokens": 1941,
+      "completion_tokens": 47,
+      "total_tokens": 1988,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 27,
+      "query": "What large creature did Alice compare the puppy's play to when trying not to be run over?",
+      "description": "Puppy comparison",
+      "expected_keywords": [
+        "cart-horse",
+        "cart horse"
+      ],
+      "expected_in_docs": [
+        "cart-horse",
+        "cart horse"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The Caterpillar was sitting on top of the mushroom with its arms folded, quietly smoking a long hookah, and taking not the smallest notice of Alice or anything else.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 17.455544233322144,
+      "total_latency": 17.45566487312317,
+      "prompt_tokens": 1334,
+      "completion_tokens": 33,
+      "total_tokens": 1367,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 28,
+      "query": "What was the Caterpillar doing when Alice first saw it on the mushroom?",
+      "description": "Caterpillar first appearance",
+      "expected_keywords": [
+        "smoking",
+        "hookah"
+      ],
+      "expected_in_docs": [
+        "smoking",
+        "hookah"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "When Alice first saw the Caterpillar, it was sitting on top of a large mushroom with its arms folded, quietly smoking a long hookah.\n\n**Supporting Excerpt:**\n\"[Alice] sees a large blue Caterpillar sitting on top with its arms folded, quietly smoking a long hookah and initially taking no notice of her.\" ([Support 1])",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 26.225722789764404,
+      "total_latency": 26.22583317756653,
+      "prompt_tokens": 1898,
+      "completion_tokens": 69,
+      "total_tokens": 1967,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 28,
+      "query": "What was the Caterpillar doing when Alice first saw it on the mushroom?",
+      "description": "Caterpillar first appearance",
+      "expected_keywords": [
+        "smoking",
+        "hookah"
+      ],
+      "expected_in_docs": [
+        "smoking",
+        "hookah"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The Caterpillar asked Alice to repeat “You are old, Father William.”",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 11.64489483833313,
+      "total_latency": 11.645000219345093,
+      "prompt_tokens": 1375,
+      "completion_tokens": 15,
+      "total_tokens": 1390,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 29,
+      "query": "Which poem did the Caterpillar ask Alice to repeat?",
+      "description": "Requested recitation",
+      "expected_keywords": [
+        "you are old father william",
+        "father william"
+      ],
+      "expected_in_docs": [
+        "you are old father william",
+        "father william"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Caterpillar asked Alice to repeat the poem \"You are old, Father William.\"\n\n**Supporting excerpt:**\n\"The Caterpillar commands, 'Repeat, \"You are old, Father William,\"' and Alice recites the poem.\" ([Memory 1])",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 22.80740261077881,
+      "total_latency": 22.807504415512085,
+      "prompt_tokens": 1894,
+      "completion_tokens": 52,
+      "total_tokens": 1946,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 29,
+      "query": "Which poem did the Caterpillar ask Alice to repeat?",
+      "description": "Requested recitation",
+      "expected_keywords": [
+        "you are old father william",
+        "father william"
+      ],
+      "expected_in_docs": [
+        "you are old father william",
+        "father william"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Three inches.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 10.367303848266602,
+      "total_latency": 10.367401838302612,
+      "prompt_tokens": 1385,
+      "completion_tokens": 4,
+      "total_tokens": 1389,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 30,
+      "query": "How tall did Alice say was 'such a wretched height' when speaking to the Caterpillar?",
+      "description": "Wretched height",
+      "expected_keywords": [
+        "three inches",
+        "3 inches"
+      ],
+      "expected_in_docs": [
+        "three inches",
+        "3 inches"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Alice said that three inches was \"such a wretched height to be.\"\n\n**Supporting Excerpt:**\n[Support 1]: “three inches is such a wretched height to be.”",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 19.054850339889526,
+      "total_latency": 19.054968118667603,
+      "prompt_tokens": 1921,
+      "completion_tokens": 38,
+      "total_tokens": 1959,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 30,
+      "query": "How tall did Alice say was 'such a wretched height' when speaking to the Caterpillar?",
+      "description": "Wretched height",
+      "expected_keywords": [
+        "three inches",
+        "3 inches"
+      ],
+      "expected_in_docs": [
+        "three inches",
+        "3 inches"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "One side will make you grow taller, and the other side will make you grow shorter.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 15.810704946517944,
+      "total_latency": 15.810837984085083,
+      "prompt_tokens": 1341,
+      "completion_tokens": 19,
+      "total_tokens": 1360,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 31,
+      "query": "According to the Caterpillar, what would one side of the mushroom do and what would the other side do?",
+      "description": "Mushroom dual effect",
+      "expected_keywords": [
+        "grow taller",
+        "grow shorter"
+      ],
+      "expected_in_docs": [
+        "grow taller",
+        "grow shorter"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "According to the Caterpillar, one side of the mushroom would make you grow taller and the other side would make you grow shorter.\n\n**Supporting excerpt:**\n“One side will make you grow taller, and the other side will make you grow shorter.”",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 24.16644048690796,
+      "total_latency": 24.166564226150513,
+      "prompt_tokens": 1913,
+      "completion_tokens": 51,
+      "total_tokens": 1964,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 31,
+      "query": "According to the Caterpillar, what would one side of the mushroom do and what would the other side do?",
+      "description": "Mushroom dual effect",
+      "expected_keywords": [
+        "grow taller",
+        "grow shorter"
+      ],
+      "expected_in_docs": [
+        "grow taller",
+        "grow shorter"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "A pigeon.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 8.867488861083984,
+      "total_latency": 8.867603778839111,
+      "prompt_tokens": 1414,
+      "completion_tokens": 4,
+      "total_tokens": 1418,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 32,
+      "query": "Which bird insisted that Alice must be a serpent because of her long neck?",
+      "description": "Serpent accusation",
+      "expected_keywords": [
+        "pigeon"
+      ],
+      "expected_in_docs": [
+        "pigeon"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "A Pigeon insisted that Alice was a serpent because of her long neck.\n\n**Supporting excerpts:**\n* \"The Pigeon says it has 'never one with such a neck as that!' when referring to little girls.\" [Memory 1]\n* \"Alice realizes the green stuff is the tops of the trees... and discovers her neck can bend easily in any direction like a serpent. A large pigeon hisses... and repeatedly cries, 'Serpent!'\" [Memory 2]",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 37.27812623977661,
+      "total_latency": 37.27822470664978,
+      "prompt_tokens": 1965,
+      "completion_tokens": 98,
+      "total_tokens": 2063,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 32,
+      "query": "Which bird insisted that Alice must be a serpent because of her long neck?",
+      "description": "Serpent accusation",
+      "expected_keywords": [
+        "pigeon"
+      ],
+      "expected_in_docs": [
+        "pigeon"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 9.60772156715393,
+      "total_latency": 9.607841730117798,
+      "prompt_tokens": 1360,
+      "completion_tokens": 7,
+      "total_tokens": 1367,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 33,
+      "query": "Who brought the invitation from the Queen to the Duchess's house?",
+      "description": "Invitation messenger",
+      "expected_keywords": [
+        "fish-footman",
+        "fish footman"
+      ],
+      "expected_in_docs": [
+        "fish-footman",
+        "fish footman"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 10.682299852371216,
+      "total_latency": 10.682411193847656,
+      "prompt_tokens": 1906,
+      "completion_tokens": 7,
+      "total_tokens": 1913,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 33,
+      "query": "Who brought the invitation from the Queen to the Duchess's house?",
+      "description": "Invitation messenger",
+      "expected_keywords": [
+        "fish-footman",
+        "fish footman"
+      ],
+      "expected_in_docs": [
+        "fish-footman",
+        "fish footman"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Pepper.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 9.277255296707153,
+      "total_latency": 9.277361392974854,
+      "prompt_tokens": 1393,
+      "completion_tokens": 3,
+      "total_tokens": 1396,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 34,
+      "query": "What overwhelming ingredient filled the Duchess's kitchen air and soup?",
+      "description": "Kitchen atmosphere",
+      "expected_keywords": [
+        "pepper"
+      ],
+      "expected_in_docs": [
+        "pepper"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The overwhelming ingredient was pepper.\n\n**Supporting Excerpts:**\n* \"There is certainly too much pepper in the soup and in the air.\" [Memory 1]\n* “There’s certainly too much pepper in that soup!” [Memory 1, Memory 2]",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 3,
+      "context_truncated": true,
+      "generation_latency": 25.496156454086304,
+      "total_latency": 25.49628734588623,
+      "prompt_tokens": 1929,
+      "completion_tokens": 59,
+      "total_tokens": 1988,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 34,
+      "query": "What overwhelming ingredient filled the Duchess's kitchen air and soup?",
+      "description": "Kitchen atmosphere",
+      "expected_keywords": [
+        "pepper"
+      ],
+      "expected_in_docs": [
+        "pepper"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 10.054477453231812,
+      "total_latency": 10.054591417312622,
+      "prompt_tokens": 1320,
+      "completion_tokens": 7,
+      "total_tokens": 1327,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 35,
+      "query": "Into what animal did the Duchess's baby finally turn?",
+      "description": "Baby transformation",
+      "expected_keywords": [
+        "pig"
+      ],
+      "expected_in_docs": [
+        "pig"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Duchess's baby finally turned into a pig.\n\n**Supporting excerpts:**\n* \"it was neither more nor less than a pig\"\n* \"it would have made a dreadfully ugly child: but it makes rather a handsome pig, I think.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 25.990124225616455,
+      "total_latency": 25.991891860961914,
+      "prompt_tokens": 1996,
+      "completion_tokens": 54,
+      "total_tokens": 2050,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 35,
+      "query": "Into what animal did the Duchess's baby finally turn?",
+      "description": "Baby transformation",
+      "expected_keywords": [
+        "pig"
+      ],
+      "expected_in_docs": [
+        "pig"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 10.371359586715698,
+      "total_latency": 10.371483325958252,
+      "prompt_tokens": 1340,
+      "completion_tokens": 7,
+      "total_tokens": 1347,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 36,
+      "query": "What direction did the Cheshire Cat give for finding the Hatter and the March Hare?",
+      "description": "Route from the Cat",
+      "expected_keywords": [
+        "that direction",
+        "hatter",
+        "march hare"
+      ],
+      "expected_in_docs": [
+        "that direction",
+        "hatter",
+        "march hare"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Cheshire Cat indicated that a Hatter lived in one direction and a March Hare in the other, using its right paw to point toward the Hatter and its other paw to point toward the March Hare.\n\n**Supporting excerpts:**\n* \"The Cat indicates the Hatter with its 'right paw' and the March Hare with 'the other paw.'\" [Memory 1]\n* \"The Cat tells Alice that a Hatter lives in one direction and a March Hare in the other, waving its right paw for the Hatter and the other paw for the March Hare.\" [Support 1]",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 43.343642711639404,
+      "total_latency": 43.34374928474426,
+      "prompt_tokens": 2033,
+      "completion_tokens": 117,
+      "total_tokens": 2150,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 36,
+      "query": "What direction did the Cheshire Cat give for finding the Hatter and the March Hare?",
+      "description": "Route from the Cat",
+      "expected_keywords": [
+        "that direction",
+        "hatter",
+        "march hare"
+      ],
+      "expected_in_docs": [
+        "that direction",
+        "hatter",
+        "march hare"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The Cat argued that while a dog growls when angry and wags its tail when pleased, the Cat growls when pleased and wags its tail when angry.",
+      "accuracy": false,
+      "retrieval_hit": true,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 17.795643091201782,
+      "total_latency": 17.795767545700073,
+      "prompt_tokens": 1411,
+      "completion_tokens": 34,
+      "total_tokens": 1445,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 37,
+      "query": "How did the Cheshire Cat distinguish itself from a dog when arguing that it was mad?",
+      "description": "Madness logic",
+      "expected_keywords": [
+        "growl when i'm pleased",
+        "wag my tail when i'm angry",
+        "purring"
+      ],
+      "expected_in_docs": [
+        "growl when i'm pleased",
+        "wag my tail when i'm angry",
+        "purring"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "I don't know. (The provided structured memory and excerpts describe the Cat's appearance, its interaction with the King and Queen, and its presence in the Duchess's kitchen, but they do not mention the specific argument where the Cat distinguishes itself from a dog to prove it is mad.)",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 26.83058476448059,
+      "total_latency": 26.830694675445557,
+      "prompt_tokens": 1937,
+      "completion_tokens": 61,
+      "total_tokens": 1998,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 37,
+      "query": "How did the Cheshire Cat distinguish itself from a dog when arguing that it was mad?",
+      "description": "Madness logic",
+      "expected_keywords": [
+        "growl when i'm pleased",
+        "wag my tail when i'm angry",
+        "purring"
+      ],
+      "expected_in_docs": [
+        "growl when i'm pleased",
+        "wag my tail when i'm angry",
+        "purring"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The chimneys were shaped like ears and the roof was thatched with fur.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 13.870585203170776,
+      "total_latency": 13.870699882507324,
+      "prompt_tokens": 1377,
+      "completion_tokens": 15,
+      "total_tokens": 1392,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 38,
+      "query": "What was unusual about the March Hare's house roof and chimneys?",
+      "description": "March Hare house detail",
+      "expected_keywords": [
+        "thatched with fur",
+        "chimneys were shaped like ears"
+      ],
+      "expected_in_docs": [
+        "thatched with fur",
+        "chimneys were shaped like ears"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The March Hare's house had chimneys shaped like ears and a roof that was thatched with fur.\n\n**Supporting excerpts:**\n* \"chimneys were shaped like ears\"\n* \"roof was thatched with fur\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 21.482681274414062,
+      "total_latency": 21.48280119895935,
+      "prompt_tokens": 2025,
+      "completion_tokens": 45,
+      "total_tokens": 2070,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 38,
+      "query": "What was unusual about the March Hare's house roof and chimneys?",
+      "description": "March Hare house detail",
+      "expected_keywords": [
+        "thatched with fur",
+        "chimneys were shaped like ears"
+      ],
+      "expected_in_docs": [
+        "thatched with fur",
+        "chimneys were shaped like ears"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Wine",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 8.996689081192017,
+      "total_latency": 8.996836185455322,
+      "prompt_tokens": 1393,
+      "completion_tokens": 2,
+      "total_tokens": 1395,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 39,
+      "query": "What drink did the March Hare offer even though none was actually on the table?",
+      "description": "Tea-party rudeness",
+      "expected_keywords": [
+        "wine"
+      ],
+      "expected_in_docs": [
+        "wine"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The March Hare offered Alice wine, even though there was only tea on the table.\n\n**Supporting excerpts:**\n* \"The March Hare offers Alice wine, but there is no wine on the table, only tea.\" [Memory 1]\n* \"The March Hare offers Alice some wine, but Alice sees nothing on the table except tea.\" [Support 1]",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 25.194271564483643,
+      "total_latency": 25.194507837295532,
+      "prompt_tokens": 2027,
+      "completion_tokens": 76,
+      "total_tokens": 2103,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 39,
+      "query": "What drink did the March Hare offer even though none was actually on the table?",
+      "description": "Tea-party rudeness",
+      "expected_keywords": [
+        "wine"
+      ],
+      "expected_in_docs": [
+        "wine"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The provided text does not state the specific riddle, only that the Hatter asked one and neither he nor the March Hare knew the answer.",
+      "accuracy": false,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 8.80817174911499,
+      "total_latency": 8.808319091796875,
+      "prompt_tokens": 1373,
+      "completion_tokens": 28,
+      "total_tokens": 1401,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 40,
+      "query": "What impossible riddle did the Hatter ask Alice at the tea party?",
+      "description": "Tea-party riddle",
+      "expected_keywords": [
+        "why is a raven like a writing-desk",
+        "raven",
+        "writing-desk"
+      ],
+      "expected_in_docs": [
+        "why is a raven like a writing-desk",
+        "raven",
+        "writing-desk"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Hatter asked Alice, \"Why is a raven like a writing-desk?\"\n\n**Supporting excerpt:**\n[Memory 1] \"...the Hatter insults Alice's hair and asks the riddle 'Why is a raven like a writing-desk?'\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 13.935631275177002,
+      "total_latency": 13.935860633850098,
+      "prompt_tokens": 1974,
+      "completion_tokens": 52,
+      "total_tokens": 2026,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 40,
+      "query": "What impossible riddle did the Hatter ask Alice at the tea party?",
+      "description": "Tea-party riddle",
+      "expected_keywords": [
+        "why is a raven like a writing-desk",
+        "raven",
+        "writing-desk"
+      ],
+      "expected_in_docs": [
+        "why is a raven like a writing-desk",
+        "raven",
+        "writing-desk"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The Hatter said, “Two days wrong!” and added that butter wouldn't suit the works.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 9.863845348358154,
+      "total_latency": 9.863953590393066,
+      "prompt_tokens": 1403,
+      "completion_tokens": 21,
+      "total_tokens": 1424,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 41,
+      "query": "What did the Hatter say was wrong with the watch after Alice answered the day of the month?",
+      "description": "Watch complaint",
+      "expected_keywords": [
+        "two days wrong"
+      ],
+      "expected_in_docs": [
+        "two days wrong"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Hatter said the watch was \"Two days wrong!\" because butter and crumbs had gotten into the works (the latter because it had been put in with the bread-knife).\n\n**Supporting Excerpt:**\n\"After a silence, the Hatter asks Alice the day of the month while examining and shaking his watch.; Alice answers, 'The fourth.'; The Hatter says the watch is 'Two days wrong!' and blames butter in the works; he says crumbs also got in because it was put in with the bread-knife.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 141.0767092704773,
+      "total_latency": 141.07681465148926,
+      "prompt_tokens": 1990,
+      "completion_tokens": 106,
+      "total_tokens": 2096,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 41,
+      "query": "What did the Hatter say was wrong with the watch after Alice answered the day of the month?",
+      "description": "Watch complaint",
+      "expected_keywords": [
+        "two days wrong"
+      ],
+      "expected_in_docs": [
+        "two days wrong"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 23.379192113876343,
+      "total_latency": 23.37940001487732,
+      "prompt_tokens": 1399,
+      "completion_tokens": 7,
+      "total_tokens": 1406,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 42,
+      "query": "What did the Hatter blame for damaging the watch mechanism?",
+      "description": "Watch explanation",
+      "expected_keywords": [
+        "butter",
+        "crumbs"
+      ],
+      "expected_in_docs": [
+        "butter",
+        "crumbs"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Hatter blamed butter and crumbs for damaging the watch mechanism, noting that the watch was \"Two days wrong!\" because butter had got into the works and crumbs had entered because it had been put in with the bread-knife.\n\n**Supporting Excerpt:**\n\"The Hatter says the watch is 'Two days wrong!' and blames butter in the works; he says crumbs also got in because it was put in with the bread-knife.\" ([Support 1])",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 103.61660480499268,
+      "total_latency": 103.61673426628113,
+      "prompt_tokens": 1982,
+      "completion_tokens": 94,
+      "total_tokens": 2076,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 42,
+      "query": "What did the Hatter blame for damaging the watch mechanism?",
+      "description": "Watch explanation",
+      "expected_keywords": [
+        "butter",
+        "crumbs"
+      ],
+      "expected_in_docs": [
+        "butter",
+        "crumbs"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "It is always six o’clock.",
+      "accuracy": false,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 18.161880016326904,
+      "total_latency": 18.162014961242676,
+      "prompt_tokens": 1409,
+      "completion_tokens": 9,
+      "total_tokens": 1418,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 43,
+      "query": "At the tea party, what time did the Hatter say it always was?",
+      "description": "Permanent tea-time",
+      "expected_keywords": [
+        "six o'clock",
+        "tea-time",
+        "tea time"
+      ],
+      "expected_in_docs": [
+        "six o'clock",
+        "tea-time",
+        "tea time"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Hatter said it was always six o’clock.\n\n**Supporting Excerpts:**\n* \"It’s always six o’clock now.\"\n* \"it’s always tea-time\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 46.319796562194824,
+      "total_latency": 46.31992506980896,
+      "prompt_tokens": 2039,
+      "completion_tokens": 43,
+      "total_tokens": 2082,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 43,
+      "query": "At the tea party, what time did the Hatter say it always was?",
+      "description": "Permanent tea-time",
+      "expected_keywords": [
+        "six o'clock",
+        "tea-time",
+        "tea time"
+      ],
+      "expected_in_docs": [
+        "six o'clock",
+        "tea-time",
+        "tea time"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Elsie, Lacie, and Tillie.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4537,
+      "context_tokens_approx": 1134,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 21.853861331939697,
+      "total_latency": 21.85396981239319,
+      "prompt_tokens": 1298,
+      "completion_tokens": 11,
+      "total_tokens": 1309,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 44,
+      "query": "What three names did the Dormouse give for the sisters in its story?",
+      "description": "Dormouse story names",
+      "expected_keywords": [
+        "elsie",
+        "lacie",
+        "tillie"
+      ],
+      "expected_in_docs": [
+        "elsie",
+        "lacie",
+        "tillie"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The three names the Dormouse gave for the sisters were Elsie, Lacie, and Tillie.\n\n**Supporting excerpts:**\n* \"Once upon a time there were three little sisters, and their names were Elsie, Lacie, and Tillie\"\n* \"The Dormouse is awakened and begins a story about three little sisters named Elsie, Lacie, and Tillie who lived at the bottom of a well.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 92.1664514541626,
+      "total_latency": 92.16657519340515,
+      "prompt_tokens": 2024,
+      "completion_tokens": 86,
+      "total_tokens": 2110,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 44,
+      "query": "What three names did the Dormouse give for the sisters in its story?",
+      "description": "Dormouse story names",
+      "expected_keywords": [
+        "elsie",
+        "lacie",
+        "tillie"
+      ],
+      "expected_in_docs": [
+        "elsie",
+        "lacie",
+        "tillie"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "They lived on treacle.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 20.757346630096436,
+      "total_latency": 20.75748920440674,
+      "prompt_tokens": 1412,
+      "completion_tokens": 7,
+      "total_tokens": 1419,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 45,
+      "query": "What did the three sisters live on at the bottom of the well?",
+      "description": "Treacle-well story",
+      "expected_keywords": [
+        "treacle"
+      ],
+      "expected_in_docs": [
+        "treacle"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The three sisters lived on treacle.\n\n**Supporting excerpt:**\n\"They lived on treacle,\" ([Memory 1])",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 30.59715509414673,
+      "total_latency": 30.597291231155396,
+      "prompt_tokens": 1970,
+      "completion_tokens": 27,
+      "total_tokens": 1997,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 45,
+      "query": "What did the three sisters live on at the bottom of the well?",
+      "description": "Treacle-well story",
+      "expected_keywords": [
+        "treacle"
+      ],
+      "expected_in_docs": [
+        "treacle"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The Dormouse listed mouse-traps, the moon, memory, and muchness.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 30.106833934783936,
+      "total_latency": 30.1069495677948,
+      "prompt_tokens": 1414,
+      "completion_tokens": 19,
+      "total_tokens": 1433,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 46,
+      "query": "What strange M-words did the Dormouse list when describing what the sisters drew?",
+      "description": "M-word drawing list",
+      "expected_keywords": [
+        "mouse-traps",
+        "moon",
+        "memory",
+        "muchness"
+      ],
+      "expected_in_docs": [
+        "mouse-traps",
+        "moon",
+        "memory",
+        "muchness"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Dormouse listed \"mouse-traps,\" \"the moon,\" \"memory,\" and \"muchness.\"\n\n**Supporting Excerpt:**\n[Memory 1] \"The Dormouse says the sisters drew things beginning with 'M,' including 'mouse-traps,' 'the moon,' 'memory,' and 'muchness.'\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 89.0467803478241,
+      "total_latency": 89.0469126701355,
+      "prompt_tokens": 1996,
+      "completion_tokens": 68,
+      "total_tokens": 2064,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 46,
+      "query": "What strange M-words did the Dormouse list when describing what the sisters drew?",
+      "description": "M-word drawing list",
+      "expected_keywords": [
+        "mouse-traps",
+        "moon",
+        "memory",
+        "muchness"
+      ],
+      "expected_in_docs": [
+        "mouse-traps",
+        "moon",
+        "memory",
+        "muchness"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "They had put a white rose-tree in by mistake when it ought to have been a red one, and they feared the Queen would have their heads cut off if she found out.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 51.02777552604675,
+      "total_latency": 51.027883529663086,
+      "prompt_tokens": 1360,
+      "completion_tokens": 38,
+      "total_tokens": 1398,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 47,
+      "query": "Why were the gardeners painting the roses red?",
+      "description": "Rose painting reason",
+      "expected_keywords": [
+        "white one in by mistake",
+        "white rose-tree",
+        "heads cut off"
+      ],
+      "expected_in_docs": [
+        "white one in by mistake",
+        "white rose-tree",
+        "heads cut off"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The gardeners were painting the roses red because they had accidentally planted a white rose-tree instead of a red one, and they feared the Queen would have their heads cut off if she discovered the mistake.\n\n**Supporting excerpts:**\n* \"Two says it should have been 'a red rose-tree,' but 'we put a white one in by mistake.'\"\n* \"They fear that if the Queen finds out, 'we should all have our heads cut off.'\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 99.25287938117981,
+      "total_latency": 99.25298929214478,
+      "prompt_tokens": 1882,
+      "completion_tokens": 95,
+      "total_tokens": 1977,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 47,
+      "query": "Why were the gardeners painting the roses red?",
+      "description": "Rose painting reason",
+      "expected_keywords": [
+        "white one in by mistake",
+        "white rose-tree",
+        "heads cut off"
+      ],
+      "expected_in_docs": [
+        "white one in by mistake",
+        "white rose-tree",
+        "heads cut off"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The balls were live hedgehogs and the mallets were live flamingoes.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 26.133369207382202,
+      "total_latency": 26.133504152297974,
+      "prompt_tokens": 1293,
+      "completion_tokens": 17,
+      "total_tokens": 1310,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 48,
+      "query": "What were used as the balls and mallets in the Queen's croquet game?",
+      "description": "Croquet equipment",
+      "expected_keywords": [
+        "hedgehogs",
+        "flamingoes"
+      ],
+      "expected_in_docs": [
+        "hedgehogs",
+        "flamingoes"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Live hedgehogs were used as the balls and live flamingoes were used as the mallets.\n\n**Supporting Excerpts:**\n* \"The balls were live hedgehogs.\"\n* \"The mallets were live flamingoes.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 57.97306966781616,
+      "total_latency": 57.973196506500244,
+      "prompt_tokens": 1956,
+      "completion_tokens": 50,
+      "total_tokens": 2006,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 48,
+      "query": "What were used as the balls and mallets in the Queen's croquet game?",
+      "description": "Croquet equipment",
+      "expected_keywords": [
+        "hedgehogs",
+        "flamingoes"
+      ],
+      "expected_in_docs": [
+        "hedgehogs",
+        "flamingoes"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The Duchess was under sentence of execution because she boxed the Queen's ears.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 20.717904567718506,
+      "total_latency": 20.71808123588562,
+      "prompt_tokens": 1362,
+      "completion_tokens": 17,
+      "total_tokens": 1379,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 49,
+      "query": "What punishment did the White Rabbit say the Duchess faced, and for what reason?",
+      "description": "Duchess sentence",
+      "expected_keywords": [
+        "execution",
+        "boxed the queen's ears"
+      ],
+      "expected_in_docs": [
+        "execution",
+        "boxed the queen's ears"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The White Rabbit stated that the Duchess was \"under sentence of execution\" because she had boxed the Queen's ears.\n\n**Supporting excerpts:**\n* \"the White Rabbit whispers into Alice's ear: 'She's under sentence of execution.'\"\n* \"The White Rabbit hushes Alice and whispers in her ear that the Duchess is 'under sentence of execution' because 'She boxed the Queen's ears'.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 98.47728967666626,
+      "total_latency": 98.47741675376892,
+      "prompt_tokens": 1940,
+      "completion_tokens": 86,
+      "total_tokens": 2026,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 49,
+      "query": "What punishment did the White Rabbit say the Duchess faced, and for what reason?",
+      "description": "Duchess sentence",
+      "expected_keywords": [
+        "execution",
+        "boxed the queen's ears"
+      ],
+      "expected_in_docs": [
+        "execution",
+        "boxed the queen's ears"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 18.11036252975464,
+      "total_latency": 18.110519647598267,
+      "prompt_tokens": 1327,
+      "completion_tokens": 7,
+      "total_tokens": 1334,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 50,
+      "query": "What line from Alice caused the Queen to stop listening angrily during croquet?",
+      "description": "Alice self-correction before Queen",
+      "expected_keywords": [
+        "likely to win",
+        "hardly worth while finishing the game"
+      ],
+      "expected_in_docs": [
+        "likely to win",
+        "hardly worth while finishing the game"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Based on the provided text, there is no mention of the Queen stopping listening **angrily**; rather, Alice noticed the Queen listening and changed her words to avoid offending her. Alice began to say the Queen was **\"Not at all\"** (liked) and **\"so extremely—\"**, but upon seeing the Queen, she changed the line to **\"—likely to win, that it’s hardly worth while finishing the game.\"**\n\n**Supporting Excerpt:**\n\"When the Cat asks how she likes the Queen, Alice starts to say, 'Not at all,' and 'she’s so extremely—'",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 135.95509338378906,
+      "total_latency": 135.95524764060974,
+      "prompt_tokens": 1955,
+      "completion_tokens": 128,
+      "total_tokens": 2083,
+      "finish_reason": "length",
+      "empty_content_fallback": null,
+      "id": 50,
+      "query": "What line from Alice caused the Queen to stop listening angrily during croquet?",
+      "description": "Alice self-correction before Queen",
+      "expected_keywords": [
+        "likely to win",
+        "hardly worth while finishing the game"
+      ],
+      "expected_in_docs": [
+        "likely to win",
+        "hardly worth while finishing the game"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The executioner, the King, and the Queen.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 22.163545608520508,
+      "total_latency": 22.163653135299683,
+      "prompt_tokens": 1322,
+      "completion_tokens": 12,
+      "total_tokens": 1334,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 51,
+      "query": "What three parties argued over how to remove the Cheshire Cat's headless head problem?",
+      "description": "Cat execution dispute",
+      "expected_keywords": [
+        "executioner",
+        "king",
+        "queen"
+      ],
+      "expected_in_docs": [
+        "executioner",
+        "king",
+        "queen"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The three parties who argued over the problem were the executioner, the King, and the Queen.\n\n**Supporting Excerpts:**\n* \"Alice finds a large crowd around the Cat and a dispute among the executioner, the King, and the Queen.\"\n* \"The executioner argues that you cannot cut off a head unless there is a body to cut it off from... The King argues that anything with a head can be beheaded. The Queen argues that if something is not done in less than no time, she will have everybody executed all round.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 114.05003786087036,
+      "total_latency": 114.05015516281128,
+      "prompt_tokens": 1976,
+      "completion_tokens": 115,
+      "total_tokens": 2091,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 51,
+      "query": "What three parties argued over how to remove the Cheshire Cat's headless head problem?",
+      "description": "Cat execution dispute",
+      "expected_keywords": [
+        "executioner",
+        "king",
+        "queen"
+      ],
+      "expected_in_docs": [
+        "executioner",
+        "king",
+        "queen"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The Queen said it is the thing Mock Turtle Soup is made from.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 18.180493354797363,
+      "total_latency": 18.180599451065063,
+      "prompt_tokens": 1388,
+      "completion_tokens": 15,
+      "total_tokens": 1403,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 52,
+      "query": "What did the Queen say a Mock Turtle was made from?",
+      "description": "Mock Turtle definition",
+      "expected_keywords": [
+        "mock turtle soup"
+      ],
+      "expected_in_docs": [
+        "mock turtle soup"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 23.961341381072998,
+      "total_latency": 23.96145510673523,
+      "prompt_tokens": 1945,
+      "completion_tokens": 7,
+      "total_tokens": 1952,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 52,
+      "query": "What did the Queen say a Mock Turtle was made from?",
+      "description": "Mock Turtle definition",
+      "expected_keywords": [
+        "mock turtle soup"
+      ],
+      "expected_in_docs": [
+        "mock turtle soup"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Because he taught them.",
+      "accuracy": false,
+      "retrieval_hit": true,
+      "context_chars": 4802,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 15.975841045379639,
+      "total_latency": 15.976009607315063,
+      "prompt_tokens": 1424,
+      "completion_tokens": 6,
+      "total_tokens": 1430,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 53,
+      "query": "Why did the Mock Turtle say their schoolmaster was called Tortoise?",
+      "description": "Tortoise pun",
+      "expected_keywords": [
+        "because he taught us"
+      ],
+      "expected_in_docs": [
+        "because he taught us"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Mock Turtle said their schoolmaster was called Tortoise \"because he taught us.\"\n\n**Supporting excerpts:**\n* [Memory 1] \"Reason for the name: 'because he taught us.'\"\n* [Memory 1] \"We called him Tortoise because he taught us,\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 68.41747879981995,
+      "total_latency": 68.41757917404175,
+      "prompt_tokens": 1976,
+      "completion_tokens": 60,
+      "total_tokens": 2036,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 53,
+      "query": "Why did the Mock Turtle say their schoolmaster was called Tortoise?",
+      "description": "Tortoise pun",
+      "expected_keywords": [
+        "because he taught us"
+      ],
+      "expected_in_docs": [
+        "because he taught us"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The first branches of Arithmetic were Ambition, Distraction, Uglification, and Derision.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4802,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 28.903244972229004,
+      "total_latency": 28.90336561203003,
+      "prompt_tokens": 1425,
+      "completion_tokens": 21,
+      "total_tokens": 1446,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 54,
+      "query": "What were the first branches of arithmetic in the Mock Turtle's school?",
+      "description": "Mock arithmetic",
+      "expected_keywords": [
+        "ambition",
+        "distraction",
+        "uglification",
+        "derision"
+      ],
+      "expected_in_docs": [
+        "ambition",
+        "distraction",
+        "uglification",
+        "derision"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The first branches of arithmetic in the Mock Turtle's school were Ambition, Distraction, Uglification, and Derision.\n\n**Supporting Excerpt:**\n\"The arithmetic branches are exactly: 'Ambition, Distraction, Uglification, and Derision.'\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 67.26151466369629,
+      "total_latency": 67.26162600517273,
+      "prompt_tokens": 1971,
+      "completion_tokens": 57,
+      "total_tokens": 2028,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 54,
+      "query": "What were the first branches of arithmetic in the Mock Turtle's school?",
+      "description": "Mock arithmetic",
+      "expected_keywords": [
+        "ambition",
+        "distraction",
+        "uglification",
+        "derision"
+      ],
+      "expected_in_docs": [
+        "ambition",
+        "distraction",
+        "uglification",
+        "derision"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "An old conger-eel.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 15.481820106506348,
+      "total_latency": 15.481928586959839,
+      "prompt_tokens": 1405,
+      "completion_tokens": 8,
+      "total_tokens": 1413,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 55,
+      "query": "What profession or creature taught Drawling, Stretching, and Fainting in Coils?",
+      "description": "Drawling-master identity",
+      "expected_keywords": [
+        "conger-eel",
+        "eel"
+      ],
+      "expected_in_docs": [
+        "conger-eel",
+        "eel"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Drawling-master, who was an old conger-eel, taught Drawling, Stretching, and Fainting in Coils.\n\n**Supporting Excerpt:**\n\"The Drawling-master was 'an old conger-eel' who came 'once a week.' The conger-eel taught 'Drawling, Stretching, and Fainting in Coils.'\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 96.64538836479187,
+      "total_latency": 96.64548969268799,
+      "prompt_tokens": 1977,
+      "completion_tokens": 79,
+      "total_tokens": 2056,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 55,
+      "query": "What profession or creature taught Drawling, Stretching, and Fainting in Coils?",
+      "description": "Drawling-master identity",
+      "expected_keywords": [
+        "conger-eel",
+        "eel"
+      ],
+      "expected_in_docs": [
+        "conger-eel",
+        "eel"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The Mock Turtle says that you throw the lobsters as far out to sea as you can.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 28.903746604919434,
+      "total_latency": 28.90387225151062,
+      "prompt_tokens": 1412,
+      "completion_tokens": 20,
+      "total_tokens": 1432,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 56,
+      "query": "In the Lobster Quadrille, what happens immediately after the dancers change lobsters and retire in order?",
+      "description": "Dance sequence step",
+      "expected_keywords": [
+        "throw the lobsters",
+        "out to sea"
+      ],
+      "expected_in_docs": [
+        "throw the lobsters",
+        "out to sea"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "Immediately after the dancers change lobsters and retire in order, they throw the lobsters as far out to sea as they can.\n\n**Supporting Excerpt:**\n\"[...] advance twice, each with a lobster as a partner, set to partners, change lobsters, retire in same order, throw the lobsters out to sea...\" ([Memory 1]) / \"...change lobsters, retire in the same order, and throw the lobsters as far out to sea as possible.\" ([Support 1])",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 102.50362944602966,
+      "total_latency": 102.503741979599,
+      "prompt_tokens": 1995,
+      "completion_tokens": 103,
+      "total_tokens": 2098,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 56,
+      "query": "In the Lobster Quadrille, what happens immediately after the dancers change lobsters and retire in order?",
+      "description": "Dance sequence step",
+      "expected_keywords": [
+        "throw the lobsters",
+        "out to sea"
+      ],
+      "expected_in_docs": [
+        "throw the lobsters",
+        "out to sea"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "I don't know.",
+      "accuracy": false,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 4.635805606842041,
+      "total_latency": 4.63593602180481,
+      "prompt_tokens": 1383,
+      "completion_tokens": 7,
+      "total_tokens": 1390,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 57,
+      "query": "What song did the Mock Turtle sing just before the trial began?",
+      "description": "Mock Turtle song",
+      "expected_keywords": [
+        "beautiful soup",
+        "soup of the evening"
+      ],
+      "expected_in_docs": [
+        "beautiful soup",
+        "soup of the evening"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Mock Turtle sang \"Turtle Soup\" (also referred to as \"Beautiful Soup\") just before the trial began.\n\n**Supporting Excerpt:**\n\"The Gryphon asks the Mock Turtle to sing 'Turtle Soup.'; The Mock Turtle sings 'Beautiful Soup' in a voice sometimes choked with sobs.; When the Gryphon calls for the chorus again, a distant cry announces, 'The trial's beginning!'\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 11.291964530944824,
+      "total_latency": 11.292049169540405,
+      "prompt_tokens": 1970,
+      "completion_tokens": 85,
+      "total_tokens": 2055,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 57,
+      "query": "What song did the Mock Turtle sing just before the trial began?",
+      "description": "Mock Turtle song",
+      "expected_keywords": [
+        "beautiful soup",
+        "soup of the evening"
+      ],
+      "expected_in_docs": [
+        "beautiful soup",
+        "soup of the evening"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The King served as the judge; the role looked awkward because he wore his crown over his wig.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 5.5242578983306885,
+      "total_latency": 5.5243353843688965,
+      "prompt_tokens": 1327,
+      "completion_tokens": 21,
+      "total_tokens": 1348,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 58,
+      "query": "Who served as the judge at the trial, and what made the role look awkward?",
+      "description": "Judge identity and appearance",
+      "expected_keywords": [
+        "king",
+        "crown over the wig"
+      ],
+      "expected_in_docs": [
+        "king",
+        "crown over the wig"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The King served as the judge. The role looked awkward because he wore his crown over his great wig.\n\n**Supporting Excerpt:**\n\"Alice identified the judge 'because of his great wig.'; The judge was the King.; The King wore his crown over the wig.\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 8.479353427886963,
+      "total_latency": 8.47941780090332,
+      "prompt_tokens": 1906,
+      "completion_tokens": 56,
+      "total_tokens": 1962,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 58,
+      "query": "Who served as the judge at the trial, and what made the role look awkward?",
+      "description": "Judge identity and appearance",
+      "expected_keywords": [
+        "king",
+        "crown over the wig"
+      ],
+      "expected_in_docs": [
+        "king",
+        "crown over the wig"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "Their names.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 5.029493808746338,
+      "total_latency": 5.029564142227173,
+      "prompt_tokens": 1386,
+      "completion_tokens": 4,
+      "total_tokens": 1390,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 59,
+      "query": "What were the jurors writing down on their slates before the trial began, according to the Gryphon?",
+      "description": "Jurors' preparation",
+      "expected_keywords": [
+        "their names"
+      ],
+      "expected_in_docs": [
+        "their names"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "According to the Gryphon, the jurors were writing down their names \"for fear they should forget them before the end of the trial.\"\n\n**Supporting Excerpt:**\n[Memory 1] \"The Gryphon said they were putting down their names 'for fear they should forget them before the end of the trial.'\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 11.341250658035278,
+      "total_latency": 11.341329097747803,
+      "prompt_tokens": 1910,
+      "completion_tokens": 65,
+      "total_tokens": 1975,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 59,
+      "query": "What were the jurors writing down on their slates before the trial began, according to the Gryphon?",
+      "description": "Jurors' preparation",
+      "expected_keywords": [
+        "their names"
+      ],
+      "expected_in_docs": [
+        "their names"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The Knave of Hearts.",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 7.5262370109558105,
+      "total_latency": 7.526303052902222,
+      "prompt_tokens": 1411,
+      "completion_tokens": 7,
+      "total_tokens": 1418,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 60,
+      "query": "Who stole the tarts according to the accusation read aloud in court?",
+      "description": "Formal accusation",
+      "expected_keywords": [
+        "knave of hearts"
+      ],
+      "expected_in_docs": [
+        "knave of hearts"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The Knave of Hearts stole the tarts.\n\n**Supporting Excerpt:**\n\"The accusation says the Knave of Hearts stole the tarts and 'took them quite away!'\"",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7998,
+      "context_tokens_approx": 2000,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 9.995282649993896,
+      "total_latency": 9.995349884033203,
+      "prompt_tokens": 1937,
+      "completion_tokens": 39,
+      "total_tokens": 1976,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 60,
+      "query": "Who stole the tarts according to the accusation read aloud in court?",
+      "description": "Formal accusation",
+      "expected_keywords": [
+        "knave of hearts"
+      ],
+      "expected_in_docs": [
+        "knave of hearts"
+      ]
+    },
+    {
+      "method": "Raw RAG",
+      "answer": "The provided text does not give three different dates; it only mentions that the Hatter had begun his tea \"not above a week or so\" ago.",
+      "accuracy": false,
+      "retrieval_hit": false,
+      "context_chars": 4537,
+      "context_tokens_approx": 1134,
+      "retrieved_records": 4,
+      "context_truncated": false,
+      "generation_latency": 7.766754865646362,
+      "total_latency": 7.766846656799316,
+      "prompt_tokens": 1294,
+      "completion_tokens": 31,
+      "total_tokens": 1325,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 61,
+      "query": "What three different dates were given for when the tea had begun?",
+      "description": "Contradictory tea dates",
+      "expected_keywords": [
+        "fourteenth",
+        "fifteenth",
+        "sixteenth",
+        "14",
+        "15",
+        "16"
+      ],
+      "expected_in_docs": [
+        "fourteenth",
+        "fifteenth",
+        "sixteenth",
+        "14",
+        "15",
+        "16"
+      ]
+    },
+    {
+      "method": "Summary Memory",
+      "answer": "The three different dates given for when the tea had begun were the \"nth of March,\" the \"Fifteenth,\" and the \"Sixteenth.\"\n\n**Supporting Excerpt:**\n\"A witness gives the date as 'nth of March, I think it was'; the March Hare says 'Fifteenth' and the Dormouse adds 'Sixteenth.'\" ([Support 1])",
+      "accuracy": true,
+      "retrieval_hit": true,
+      "context_chars": 7997,
+      "context_tokens_approx": 1999,
+      "retrieved_records": 2,
+      "context_truncated": true,
+      "generation_latency": 13.150723695755005,
+      "total_latency": 13.150796175003052,
+      "prompt_tokens": 1984,
+      "completion_tokens": 76,
+      "total_tokens": 2060,
+      "finish_reason": "stop",
+      "empty_content_fallback": null,
+      "id": 61,
+      "query": "What three different dates were given for when the tea had begun?",
+      "description": "Contradictory tea dates",
+      "expected_keywords": [
+        "fourteenth",
+        "fifteenth",
+        "sixteenth",
+        "14",
+        "15",
+        "16"
+      ],
+      "expected_in_docs": [
+        "fourteenth",
+        "fifteenth",
+        "sixteenth",
+        "14",
+        "15",
+        "16"
+      ]
+    }
+  ]
+}

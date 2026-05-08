@@ -1,0 +1,3137 @@
+{
+  "datasets": [
+    "narrativeqa",
+    "qasper"
+  ],
+  "limit_per_dataset": 50,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "raw_k": 4,
+  "summary_k": 3,
+  "memory_mode": "structured",
+  "summary": [
+    {
+      "dataset": "narrativeqa",
+      "method": "Raw RAG",
+      "score_name": "hit",
+      "score": 10.0,
+      "correct_or_hits": 5,
+      "total": 50,
+      "avg_answer_score": 0.10683825447740279,
+      "avg_context_chars": 4786.46,
+      "avg_context_tokens_approx": 1196.6,
+      "avg_retrieval_latency": 0.43578693866729734,
+      "avg_generation_latency": 0.0
+    },
+    {
+      "dataset": "narrativeqa",
+      "method": "Summary Memory (structured)",
+      "score_name": "hit",
+      "score": 16.0,
+      "correct_or_hits": 8,
+      "total": 50,
+      "avg_answer_score": 0.1611976810661913,
+      "avg_context_chars": 34640.36,
+      "avg_context_tokens_approx": 8660.06,
+      "avg_retrieval_latency": 0.4930525588989258,
+      "avg_generation_latency": 0.0
+    },
+    {
+      "dataset": "qasper",
+      "method": "Raw RAG",
+      "score_name": "hit",
+      "score": 24.0,
+      "correct_or_hits": 12,
+      "total": 50,
+      "avg_answer_score": 0.258729775111588,
+      "avg_context_chars": 4752.48,
+      "avg_context_tokens_approx": 1188.24,
+      "avg_retrieval_latency": 0.07829353332519531,
+      "avg_generation_latency": 0.0
+    },
+    {
+      "dataset": "qasper",
+      "method": "Summary Memory (structured)",
+      "score_name": "hit",
+      "score": 36.0,
+      "correct_or_hits": 18,
+      "total": 50,
+      "avg_answer_score": 0.36376013066482904,
+      "avg_context_chars": 29078.3,
+      "avg_context_tokens_approx": 7269.58,
+      "avg_retrieval_latency": 0.09930213451385499,
+      "avg_generation_latency": 0.0
+    }
+  ],
+  "rows": [
+    {
+      "dataset": "narrativeqa",
+      "example_id": "341d214a2c377691bf20e5a30b8f7979696bd19141ad9c9f",
+      "method": "Raw RAG",
+      "question": "What is Saltram's living situation?",
+      "answers": [
+        "He is a guest in the home of the Mulvilles."
+      ],
+      "hit": false,
+      "answer_score": 0.017817371937639197,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.5966155529022217
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "341d214a2c377691bf20e5a30b8f7979696bd19141ad9c9f",
+      "method": "Summary Memory (structured)",
+      "question": "What is Saltram's living situation?",
+      "answers": [
+        "He is a guest in the home of the Mulvilles."
+      ],
+      "hit": false,
+      "answer_score": 0.0027330701488004865,
+      "context_chars": 36433,
+      "context_tokens_approx": 9108,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.8947312831878662
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "26c6325283dece0b557e34cde9a5c57999ec5c68782e8194",
+      "method": "Raw RAG",
+      "question": "Why does Ann not return Mary's feelings of affection?",
+      "answers": [
+        "Because she is in unrequited love with someone else"
+      ],
+      "hit": false,
+      "answer_score": 0.011600928074245941,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.6476385593414307
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "26c6325283dece0b557e34cde9a5c57999ec5c68782e8194",
+      "method": "Summary Memory (structured)",
+      "question": "Why does Ann not return Mary's feelings of affection?",
+      "answers": [
+        "Because she is in unrequited love with someone else"
+      ],
+      "hit": false,
+      "answer_score": 0.0021655065738592424,
+      "context_chars": 36575,
+      "context_tokens_approx": 9144,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.7467706203460693
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "5b8d6fdd30a297e508ebb484f172ca5bce8d31b340eb3506",
+      "method": "Raw RAG",
+      "question": "Where does the witch live?",
+      "answers": [
+        "The Atlas Mountains"
+      ],
+      "hit": false,
+      "answer_score": 0.004956629491945476,
+      "context_chars": 4802,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.18102288246154785
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "5b8d6fdd30a297e508ebb484f172ca5bce8d31b340eb3506",
+      "method": "Summary Memory (structured)",
+      "question": "Where does the witch live?",
+      "answers": [
+        "The Atlas Mountains"
+      ],
+      "hit": false,
+      "answer_score": 0.0011269722013523666,
+      "context_chars": 32503,
+      "context_tokens_approx": 8126,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.18120026588439941
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "68fc4dee839213b5259d41718909195c2f5274665bc18036",
+      "method": "Raw RAG",
+      "question": "What was the purpose of Crito's visit?",
+      "answers": [
+        "To smuggle Socrates out of prison and into a life of exile."
+      ],
+      "hit": false,
+      "answer_score": 0.020227560050568902,
+      "context_chars": 4274,
+      "context_tokens_approx": 1068,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.19504189491271973
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "68fc4dee839213b5259d41718909195c2f5274665bc18036",
+      "method": "Summary Memory (structured)",
+      "question": "What was the purpose of Crito's visit?",
+      "answers": [
+        "To smuggle Socrates out of prison and into a life of exile."
+      ],
+      "hit": false,
+      "answer_score": 0.003344990117074654,
+      "context_chars": 35892,
+      "context_tokens_approx": 8973,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.20152854919433594
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "36232c9c63d19d282643657b3da5b688cb14e3b44009c494",
+      "method": "Raw RAG",
+      "question": "Why didn't Baron Henry just kill Otto instead of cutting his hand off?",
+      "answers": [
+        "Otto was so young."
+      ],
+      "hit": false,
+      "answer_score": 0.008639308855291577,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.660836935043335
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "36232c9c63d19d282643657b3da5b688cb14e3b44009c494",
+      "method": "Summary Memory (structured)",
+      "question": "Why didn't Baron Henry just kill Otto instead of cutting his hand off?",
+      "answers": [
+        "Otto was so young."
+      ],
+      "hit": false,
+      "answer_score": 0.0012024650533593866,
+      "context_chars": 35917,
+      "context_tokens_approx": 8979,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.7266240119934082
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "0bf1995158cbf08134d5dc15475c27f38b3ab5441c422419",
+      "method": "Raw RAG",
+      "question": "How long had Mortimer Trefinnis' sister been dead when the doctor examined the body?",
+      "answers": [
+        "Six hours."
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 4802,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.280642032623291
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "0bf1995158cbf08134d5dc15475c27f38b3ab5441c422419",
+      "method": "Summary Memory (structured)",
+      "question": "How long had Mortimer Trefinnis' sister been dead when the doctor examined the body?",
+      "answers": [
+        "Six hours."
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 36455,
+      "context_tokens_approx": 9114,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.2998161315917969
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "9fbcbb5460066a68460ba92626c25371e0a1ff65b3bd5e84",
+      "method": "Raw RAG",
+      "question": "With whom does the entertainers' manager have an affair?",
+      "answers": [
+        "Lisa, the blacksmith's wife."
+      ],
+      "hit": false,
+      "answer_score": 0.006802721088435374,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.43704795837402344
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "9fbcbb5460066a68460ba92626c25371e0a1ff65b3bd5e84",
+      "method": "Summary Memory (structured)",
+      "question": "With whom does the entertainers' manager have an affair?",
+      "answers": [
+        "Lisa, the blacksmith's wife."
+      ],
+      "hit": false,
+      "answer_score": 0.0009367681498829039,
+      "context_chars": 34908,
+      "context_tokens_approx": 8727,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.5181519985198975
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "f9cfda8abcc78f9e2f492d4f58ee4996430e9a8911e29726",
+      "method": "Raw RAG",
+      "question": "Who is the first person that falls under Vigo's spell?",
+      "answers": [
+        "Dr. Janosz Poha"
+      ],
+      "hit": false,
+      "answer_score": 0.00730816077953715,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.7262454032897949
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "f9cfda8abcc78f9e2f492d4f58ee4996430e9a8911e29726",
+      "method": "Summary Memory (structured)",
+      "question": "Who is the first person that falls under Vigo's spell?",
+      "answers": [
+        "Dr. Janosz Poha"
+      ],
+      "hit": false,
+      "answer_score": 0.0009713453132588635,
+      "context_chars": 36361,
+      "context_tokens_approx": 9090,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.7659189701080322
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "58b8a46c20c05540367b90490846c4f9808db630026b28d4",
+      "method": "Raw RAG",
+      "question": "What nationality is Ruth Anvoy?",
+      "answers": [
+        "She is an American."
+      ],
+      "hit": false,
+      "answer_score": 0.008791208791208791,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.572319507598877
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "58b8a46c20c05540367b90490846c4f9808db630026b28d4",
+      "method": "Summary Memory (structured)",
+      "question": "What nationality is Ruth Anvoy?",
+      "answers": [
+        "She is an American."
+      ],
+      "hit": false,
+      "answer_score": 0.0012200701540338568,
+      "context_chars": 35745,
+      "context_tokens_approx": 8936,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.6098723411560059
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "c89fd516348b68f96538948b052cb10d5b6f21bc441f5a55",
+      "method": "Raw RAG",
+      "question": "Who did the Witch want to have reveal their own lies?",
+      "answers": [
+        "The scribe."
+      ],
+      "hit": false,
+      "answer_score": 0.0024906600249066002,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.16014885902404785
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "c89fd516348b68f96538948b052cb10d5b6f21bc441f5a55",
+      "method": "Summary Memory (structured)",
+      "question": "Who did the Witch want to have reveal their own lies?",
+      "answers": [
+        "The scribe."
+      ],
+      "hit": false,
+      "answer_score": 0.0007359705611775528,
+      "context_chars": 32673,
+      "context_tokens_approx": 8168,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.1751248836517334
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "67933dc11fce5ce5b80acc04541f0442117aca5eccc06b6f",
+      "method": "Raw RAG",
+      "question": "Why do the bosses of Wilma's gang believe that Anthony Rogers will be useful to them in the current conflict?",
+      "answers": [
+        "Because he fought in the first world war."
+      ],
+      "hit": false,
+      "answer_score": 0.006818181818181819,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.6992864608764648
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "67933dc11fce5ce5b80acc04541f0442117aca5eccc06b6f",
+      "method": "Summary Memory (structured)",
+      "question": "Why do the bosses of Wilma's gang believe that Anthony Rogers will be useful to them in the current conflict?",
+      "answers": [
+        "Because he fought in the first world war."
+      ],
+      "hit": false,
+      "answer_score": 0.002441629787883412,
+      "context_chars": 36307,
+      "context_tokens_approx": 9077,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.838702917098999
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "b097807317fd6df3e69b46d4332b558f2d6c7f1f893770a6",
+      "method": "Raw RAG",
+      "question": "Which descriptions of the future world does Soames provide upon his return?",
+      "answers": [
+        "ones that are vague"
+      ],
+      "hit": false,
+      "answer_score": 0.00441988950276243,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.24793505668640137
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "b097807317fd6df3e69b46d4332b558f2d6c7f1f893770a6",
+      "method": "Summary Memory (structured)",
+      "question": "Which descriptions of the future world does Soames provide upon his return?",
+      "answers": [
+        "ones that are vague"
+      ],
+      "hit": false,
+      "answer_score": 0.0006896551724137932,
+      "context_chars": 31477,
+      "context_tokens_approx": 7869,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.2717626094818115
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "24c995f1a10e348519cdc6cd24685ab64bcf6454554de945",
+      "method": "Raw RAG",
+      "question": "How long after Madame de Merret dies before people are allowed inter manor?",
+      "answers": [
+        "50 years"
+      ],
+      "hit": false,
+      "answer_score": 0.0022271714922048997,
+      "context_chars": 4802,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.1968092918395996
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "24c995f1a10e348519cdc6cd24685ab64bcf6454554de945",
+      "method": "Summary Memory (structured)",
+      "question": "How long after Madame de Merret dies before people are allowed inter manor?",
+      "answers": [
+        "50 years"
+      ],
+      "hit": false,
+      "answer_score": 0.0003381805884342239,
+      "context_chars": 32642,
+      "context_tokens_approx": 8160,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.218794584274292
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "8134d2aaf4e735e59f38656a3c804171a8d1084faef2da93",
+      "method": "Raw RAG",
+      "question": "Who doe the Vervelle couple believe Grassou is the perfect match for?",
+      "answers": [
+        "Their daughter, Virgine."
+      ],
+      "hit": false,
+      "answer_score": 0.004807692307692307,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.19609904289245605
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "8134d2aaf4e735e59f38656a3c804171a8d1084faef2da93",
+      "method": "Summary Memory (structured)",
+      "question": "Who doe the Vervelle couple believe Grassou is the perfect match for?",
+      "answers": [
+        "Their daughter, Virgine."
+      ],
+      "hit": false,
+      "answer_score": 0.0006583278472679394,
+      "context_chars": 35577,
+      "context_tokens_approx": 8894,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.23131704330444336
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "321a85aa34669657c041d72547da9f30764447d789bf0e2d",
+      "method": "Raw RAG",
+      "question": "Who does Vervelle want his daughter to marry?",
+      "answers": [
+        "Grassou"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.1879725456237793
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "321a85aa34669657c041d72547da9f30764447d789bf0e2d",
+      "method": "Summary Memory (structured)",
+      "question": "Who does Vervelle want his daughter to marry?",
+      "answers": [
+        "Grassou"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 35592,
+      "context_tokens_approx": 8898,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.21371793746948242
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "31a2673d857b4ae705288436804dd94343b7f7d9bfdd1298",
+      "method": "Raw RAG",
+      "question": "How does the slime get into Dana's apartment?",
+      "answers": [
+        "The slime gets into Dana's apartment from the bathtub."
+      ],
+      "hit": false,
+      "answer_score": 0.019138755980861247,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.6392710208892822
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "31a2673d857b4ae705288436804dd94343b7f7d9bfdd1298",
+      "method": "Summary Memory (structured)",
+      "question": "How does the slime get into Dana's apartment?",
+      "answers": [
+        "The slime gets into Dana's apartment from the bathtub."
+      ],
+      "hit": false,
+      "answer_score": 0.0032195750160978753,
+      "context_chars": 36605,
+      "context_tokens_approx": 9151,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.805962085723877
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "7e1df407b7018ef82e2ade488c601066798bbe67a39a6da4",
+      "method": "Raw RAG",
+      "question": "What does Elder Childers argue?",
+      "answers": [
+        "That a mule bone is very powerful and can be a weapon."
+      ],
+      "hit": false,
+      "answer_score": 0.020524515393386542,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.3351452350616455
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "7e1df407b7018ef82e2ade488c601066798bbe67a39a6da4",
+      "method": "Summary Memory (structured)",
+      "question": "What does Elder Childers argue?",
+      "answers": [
+        "That a mule bone is very powerful and can be a weapon."
+      ],
+      "hit": false,
+      "answer_score": 0.0034812880765883376,
+      "context_chars": 29957,
+      "context_tokens_approx": 7489,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.35772013664245605
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "7efd1cc4cce3770765ac6c7304b68cfe28c83aec18c01577",
+      "method": "Raw RAG",
+      "question": "Why do the bosses of Wilma's gang believe that Anthony Rogers will be useful to them in the current conflict?",
+      "answers": [
+        "Anthony Rogers has previous wartime and combatant experience."
+      ],
+      "hit": false,
+      "answer_score": 0.004545454545454546,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.695925235748291
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "7efd1cc4cce3770765ac6c7304b68cfe28c83aec18c01577",
+      "method": "Summary Memory (structured)",
+      "question": "Why do the bosses of Wilma's gang believe that Anthony Rogers will be useful to them in the current conflict?",
+      "answers": [
+        "Anthony Rogers has previous wartime and combatant experience."
+      ],
+      "hit": false,
+      "answer_score": 0.0012123048946810124,
+      "context_chars": 36637,
+      "context_tokens_approx": 9159,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.8638453483581543
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "677af5490eddd9e1d2ecd66ab0d1e038d1f7e7c5e985accf",
+      "method": "Raw RAG",
+      "question": "What does Reiko see in the photograph that her ex-husband takes of her after she has seen the tape?",
+      "answers": [
+        "Her face is blurry"
+      ],
+      "hit": false,
+      "answer_score": 0.007633587786259542,
+      "context_chars": 4801,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.4326512813568115
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "677af5490eddd9e1d2ecd66ab0d1e038d1f7e7c5e985accf",
+      "method": "Summary Memory (structured)",
+      "question": "What does Reiko see in the photograph that her ex-husband takes of her after she has seen the tape?",
+      "answers": [
+        "Her face is blurry"
+      ],
+      "hit": false,
+      "answer_score": 0.0010193679918450561,
+      "context_chars": 36107,
+      "context_tokens_approx": 9027,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.48389482498168945
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "8a46cc12564386606f3162cd88cae3ec0f868009efce1d33",
+      "method": "Raw RAG",
+      "question": "How many ethical arguments does Socrates propose?",
+      "answers": [
+        "Two"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 4802,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.1937394142150879
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "8a46cc12564386606f3162cd88cae3ec0f868009efce1d33",
+      "method": "Summary Memory (structured)",
+      "question": "How many ethical arguments does Socrates propose?",
+      "answers": [
+        "Two"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 35896,
+      "context_tokens_approx": 8974,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.21003270149230957
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "af8f267654c2ca703d2044593d63c658c8716e66306dd65a",
+      "method": "Raw RAG",
+      "question": "Why was Mortimer Trefinnis once estranged from his siblings?",
+      "answers": [
+        "because of the division of proceeds from selling the family business."
+      ],
+      "hit": false,
+      "answer_score": 0.01405152224824356,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.24741840362548828
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "af8f267654c2ca703d2044593d63c658c8716e66306dd65a",
+      "method": "Summary Memory (structured)",
+      "question": "Why was Mortimer Trefinnis once estranged from his siblings?",
+      "answers": [
+        "because of the division of proceeds from selling the family business."
+      ],
+      "hit": false,
+      "answer_score": 0.0024264482863208974,
+      "context_chars": 37140,
+      "context_tokens_approx": 9285,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.32006406784057617
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "b92c3f3f94368153267f267845b8140ccac30015795b574d",
+      "method": "Raw RAG",
+      "question": "What year is it when Anthony Rogers finally disembarks from the coal mine?",
+      "answers": [
+        "2419."
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.755842924118042
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "b92c3f3f94368153267f267845b8140ccac30015795b574d",
+      "method": "Summary Memory (structured)",
+      "question": "What year is it when Anthony Rogers finally disembarks from the coal mine?",
+      "answers": [
+        "2419."
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 36756,
+      "context_tokens_approx": 9189,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.8623290061950684
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "949abce7e7abc634fc08ff28f996a235ddd6041358bee155",
+      "method": "Raw RAG",
+      "question": "Why did Bill run to Texas?",
+      "answers": [
+        "he murdered someone"
+      ],
+      "hit": false,
+      "answer_score": 0.002026342451874367,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.9330697059631348
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "949abce7e7abc634fc08ff28f996a235ddd6041358bee155",
+      "method": "Summary Memory (structured)",
+      "question": "Why did Bill run to Texas?",
+      "answers": [
+        "he murdered someone"
+      ],
+      "hit": false,
+      "answer_score": 0.00027808676307007786,
+      "context_chars": 36526,
+      "context_tokens_approx": 9132,
+      "retrieved_records": 7,
+      "retrieval_latency": 1.0027639865875244
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "e39f9c371b47fb74a202d1f30bc46e806791d0ee81b1b2d4",
+      "method": "Raw RAG",
+      "question": "Who does Socrates compare going against the law to?",
+      "answers": [
+        "Your parents"
+      ],
+      "hit": false,
+      "answer_score": 0.002237136465324385,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.18261289596557617
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "e39f9c371b47fb74a202d1f30bc46e806791d0ee81b1b2d4",
+      "method": "Summary Memory (structured)",
+      "question": "Who does Socrates compare going against the law to?",
+      "answers": [
+        "Your parents"
+      ],
+      "hit": false,
+      "answer_score": 0.000663680106188817,
+      "context_chars": 32959,
+      "context_tokens_approx": 8240,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.20140600204467773
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "60cacef36b194be88d2a8a4fa816324ffcb672f336197584",
+      "method": "Raw RAG",
+      "question": "What relation to Ruth Anvoy is Lady Coxon?",
+      "answers": [
+        "Lady Coxon is Ruth's aunt."
+      ],
+      "hit": false,
+      "answer_score": 0.013186813186813187,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.5843257904052734
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "60cacef36b194be88d2a8a4fa816324ffcb672f336197584",
+      "method": "Summary Memory (structured)",
+      "question": "What relation to Ruth Anvoy is Lady Coxon?",
+      "answers": [
+        "Lady Coxon is Ruth's aunt."
+      ],
+      "hit": false,
+      "answer_score": 0.001839080459770115,
+      "context_chars": 36099,
+      "context_tokens_approx": 9025,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.6499576568603516
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "d22828536f4d6bee11bd1f15f636bddd18fa8f246ef1be6c",
+      "method": "Raw RAG",
+      "question": "What is Reiko's job?",
+      "answers": [
+        "Reiko is a reporter."
+      ],
+      "hit": false,
+      "answer_score": 0.010296010296010296,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.5023162364959717
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "d22828536f4d6bee11bd1f15f636bddd18fa8f246ef1be6c",
+      "method": "Summary Memory (structured)",
+      "question": "What is Reiko's job?",
+      "answers": [
+        "Reiko is a reporter."
+      ],
+      "hit": false,
+      "answer_score": 0.0013395847287340924,
+      "context_chars": 36608,
+      "context_tokens_approx": 9152,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.5247244834899902
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "585ce1f974c0a35526da31a0cdc1541728ffc2df6a73b4f3",
+      "method": "Raw RAG",
+      "question": "Why does Socrates ultimately decide it is unjust to escape?",
+      "answers": [
+        "Because it violates his belief in the  laws of society."
+      ],
+      "hit": false,
+      "answer_score": 0.01323042998897464,
+      "context_chars": 4801,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.1615135669708252
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "585ce1f974c0a35526da31a0cdc1541728ffc2df6a73b4f3",
+      "method": "Summary Memory (structured)",
+      "question": "Why does Socrates ultimately decide it is unjust to escape?",
+      "answers": [
+        "Because it violates his belief in the  laws of society."
+      ],
+      "hit": false,
+      "answer_score": 0.0022760526743618925,
+      "context_chars": 33339,
+      "context_tokens_approx": 8335,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.20637106895446777
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "880269c856197f51942d2649c32e0c37955409d7fdb3f369",
+      "method": "Raw RAG",
+      "question": "How is Drexl killed?",
+      "answers": [
+        "he is shot"
+      ],
+      "hit": false,
+      "answer_score": 0.00408997955010225,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.9069838523864746
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "880269c856197f51942d2649c32e0c37955409d7fdb3f369",
+      "method": "Summary Memory (structured)",
+      "question": "How is Drexl killed?",
+      "answers": [
+        "he is shot"
+      ],
+      "hit": false,
+      "answer_score": 0.0008536064874093042,
+      "context_chars": 35521,
+      "context_tokens_approx": 8880,
+      "retrieved_records": 7,
+      "retrieval_latency": 1.0247254371643066
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "0cb4ddf1bedade882d28e7940531bbac3ec45efb1f668635",
+      "method": "Raw RAG",
+      "question": "What did Anvoy do with the letter once she received it?",
+      "answers": [
+        "She declined to read it."
+      ],
+      "hit": false,
+      "answer_score": 0.008978675645342311,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.6160376071929932
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "0cb4ddf1bedade882d28e7940531bbac3ec45efb1f668635",
+      "method": "Summary Memory (structured)",
+      "question": "What did Anvoy do with the letter once she received it?",
+      "answers": [
+        "She declined to read it."
+      ],
+      "hit": false,
+      "answer_score": 0.0015080681646810435,
+      "context_chars": 36546,
+      "context_tokens_approx": 9136,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.657524824142456
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "562b8f8423dfb1c0fe308445710a9018f3d4e7508ef87e52",
+      "method": "Raw RAG",
+      "question": "What was the description of the teens faces when they died?",
+      "answers": [
+        "Twisted in fear"
+      ],
+      "hit": false,
+      "answer_score": 0.007672634271099745,
+      "context_chars": 4798,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.49256157875061035
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "562b8f8423dfb1c0fe308445710a9018f3d4e7508ef87e52",
+      "method": "Summary Memory (structured)",
+      "question": "What was the description of the teens faces when they died?",
+      "answers": [
+        "Twisted in fear"
+      ],
+      "hit": false,
+      "answer_score": 0.0010055304172951233,
+      "context_chars": 35835,
+      "context_tokens_approx": 8959,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.512993574142456
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "ea7825ba7cc9beff14746f8a82ec525b3b9d536b467cdaba",
+      "method": "Raw RAG",
+      "question": "Why does Soames get upset with Beerbohm?",
+      "answers": [
+        "Beerbohm wrote a fictional story about Soames."
+      ],
+      "hit": false,
+      "answer_score": 0.011210762331838566,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.2757537364959717
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "ea7825ba7cc9beff14746f8a82ec525b3b9d536b467cdaba",
+      "method": "Summary Memory (structured)",
+      "question": "Why does Soames get upset with Beerbohm?",
+      "answers": [
+        "Beerbohm wrote a fictional story about Soames."
+      ],
+      "hit": false,
+      "answer_score": 0.00210637177461822,
+      "context_chars": 31190,
+      "context_tokens_approx": 7798,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.3107869625091553
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "b8c1df9064532860efef843054433b6588ec8c89071c027f",
+      "method": "Raw RAG",
+      "question": "How many days do viewers of the tape have to live after they watch it?",
+      "answers": [
+        "Seven days"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 4456,
+      "context_tokens_approx": 1114,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.45410823822021484
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "b8c1df9064532860efef843054433b6588ec8c89071c027f",
+      "method": "Summary Memory (structured)",
+      "question": "How many days do viewers of the tape have to live after they watch it?",
+      "answers": [
+        "Seven days"
+      ],
+      "hit": false,
+      "answer_score": 0.0004330879168471199,
+      "context_chars": 27512,
+      "context_tokens_approx": 6878,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.5154623985290527
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "08eb5808e99ec50b74a3b2779c65c533fec812a1e70f5ed3",
+      "method": "Raw RAG",
+      "question": "Who does not see death in the end?",
+      "answers": [
+        "all but Jof and the Juggler"
+      ],
+      "hit": false,
+      "answer_score": 0.011273957158962795,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.4767723083496094
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "08eb5808e99ec50b74a3b2779c65c533fec812a1e70f5ed3",
+      "method": "Summary Memory (structured)",
+      "question": "Who does not see death in the end?",
+      "answers": [
+        "all but Jof and the Juggler"
+      ],
+      "hit": false,
+      "answer_score": 0.0018541409147095178,
+      "context_chars": 35706,
+      "context_tokens_approx": 8926,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.5094261169433594
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "13bff0d53a16f0e4ea96e342a517d30aab0357d624ee1ceb",
+      "method": "Raw RAG",
+      "question": "When Mary was younger, how did her mother fill her free time?",
+      "answers": [
+        "she was obsessed with novels."
+      ],
+      "hit": false,
+      "answer_score": 0.006872852233676977,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.6294291019439697
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "13bff0d53a16f0e4ea96e342a517d30aab0357d624ee1ceb",
+      "method": "Summary Memory (structured)",
+      "question": "When Mary was younger, how did her mother fill her free time?",
+      "answers": [
+        "she was obsessed with novels."
+      ],
+      "hit": false,
+      "answer_score": 0.0012804097311139566,
+      "context_chars": 26906,
+      "context_tokens_approx": 6726,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.668567419052124
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "478201dd5ae2b46b44caacaa387140a11bf5437332820d41",
+      "method": "Raw RAG",
+      "question": "What attratcs men to Anderson?",
+      "answers": [
+        "HER BEAUTY"
+      ],
+      "hit": false,
+      "answer_score": 0.0023337222870478415,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.18383288383483887
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "478201dd5ae2b46b44caacaa387140a11bf5437332820d41",
+      "method": "Summary Memory (structured)",
+      "question": "What attratcs men to Anderson?",
+      "answers": [
+        "HER BEAUTY"
+      ],
+      "hit": false,
+      "answer_score": 0.000630119722747322,
+      "context_chars": 36687,
+      "context_tokens_approx": 9172,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.2315349578857422
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "b91ede2d2d08ea6f5f3b894c932b70e141665dd59d334dc8",
+      "method": "Raw RAG",
+      "question": "Why was Falder worried about Ruth?",
+      "answers": [
+        "Her husband abused her"
+      ],
+      "hit": false,
+      "answer_score": 0.0044994375703037125,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.5705909729003906
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "b91ede2d2d08ea6f5f3b894c932b70e141665dd59d334dc8",
+      "method": "Summary Memory (structured)",
+      "question": "Why was Falder worried about Ruth?",
+      "answers": [
+        "Her husband abused her"
+      ],
+      "hit": false,
+      "answer_score": 0.0009348706762231225,
+      "context_chars": 35556,
+      "context_tokens_approx": 8889,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.5934267044067383
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "fd7551a90b78405f6b71079bb8565a2c9f60db1b7e4179c8",
+      "method": "Raw RAG",
+      "question": "How did Bill die?",
+      "answers": [
+        "He is killed by police."
+      ],
+      "hit": false,
+      "answer_score": 0.006160164271047228,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.7987911701202393
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "fd7551a90b78405f6b71079bb8565a2c9f60db1b7e4179c8",
+      "method": "Summary Memory (structured)",
+      "question": "How did Bill die?",
+      "answers": [
+        "He is killed by police."
+      ],
+      "hit": false,
+      "answer_score": 0.001104514703851995,
+      "context_chars": 36850,
+      "context_tokens_approx": 9212,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.9133107662200928
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "627d4b1bf8c78ab08d4da01abc81be9e724d1e8bcb2d2e6b",
+      "method": "Raw RAG",
+      "question": "Why are Holmes and Dr. Watson in Cornwall?",
+      "answers": [
+        "For Holmes' health."
+      ],
+      "hit": false,
+      "answer_score": 0.004561003420752566,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.17448639869689941
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "627d4b1bf8c78ab08d4da01abc81be9e724d1e8bcb2d2e6b",
+      "method": "Summary Memory (structured)",
+      "question": "Why are Holmes and Dr. Watson in Cornwall?",
+      "answers": [
+        "For Holmes' health."
+      ],
+      "hit": false,
+      "answer_score": 0.0009252120277563608,
+      "context_chars": 36627,
+      "context_tokens_approx": 9157,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.2025468349456787
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "414ea192da69d6665e5ad41f59b34c6e1a8b5a59fa0703e5",
+      "method": "Raw RAG",
+      "question": "What ghost emerged from a painting at Dana's workplace?",
+      "answers": [
+        "Vigo"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.5856747627258301
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "414ea192da69d6665e5ad41f59b34c6e1a8b5a59fa0703e5",
+      "method": "Summary Memory (structured)",
+      "question": "What ghost emerged from a painting at Dana's workplace?",
+      "answers": [
+        "Vigo"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 36440,
+      "context_tokens_approx": 9110,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.6513848304748535
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "507378fadb4447d3f857ab09512a7bf0cae2c34083e449c6",
+      "method": "Raw RAG",
+      "question": "How is Mary initially educated?",
+      "answers": [
+        "Nature and books"
+      ],
+      "hit": false,
+      "answer_score": 0.0024271844660194173,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.5315001010894775
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "507378fadb4447d3f857ab09512a7bf0cae2c34083e449c6",
+      "method": "Summary Memory (structured)",
+      "question": "How is Mary initially educated?",
+      "answers": [
+        "Nature and books"
+      ],
+      "hit": false,
+      "answer_score": 0.0012815036309269544,
+      "context_chars": 27193,
+      "context_tokens_approx": 6798,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.5874395370483398
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "73705494f8a477420b27dee08ab2c02f30cad6025cd3e388",
+      "method": "Raw RAG",
+      "question": "Where does the slime attack Dana and Oscar?",
+      "answers": [
+        "museum"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.5743343830108643
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "73705494f8a477420b27dee08ab2c02f30cad6025cd3e388",
+      "method": "Summary Memory (structured)",
+      "question": "Where does the slime attack Dana and Oscar?",
+      "answers": [
+        "museum"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 36845,
+      "context_tokens_approx": 9211,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.624786376953125
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "a8a172aa00eb9de7d74042b9cd27d07cf537b2056b93cf62",
+      "method": "Raw RAG",
+      "question": "Who made the original cursed videotape?",
+      "answers": [
+        "Sadako Yamamura made the tape psionically."
+      ],
+      "hit": false,
+      "answer_score": 0.004993757802746567,
+      "context_chars": 4801,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.38646626472473145
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "a8a172aa00eb9de7d74042b9cd27d07cf537b2056b93cf62",
+      "method": "Summary Memory (structured)",
+      "question": "Who made the original cursed videotape?",
+      "answers": [
+        "Sadako Yamamura made the tape psionically."
+      ],
+      "hit": false,
+      "answer_score": 0.0012872774082814844,
+      "context_chars": 27751,
+      "context_tokens_approx": 6938,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.42676639556884766
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "0efa676797a76ec31f8888ffea26cffe75b602ee3a38b7a2",
+      "method": "Raw RAG",
+      "question": "Where does this story take place?",
+      "answers": [
+        "In Socrates Cell?"
+      ],
+      "hit": false,
+      "answer_score": 0.0045045045045045045,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.11650252342224121
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "0efa676797a76ec31f8888ffea26cffe75b602ee3a38b7a2",
+      "method": "Summary Memory (structured)",
+      "question": "Where does this story take place?",
+      "answers": [
+        "In Socrates Cell?"
+      ],
+      "hit": false,
+      "answer_score": 0.0006568144499178981,
+      "context_chars": 33292,
+      "context_tokens_approx": 8323,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.1409163475036621
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "887b45fe14ce901239d9ec0eee625ec5f02c410b1eb426b4",
+      "method": "Raw RAG",
+      "question": "How did Shizuko Yamamura die?",
+      "answers": [
+        "She committed suicide."
+      ],
+      "hit": false,
+      "answer_score": 0.007853403141361254,
+      "context_chars": 4802,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.38498759269714355
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "887b45fe14ce901239d9ec0eee625ec5f02c410b1eb426b4",
+      "method": "Summary Memory (structured)",
+      "question": "How did Shizuko Yamamura die?",
+      "answers": [
+        "She committed suicide."
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 36523,
+      "context_tokens_approx": 9131,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.42241382598876953
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "62fc0808be185047c6e6ec24c916c59def5d1acd30a95861",
+      "method": "Raw RAG",
+      "question": "Why did Bennett Landsmann need to defend Seth Lazurus in court?",
+      "answers": [
+        "because he's a lawyer"
+      ],
+      "hit": false,
+      "answer_score": 0.009227220299884658,
+      "context_chars": 4802,
+      "context_tokens_approx": 1200,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.1559464931488037
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "62fc0808be185047c6e6ec24c916c59def5d1acd30a95861",
+      "method": "Summary Memory (structured)",
+      "question": "Why did Bennett Landsmann need to defend Seth Lazurus in court?",
+      "answers": [
+        "because he's a lawyer"
+      ],
+      "hit": false,
+      "answer_score": 0.0012531328320802006,
+      "context_chars": 36772,
+      "context_tokens_approx": 9193,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.18665480613708496
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "41d2d4a499eabd3034b061845ae3c279f5befd0fce60f757",
+      "method": "Raw RAG",
+      "question": "Which remarkable habit did Enoch Soames demonstrate with regard to choice of clothing?",
+      "answers": [
+        "always wore a grey waterproof cape and a soft black hat"
+      ],
+      "hit": false,
+      "answer_score": 0.008820286659316428,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.23199009895324707
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "41d2d4a499eabd3034b061845ae3c279f5befd0fce60f757",
+      "method": "Summary Memory (structured)",
+      "question": "Which remarkable habit did Enoch Soames demonstrate with regard to choice of clothing?",
+      "answers": [
+        "always wore a grey waterproof cape and a soft black hat"
+      ],
+      "hit": false,
+      "answer_score": 0.0027198549410698096,
+      "context_chars": 36119,
+      "context_tokens_approx": 9030,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.2621278762817383
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "a5e44b1e2b98f80aabab5f1b8296d0fe66d53b31c1f3e332",
+      "method": "Raw RAG",
+      "question": "Who did Baron Conrad kill?",
+      "answers": [
+        "Baron Frederick"
+      ],
+      "hit": false,
+      "answer_score": 0.0022123893805309734,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.5657680034637451
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "a5e44b1e2b98f80aabab5f1b8296d0fe66d53b31c1f3e332",
+      "method": "Summary Memory (structured)",
+      "question": "Who did Baron Conrad kill?",
+      "answers": [
+        "Baron Frederick"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 36794,
+      "context_tokens_approx": 9198,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.6168656349182129
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "cf6cd2d8526658bac5ee4a39bc0237021c54eec652d27d1b",
+      "method": "Raw RAG",
+      "question": "How is Mary initially educated?",
+      "answers": [
+        "She educates herself using books and the natural world."
+      ],
+      "hit": false,
+      "answer_score": 0.012048192771084336,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.5025539398193359
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "cf6cd2d8526658bac5ee4a39bc0237021c54eec652d27d1b",
+      "method": "Summary Memory (structured)",
+      "question": "How is Mary initially educated?",
+      "answers": [
+        "She educates herself using books and the natural world."
+      ],
+      "hit": false,
+      "answer_score": 0.0025762129669386004,
+      "context_chars": 27091,
+      "context_tokens_approx": 6773,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.5925297737121582
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "923329f49e6ae0c9f11914e9b90d01a64bc74f6c0dd663bd",
+      "method": "Raw RAG",
+      "question": "What religion supported Dave during Jim's trial?",
+      "answers": [
+        "The Baptist's supported Dave."
+      ],
+      "hit": false,
+      "answer_score": 0.008394543546694649,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.27010488510131836
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "923329f49e6ae0c9f11914e9b90d01a64bc74f6c0dd663bd",
+      "method": "Summary Memory (structured)",
+      "question": "What religion supported Dave during Jim's trial?",
+      "answers": [
+        "The Baptist's supported Dave."
+      ],
+      "hit": false,
+      "answer_score": 0.001152903876639285,
+      "context_chars": 35962,
+      "context_tokens_approx": 8990,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.3055744171142578
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "ba016e084e6954d21521889759d81e159d1977cbf2b3354a",
+      "method": "Raw RAG",
+      "question": "Who does Vane write about in her letter?",
+      "answers": [
+        "Louis Leverett"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.25467634201049805
+    },
+    {
+      "dataset": "narrativeqa",
+      "example_id": "ba016e084e6954d21521889759d81e159d1977cbf2b3354a",
+      "method": "Summary Memory (structured)",
+      "question": "Who does Vane write about in her letter?",
+      "answers": [
+        "Louis Leverett"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 36614,
+      "context_tokens_approx": 9154,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.31175661087036133
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "3ac3eef636db11635a21a61804cb28e92c546a5686dd1e12",
+      "method": "Raw RAG",
+      "question": "How is the ground truth for fake news established?",
+      "answers": [
+        "Ground truth is not established in the paper"
+      ],
+      "hit": false,
+      "answer_score": 0.019662921348314606,
+      "context_chars": 4427,
+      "context_tokens_approx": 1107,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.05770707130432129
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "3ac3eef636db11635a21a61804cb28e92c546a5686dd1e12",
+      "method": "Summary Memory (structured)",
+      "question": "How is the ground truth for fake news established?",
+      "answers": [
+        "Ground truth is not established in the paper"
+      ],
+      "hit": false,
+      "answer_score": 0.0032825322391559202,
+      "context_chars": 27051,
+      "context_tokens_approx": 6763,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.07022476196289062
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "db6c4d611b78c840972b57ee0b245003566b982feaff1084",
+      "method": "Raw RAG",
+      "question": "What is the GhostVLAD approach?",
+      "answers": [
+        "extension of the NetVLAD, adds Ghost clusters along with the NetVLAD clusters",
+        "An extension of NetVLAD which replaces hard assignment-based clustering with soft assignment-based clustering with the additon o fusing Ghost clusters to deal with noisy content."
+      ],
+      "hit": false,
+      "answer_score": 0.053987730061349694,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.04043841361999512
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "db6c4d611b78c840972b57ee0b245003566b982feaff1084",
+      "method": "Summary Memory (structured)",
+      "question": "What is the GhostVLAD approach?",
+      "answers": [
+        "extension of the NetVLAD, adds Ghost clusters along with the NetVLAD clusters",
+        "An extension of NetVLAD which replaces hard assignment-based clustering with soft assignment-based clustering with the additon o fusing Ghost clusters to deal with noisy content."
+      ],
+      "hit": false,
+      "answer_score": 0.013142857142857144,
+      "context_chars": 21186,
+      "context_tokens_approx": 5296,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.06212329864501953
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "e419f2bff9d2ab7c3b60b3250caccd2d9ae1285ec3e8e818",
+      "method": "Raw RAG",
+      "question": "By how much does their model outperform the state of the art results?",
+      "answers": [
+        "the attention model, MDREA, also outperforms the best existing research results (WAP 0.690 to 0.688)"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.047777414321899414
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "e419f2bff9d2ab7c3b60b3250caccd2d9ae1285ec3e8e818",
+      "method": "Summary Memory (structured)",
+      "question": "By how much does their model outperform the state of the art results?",
+      "answers": [
+        "the attention model, MDREA, also outperforms the best existing research results (WAP 0.690 to 0.688)"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 29051,
+      "context_tokens_approx": 7263,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.06724286079406738
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "9fb085a1f47673d1907f2378c90843b4b6e8622a14fe1fa9",
+      "method": "Raw RAG",
+      "question": "What additional features and context are proposed?",
+      "answers": [
+        "using tweets that one has replied or quoted to as contextual information",
+        "text sequences of context tweets"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.03532600402832031
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "9fb085a1f47673d1907f2378c90843b4b6e8622a14fe1fa9",
+      "method": "Summary Memory (structured)",
+      "question": "What additional features and context are proposed?",
+      "answers": [
+        "using tweets that one has replied or quoted to as contextual information",
+        "text sequences of context tweets"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 20253,
+      "context_tokens_approx": 5063,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.05266547203063965
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "14e88916523197e066dbb743339685621db47c4beb503abb",
+      "method": "Raw RAG",
+      "question": "Which Facebook pages did they look at?",
+      "answers": [
+        "FoxNews, CNN, ESPN, New York Times, Time magazine, Huffington Post Weird News, The Guardian, Cartoon Network, Cooking Light, Home Cooking Adventure, Justin Bieber, Nickelodeon, Spongebob, Disney",
+        "FoxNews, CNN, ESPN, New York Times, Time magazine, Huffington Post Weird News, The Guardian, Cartoon Network, Cooking Light, Home Cooking Adventure, Justin Bieber, Nickelodeon, Spongebob, Disney."
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.05317115783691406
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "14e88916523197e066dbb743339685621db47c4beb503abb",
+      "method": "Summary Memory (structured)",
+      "question": "Which Facebook pages did they look at?",
+      "answers": [
+        "FoxNews, CNN, ESPN, New York Times, Time magazine, Huffington Post Weird News, The Guardian, Cartoon Network, Cooking Light, Home Cooking Adventure, Justin Bieber, Nickelodeon, Spongebob, Disney",
+        "FoxNews, CNN, ESPN, New York Times, Time magazine, Huffington Post Weird News, The Guardian, Cartoon Network, Cooking Light, Home Cooking Adventure, Justin Bieber, Nickelodeon, Spongebob, Disney."
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 28763,
+      "context_tokens_approx": 7191,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.07212686538696289
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "c109a25d23a8c5c95af8697ef1ac51cd3bee93c67521af6d",
+      "method": "Raw RAG",
+      "question": "Do the hashtag and SemEval datasets contain only English data?",
+      "answers": [
+        "Yes",
+        "Yes"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.07693743705749512
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "c109a25d23a8c5c95af8697ef1ac51cd3bee93c67521af6d",
+      "method": "Summary Memory (structured)",
+      "question": "Do the hashtag and SemEval datasets contain only English data?",
+      "answers": [
+        "Yes",
+        "Yes"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 32977,
+      "context_tokens_approx": 8244,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.10043573379516602
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "072d3de1a7122730a13a31db3eede4113af2d920814f0aaa",
+      "method": "Raw RAG",
+      "question": "What type of evaluation is proposed for this task?",
+      "answers": [
+        "Answer with content missing: (Evaluation Metrics section) Precision, Recall, F1-scores, Strict match, METEOR, ROUGE-2"
+      ],
+      "hit": false,
+      "answer_score": 0.010403120936280884,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.08115983009338379
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "072d3de1a7122730a13a31db3eede4113af2d920814f0aaa",
+      "method": "Summary Memory (structured)",
+      "question": "What type of evaluation is proposed for this task?",
+      "answers": [
+        "Answer with content missing: (Evaluation Metrics section) Precision, Recall, F1-scores, Strict match, METEOR, ROUGE-2"
+      ],
+      "hit": false,
+      "answer_score": 0.0036049026676279743,
+      "context_chars": 35403,
+      "context_tokens_approx": 8851,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.11074042320251465
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "8fa5af6a36dd0b6b73900b2ec6f6e43a652a3e7d2b827a58",
+      "method": "Raw RAG",
+      "question": "What are the datasets used for evaluation?",
+      "answers": [
+        "CNN/DailyMail news highlights, New York Times Annotated Corpus, XSum",
+        "the CNN/DailyMail news highlights dataset BIBREF24, the New York Times Annotated Corpus (NYT; BIBREF25), XSum BIBREF22"
+      ],
+      "hit": false,
+      "answer_score": 0.04545454545454545,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.08565926551818848
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "8fa5af6a36dd0b6b73900b2ec6f6e43a652a3e7d2b827a58",
+      "method": "Summary Memory (structured)",
+      "question": "What are the datasets used for evaluation?",
+      "answers": [
+        "CNN/DailyMail news highlights, New York Times Annotated Corpus, XSum",
+        "the CNN/DailyMail news highlights dataset BIBREF24, the New York Times Annotated Corpus (NYT; BIBREF25), XSum BIBREF22"
+      ],
+      "hit": false,
+      "answer_score": 0.008011310084825637,
+      "context_chars": 27545,
+      "context_tokens_approx": 6886,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.10200142860412598
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "5f00d4f6e62f4b99484eb78491f803f8143cc1b13ad33816",
+      "method": "Raw RAG",
+      "question": "How does this approach compare to other WSD approaches employing word embeddings?",
+      "answers": [
+        "GM$\\_$KL achieves better correlation than existing approaches for various metrics on SCWS dataset."
+      ],
+      "hit": false,
+      "answer_score": 0.025677603423680456,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.03916049003601074
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "5f00d4f6e62f4b99484eb78491f803f8143cc1b13ad33816",
+      "method": "Summary Memory (structured)",
+      "question": "How does this approach compare to other WSD approaches employing word embeddings?",
+      "answers": [
+        "GM$\\_$KL achieves better correlation than existing approaches for various metrics on SCWS dataset."
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 21429,
+      "context_tokens_approx": 5357,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.0596928596496582
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "91dd7b7a6ead4025763812d70dc51c6674b0acf31bd5a5f0",
+      "method": "Raw RAG",
+      "question": "How does their ensemble method work?",
+      "answers": [
+        "simply averaging the predictions from the constituent single models"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4434,
+      "context_tokens_approx": 1108,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.07717132568359375
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "91dd7b7a6ead4025763812d70dc51c6674b0acf31bd5a5f0",
+      "method": "Summary Memory (structured)",
+      "question": "How does their ensemble method work?",
+      "answers": [
+        "simply averaging the predictions from the constituent single models"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 33751,
+      "context_tokens_approx": 8438,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.09903168678283691
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "fe6e5087f91071369646d9d868d784a290d0d13013292b61",
+      "method": "Raw RAG",
+      "question": "What are the sources of the datasets?",
+      "answers": [
+        "Friends TV sitcom, Facebook messenger chats"
+      ],
+      "hit": false,
+      "answer_score": 0.015748031496062992,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.05408954620361328
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "fe6e5087f91071369646d9d868d784a290d0d13013292b61",
+      "method": "Summary Memory (structured)",
+      "question": "What are the sources of the datasets?",
+      "answers": [
+        "Friends TV sitcom, Facebook messenger chats"
+      ],
+      "hit": false,
+      "answer_score": 0.0026767789426723173,
+      "context_chars": 29222,
+      "context_tokens_approx": 7306,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.07458758354187012
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "51b9066a5f2845e2fdf0d1dcde6833f70ae49ed01aa306db",
+      "method": "Raw RAG",
+      "question": "what language does this paper focus on?",
+      "answers": [
+        "English",
+        "Simple English"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.03677654266357422
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "51b9066a5f2845e2fdf0d1dcde6833f70ae49ed01aa306db",
+      "method": "Summary Memory (structured)",
+      "question": "what language does this paper focus on?",
+      "answers": [
+        "English",
+        "Simple English"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 22102,
+      "context_tokens_approx": 5526,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.05817914009094238
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "bae15e10e0f414a92fb0e943871ed25c3fc16183a3028012",
+      "method": "Raw RAG",
+      "question": "What sentiment analysis dataset is used?",
+      "answers": [
+        "IMDb dataset of movie reviews",
+        "IMDb"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.04232931137084961
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "bae15e10e0f414a92fb0e943871ed25c3fc16183a3028012",
+      "method": "Summary Memory (structured)",
+      "question": "What sentiment analysis dataset is used?",
+      "answers": [
+        "IMDb dataset of movie reviews",
+        "IMDb"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 21859,
+      "context_tokens_approx": 5465,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.061919450759887695
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "d022dfe02fb2a55b4baa40fe436f616aecd3f3ced1a58d7c",
+      "method": "Raw RAG",
+      "question": "What accuracy does the proposed system achieve?",
+      "answers": [
+        "F1 scores of 85.99 on the DL-PS data,  75.15 on the EC-MT data and 71.53 on the EC-UQ data",
+        "F1 of 85.99 on the DL-PS dataset (dialog domain); 75.15 on EC-MT and 71.53 on EC-UQ (e-commerce domain)"
+      ],
+      "hit": false,
+      "answer_score": 0.04600484261501211,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.11995840072631836
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "d022dfe02fb2a55b4baa40fe436f616aecd3f3ced1a58d7c",
+      "method": "Summary Memory (structured)",
+      "question": "What accuracy does the proposed system achieve?",
+      "answers": [
+        "F1 scores of 85.99 on the DL-PS data,  75.15 on the EC-MT data and 71.53 on the EC-UQ data",
+        "F1 of 85.99 on the DL-PS dataset (dialog domain); 75.15 on EC-MT and 71.53 on EC-UQ (e-commerce domain)"
+      ],
+      "hit": false,
+      "answer_score": 0.006977598237238341,
+      "context_chars": 33529,
+      "context_tokens_approx": 8382,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.15118932723999023
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "43279ddf85ada1b163aa1b316a4df1418957058206501c26",
+      "method": "Raw RAG",
+      "question": "Did they experiment with this new dataset?",
+      "answers": [
+        "No"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.07018375396728516
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "43279ddf85ada1b163aa1b316a4df1418957058206501c26",
+      "method": "Summary Memory (structured)",
+      "question": "Did they experiment with this new dataset?",
+      "answers": [
+        "No"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 30652,
+      "context_tokens_approx": 7663,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.08440065383911133
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "f27a64d129091a6c8973c001ff789b8f68955b8ff0ae70af",
+      "method": "Raw RAG",
+      "question": "What datasets are used?",
+      "answers": [
+        "Custom dataset with user questions; set of documents, twitter posts and news articles, all related to finance.",
+        "a self-collected financial intents dataset in Portuguese"
+      ],
+      "hit": false,
+      "answer_score": 0.019851116625310174,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.274294376373291
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "f27a64d129091a6c8973c001ff789b8f68955b8ff0ae70af",
+      "method": "Summary Memory (structured)",
+      "question": "What datasets are used?",
+      "answers": [
+        "Custom dataset with user questions; set of documents, twitter posts and news articles, all related to finance.",
+        "a self-collected financial intents dataset in Portuguese"
+      ],
+      "hit": false,
+      "answer_score": 0.005284015852047556,
+      "context_chars": 37521,
+      "context_tokens_approx": 9380,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.288771390914917
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "c47ca982b6c4681c4741d4708801fa79a3e1cab17d0a2c4a",
+      "method": "Raw RAG",
+      "question": "Which stock market sector achieved the best performance?",
+      "answers": [
+        "Energy with accuracy of 0.538",
+        "Energy"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.25260066986083984
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "c47ca982b6c4681c4741d4708801fa79a3e1cab17d0a2c4a",
+      "method": "Summary Memory (structured)",
+      "question": "Which stock market sector achieved the best performance?",
+      "answers": [
+        "Energy with accuracy of 0.538",
+        "Energy"
+      ],
+      "hit": false,
+      "answer_score": 0.0017327268789257089,
+      "context_chars": 27835,
+      "context_tokens_approx": 6959,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.28392767906188965
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "1614ea21f8d039debfc655015f8133d0ef220837804ddf62",
+      "method": "Raw RAG",
+      "question": "what NMT models did they compare with?",
+      "answers": [
+        "RNN-based NMT model, Transformer-NMT"
+      ],
+      "hit": false,
+      "answer_score": 0.015170670037926675,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.07532596588134766
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "1614ea21f8d039debfc655015f8133d0ef220837804ddf62",
+      "method": "Summary Memory (structured)",
+      "question": "what NMT models did they compare with?",
+      "answers": [
+        "RNN-based NMT model, Transformer-NMT"
+      ],
+      "hit": false,
+      "answer_score": 0.0024266936299292214,
+      "context_chars": 32277,
+      "context_tokens_approx": 8069,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.0967707633972168
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "159a474e0a7155a2d0b984cbb5215cdc853d721605b90154",
+      "method": "Raw RAG",
+      "question": "What are the three regularization terms?",
+      "answers": [
+        "a regularization term associated with neutral features, the maximum entropy of class distribution regularization term, the KL divergence between reference and predicted class distribution",
+        "a regularization term associated with neutral features,  the maximum entropy of class distribution, KL divergence between reference and predicted class distribution"
+      ],
+      "hit": false,
+      "answer_score": 0.059701492537313446,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.06755208969116211
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "159a474e0a7155a2d0b984cbb5215cdc853d721605b90154",
+      "method": "Summary Memory (structured)",
+      "question": "What are the three regularization terms?",
+      "answers": [
+        "a regularization term associated with neutral features, the maximum entropy of class distribution regularization term, the KL divergence between reference and predicted class distribution",
+        "a regularization term associated with neutral features,  the maximum entropy of class distribution, KL divergence between reference and predicted class distribution"
+      ],
+      "hit": false,
+      "answer_score": 0.009605763458074845,
+      "context_chars": 31330,
+      "context_tokens_approx": 7832,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.09407472610473633
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "d426a2d42f3dffc8771498ba64ed0e383b91939398e83dce",
+      "method": "Raw RAG",
+      "question": "What are the baselines?",
+      "answers": [
+        "SVM with unigram, bigram, and trigram features, SVM with average word embedding, SVM with average transformed word embeddings, CNN, ecurrent Convolutional Neural Networks, SVM and deep learning models with comment information",
+        "SVM with unigram, bigram, trigram features, with average word embedding, with average transformed word embeddings, CNN and RCNN, SVM, CNN, RCNN with comment information"
+      ],
+      "hit": false,
+      "answer_score": 0.058673469387755105,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.08995318412780762
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "d426a2d42f3dffc8771498ba64ed0e383b91939398e83dce",
+      "method": "Summary Memory (structured)",
+      "question": "What are the baselines?",
+      "answers": [
+        "SVM with unigram, bigram, and trigram features, SVM with average word embedding, SVM with average transformed word embeddings, CNN, ecurrent Convolutional Neural Networks, SVM and deep learning models with comment information",
+        "SVM with unigram, bigram, trigram features, with average word embedding, with average transformed word embeddings, CNN and RCNN, SVM, CNN, RCNN with comment information"
+      ],
+      "hit": false,
+      "answer_score": 0.010398613518197573,
+      "context_chars": 36854,
+      "context_tokens_approx": 9214,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.11015868186950684
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "680ef767fe2a990615d0bc1cb1bf5f7d23c8766209138826",
+      "method": "Raw RAG",
+      "question": "By how much did they improve?",
+      "answers": [
+        "They decrease MAE in 0.34"
+      ],
+      "hit": false,
+      "answer_score": 0.0032258064516129037,
+      "context_chars": 3950,
+      "context_tokens_approx": 988,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.04895329475402832
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "680ef767fe2a990615d0bc1cb1bf5f7d23c8766209138826",
+      "method": "Summary Memory (structured)",
+      "question": "By how much did they improve?",
+      "answers": [
+        "They decrease MAE in 0.34"
+      ],
+      "hit": false,
+      "answer_score": 0.0016133369185264855,
+      "context_chars": 24918,
+      "context_tokens_approx": 6230,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.06592273712158203
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "8b6bf313950a892cbda035f2c7b3d8b01472ff34749f028d",
+      "method": "Raw RAG",
+      "question": "How does their model improve interpretability compared to softmax transformers?",
+      "answers": [
+        "the attention heads in the proposed adaptively sparse Transformer can specialize more and with higher confidence",
+        "We introduce sparse attention into the Transformer architecture"
+      ],
+      "hit": false,
+      "answer_score": 0.031914893617021274,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.10589075088500977
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "8b6bf313950a892cbda035f2c7b3d8b01472ff34749f028d",
+      "method": "Summary Memory (structured)",
+      "question": "How does their model improve interpretability compared to softmax transformers?",
+      "answers": [
+        "the attention heads in the proposed adaptively sparse Transformer can specialize more and with higher confidence",
+        "We introduce sparse attention into the Transformer architecture"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 36568,
+      "context_tokens_approx": 9142,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.14370393753051758
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "04af9dc96013a1bc7faecbc589f7ea5c207e92c7d9a3495e",
+      "method": "Raw RAG",
+      "question": "what was the baseline?",
+      "answers": [
+        "MT system on the data released by BIBREF11",
+        "Transformer base, two-pass CADec model"
+      ],
+      "hit": false,
+      "answer_score": 0.015364916773367479,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.07719945907592773
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "04af9dc96013a1bc7faecbc589f7ea5c207e92c7d9a3495e",
+      "method": "Summary Memory (structured)",
+      "question": "what was the baseline?",
+      "answers": [
+        "MT system on the data released by BIBREF11",
+        "Transformer base, two-pass CADec model"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 32597,
+      "context_tokens_approx": 8149,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.0923159122467041
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "3b069a546d5417be546f57d02981cf5ac68b4d3d6c55624a",
+      "method": "Raw RAG",
+      "question": "What metrics are used for evaluation?",
+      "answers": [
+        "translation probabilities, Labeled Attachment Scores (LAS)",
+        "accuracy, Labeled Attachment Scores (LAS)"
+      ],
+      "hit": false,
+      "answer_score": 0.013175230566534916,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.0707697868347168
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "3b069a546d5417be546f57d02981cf5ac68b4d3d6c55624a",
+      "method": "Summary Memory (structured)",
+      "question": "What metrics are used for evaluation?",
+      "answers": [
+        "translation probabilities, Labeled Attachment Scores (LAS)",
+        "accuracy, Labeled Attachment Scores (LAS)"
+      ],
+      "hit": false,
+      "answer_score": 0.0024554941682013503,
+      "context_chars": 31249,
+      "context_tokens_approx": 7812,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.09293675422668457
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "ebd4ae480fe1596841b2132e96f40eac8437c800db8ef59e",
+      "method": "Raw RAG",
+      "question": "What is the attention module pretrained on?",
+      "answers": [
+        "the model is pre-trained on CTC-based ASR task and MT task in the pre-training stage."
+      ],
+      "hit": false,
+      "answer_score": 0.042767295597484274,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.07627367973327637
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "ebd4ae480fe1596841b2132e96f40eac8437c800db8ef59e",
+      "method": "Summary Memory (structured)",
+      "question": "What is the attention module pretrained on?",
+      "answers": [
+        "the model is pre-trained on CTC-based ASR task and MT task in the pre-training stage."
+      ],
+      "hit": false,
+      "answer_score": 0.0075187969924812035,
+      "context_chars": 29362,
+      "context_tokens_approx": 7340,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.1010897159576416
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "036bfbdbfff8294f59afd5860663bbb4349924c9853b2151",
+      "method": "Raw RAG",
+      "question": "What kind of stylistic features are obtained?",
+      "answers": [
+        "Unanswerable"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.07321023941040039
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "036bfbdbfff8294f59afd5860663bbb4349924c9853b2151",
+      "method": "Summary Memory (structured)",
+      "question": "What kind of stylistic features are obtained?",
+      "answers": [
+        "Unanswerable"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 31534,
+      "context_tokens_approx": 7884,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.0925900936126709
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "8595332098adaabcfd8ae199f754a9b06cdde08cdd4cc64a",
+      "method": "Raw RAG",
+      "question": "What architecture does the encoder have?",
+      "answers": [
+        "LSTM",
+        "LSTM"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.03885221481323242
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "8595332098adaabcfd8ae199f754a9b06cdde08cdd4cc64a",
+      "method": "Summary Memory (structured)",
+      "question": "What architecture does the encoder have?",
+      "answers": [
+        "LSTM",
+        "LSTM"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 20987,
+      "context_tokens_approx": 5247,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.05579566955566406
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "3ca65b23b3cb316653709b469b4a9b42b790e0350c76ae1a",
+      "method": "Raw RAG",
+      "question": "Is WordNet useful for taxonomic reasoning for this task?",
+      "answers": [
+        "Unanswerable",
+        "Yes"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.13157892227172852
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "3ca65b23b3cb316653709b469b4a9b42b790e0350c76ae1a",
+      "method": "Summary Memory (structured)",
+      "question": "Is WordNet useful for taxonomic reasoning for this task?",
+      "answers": [
+        "Unanswerable",
+        "Yes"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 36707,
+      "context_tokens_approx": 9177,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.14568853378295898
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "39352d304bd452de69fcc492ad458b72614e329b4509eb48",
+      "method": "Raw RAG",
+      "question": "what were the baselines?",
+      "answers": [
+        "Unanswerable",
+        "LF-MMI Attention\nSeq2Seq \nRNN-T \nChar E2E LF-MMI \nPhone E2E LF-MMI \nCTC + Gram-CTC"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.03451418876647949
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "39352d304bd452de69fcc492ad458b72614e329b4509eb48",
+      "method": "Summary Memory (structured)",
+      "question": "what were the baselines?",
+      "answers": [
+        "Unanswerable",
+        "LF-MMI Attention\nSeq2Seq \nRNN-T \nChar E2E LF-MMI \nPhone E2E LF-MMI \nCTC + Gram-CTC"
+      ],
+      "hit": false,
+      "answer_score": 0.0020898641588296763,
+      "context_chars": 18373,
+      "context_tokens_approx": 4593,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.057518959045410156
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "18576b9ee9994a46dc0c7d916a009ff6d0964991541010ee",
+      "method": "Raw RAG",
+      "question": "How many users do they look at?",
+      "answers": [
+        "22,880 users",
+        "20,000"
+      ],
+      "hit": false,
+      "answer_score": 0.0026737967914438505,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.08083510398864746
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "18576b9ee9994a46dc0c7d916a009ff6d0964991541010ee",
+      "method": "Summary Memory (structured)",
+      "question": "How many users do they look at?",
+      "answers": [
+        "22,880 users",
+        "20,000"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 35056,
+      "context_tokens_approx": 8764,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.11130332946777344
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "86c75d2a9157cb601a49f8424fa1e6e90fcd724132490bbd",
+      "method": "Raw RAG",
+      "question": "What metrics are used for evaluation?",
+      "answers": [
+        "Byte-Pair Encoding perplexity  (BPE PPL),\nBLEU-1,\nBLEU-4,\nROUGE-L,\npercentage of distinct unigram (D-1),\npercentage of distinct bigrams(D-2),\nuser matching accuracy(UMA),\nMean Reciprocal Rank(MRR)\nPairwise preference over baseline(PP)",
+        "BLEU-1/4 and ROUGE-L, likelihood of generated recipes using identical input specifications but conditioned on ten different user profiles, user matching accuracy (UMA), Mean Reciprocal Rank (MRR), neural scoring model from BIBREF33 to measure recipe-level coherence",
+        "Distinct-1/2, UMA = User Matching Accuracy, MRR\n= Mean Reciprocal Rank, PP = Pairwise preference over baseline (evaluated for 310 recipe pairs per model)"
+      ],
+      "hit": false,
+      "answer_score": 0.0816326530612245,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.04706430435180664
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "86c75d2a9157cb601a49f8424fa1e6e90fcd724132490bbd",
+      "method": "Summary Memory (structured)",
+      "question": "What metrics are used for evaluation?",
+      "answers": [
+        "Byte-Pair Encoding perplexity  (BPE PPL),\nBLEU-1,\nBLEU-4,\nROUGE-L,\npercentage of distinct unigram (D-1),\npercentage of distinct bigrams(D-2),\nuser matching accuracy(UMA),\nMean Reciprocal Rank(MRR)\nPairwise preference over baseline(PP)",
+        "BLEU-1/4 and ROUGE-L, likelihood of generated recipes using identical input specifications but conditioned on ten different user profiles, user matching accuracy (UMA), Mean Reciprocal Rank (MRR), neural scoring model from BIBREF33 to measure recipe-level coherence",
+        "Distinct-1/2, UMA = User Matching Accuracy, MRR\n= Mean Reciprocal Rank, PP = Pairwise preference over baseline (evaluated for 310 recipe pairs per model)"
+      ],
+      "hit": false,
+      "answer_score": 0.020035961983046496,
+      "context_chars": 25062,
+      "context_tokens_approx": 6266,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.06607484817504883
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "b72f9154e71c03d0403e06e50063325961ea2ad27c245763",
+      "method": "Raw RAG",
+      "question": "What labels do they create on their dataset?",
+      "answers": [
+        "(1) the time the patient has been experiencing the symptom, (2) activities that trigger the symptom (to occur or worsen), (3) the extent of seriousness, (4) the frequency occurrence of the symptom, and (5) the location of symptom, No Answer",
+        "the time the patient has been experiencing the symptom, activities that trigger the symptom, the extent of seriousness, the frequency occurrence of the symptom, the location of symptom, 9 symptoms"
+      ],
+      "hit": false,
+      "answer_score": 0.07724137931034483,
+      "context_chars": 4715,
+      "context_tokens_approx": 1179,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.07411623001098633
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "b72f9154e71c03d0403e06e50063325961ea2ad27c245763",
+      "method": "Summary Memory (structured)",
+      "question": "What labels do they create on their dataset?",
+      "answers": [
+        "(1) the time the patient has been experiencing the symptom, (2) activities that trigger the symptom (to occur or worsen), (3) the extent of seriousness, (4) the frequency occurrence of the symptom, and (5) the location of symptom, No Answer",
+        "the time the patient has been experiencing the symptom, activities that trigger the symptom, the extent of seriousness, the frequency occurrence of the symptom, the location of symptom, 9 symptoms"
+      ],
+      "hit": false,
+      "answer_score": 0.016963528413910092,
+      "context_chars": 31462,
+      "context_tokens_approx": 7866,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.09341764450073242
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "2ecd2808617740f222a4e2f3b2df546da046d876b1580952",
+      "method": "Raw RAG",
+      "question": "How much data is needed to train the task-specific encoder?",
+      "answers": [
+        "57,505 sentences",
+        "57,505 sentences"
+      ],
+      "hit": false,
+      "answer_score": 0.0027173913043478264,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.08947086334228516
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "2ecd2808617740f222a4e2f3b2df546da046d876b1580952",
+      "method": "Summary Memory (structured)",
+      "question": "How much data is needed to train the task-specific encoder?",
+      "answers": [
+        "57,505 sentences",
+        "57,505 sentences"
+      ],
+      "hit": false,
+      "answer_score": 0.0010393209769617184,
+      "context_chars": 37473,
+      "context_tokens_approx": 9368,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.11442089080810547
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "11be2f14f540e957e9797cc962203b8186ca10561228f81f",
+      "method": "Raw RAG",
+      "question": "What tasks are used for evaluation?",
+      "answers": [
+        "four machine translation tasks: German -> English, Japanese -> English, Romanian -> English, English -> German",
+        "four machine translation tasks, IWSLT 2017 German $\\rightarrow $ English BIBREF27, KFTT Japanese $\\rightarrow $ English BIBREF28, WMT 2016 Romanian $\\rightarrow $ English BIBREF29, WMT 2014 English $\\rightarrow $ German BIBREF30"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.11778426170349121
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "11be2f14f540e957e9797cc962203b8186ca10561228f81f",
+      "method": "Summary Memory (structured)",
+      "question": "What tasks are used for evaluation?",
+      "answers": [
+        "four machine translation tasks: German -> English, Japanese -> English, Romanian -> English, English -> German",
+        "four machine translation tasks, IWSLT 2017 German $\\rightarrow $ English BIBREF27, KFTT Japanese $\\rightarrow $ English BIBREF28, WMT 2016 Romanian $\\rightarrow $ English BIBREF29, WMT 2014 English $\\rightarrow $ German BIBREF30"
+      ],
+      "hit": false,
+      "answer_score": 0.009754335260115607,
+      "context_chars": 36245,
+      "context_tokens_approx": 9061,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.14056086540222168
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "bfc5d4d72997fdcc0107cd5cab9b9718777c43b86be45eb2",
+      "method": "Raw RAG",
+      "question": "What is the improvement in performance for Estonian in the NER task?",
+      "answers": [
+        "5 percent points.",
+        "0.05 F1"
+      ],
+      "hit": false,
+      "answer_score": 0.002642007926023778,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.05226397514343262
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "bfc5d4d72997fdcc0107cd5cab9b9718777c43b86be45eb2",
+      "method": "Summary Memory (structured)",
+      "question": "What is the improvement in performance for Estonian in the NER task?",
+      "answers": [
+        "5 percent points.",
+        "0.05 F1"
+      ],
+      "hit": false,
+      "answer_score": 0.00045558086560364467,
+      "context_chars": 28034,
+      "context_tokens_approx": 7008,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.07123303413391113
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "65f7bdb541fd6f01fe866dcf694891f92533186085fcba20",
+      "method": "Raw RAG",
+      "question": "What background do they have?",
+      "answers": [
+        "Unanswerable"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 4803,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.1796703338623047
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "65f7bdb541fd6f01fe866dcf694891f92533186085fcba20",
+      "method": "Summary Memory (structured)",
+      "question": "What background do they have?",
+      "answers": [
+        "Unanswerable"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 37770,
+      "context_tokens_approx": 9442,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.2035658359527588
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "091b4028a3b5e9d8248c58f17a62fd16c878da69693cfbfb",
+      "method": "Raw RAG",
+      "question": "LDA is an unsupervised method; is this paper introducing an unsupervised approach to spam detection?",
+      "answers": [
+        "No",
+        "No"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4784,
+      "context_tokens_approx": 1196,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.042334794998168945
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "091b4028a3b5e9d8248c58f17a62fd16c878da69693cfbfb",
+      "method": "Summary Memory (structured)",
+      "question": "LDA is an unsupervised method; is this paper introducing an unsupervised approach to spam detection?",
+      "answers": [
+        "No",
+        "No"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 21977,
+      "context_tokens_approx": 5494,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.06124591827392578
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "93004cdb0e6d24f5de0568ed952fd50655e42900dc9dbfdb",
+      "method": "Raw RAG",
+      "question": "Which languages are similar to each other?",
+      "answers": [
+        "Nguni languages (zul, xho, nbl, ssw), Sotho languages (nso, sot, tsn)",
+        "The Nguni languages are similar to each other, The same is true of the Sotho languages"
+      ],
+      "hit": false,
+      "answer_score": 0.04306864064602961,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.03535318374633789
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "93004cdb0e6d24f5de0568ed952fd50655e42900dc9dbfdb",
+      "method": "Summary Memory (structured)",
+      "question": "Which languages are similar to each other?",
+      "answers": [
+        "Nguni languages (zul, xho, nbl, ssw), Sotho languages (nso, sot, tsn)",
+        "The Nguni languages are similar to each other, The same is true of the Sotho languages"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 18539,
+      "context_tokens_approx": 4635,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.055110931396484375
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "3598040772b4950e6241b50125f7ab7038a8149060e3c381",
+      "method": "Raw RAG",
+      "question": "which lstm models did they compare with?",
+      "answers": [
+        "Unidirectional LSTM networks with 2, 6, 7, 8, and  9 layers."
+      ],
+      "hit": false,
+      "answer_score": 0.024875621890547265,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.08773612976074219
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "3598040772b4950e6241b50125f7ab7038a8149060e3c381",
+      "method": "Summary Memory (structured)",
+      "question": "which lstm models did they compare with?",
+      "answers": [
+        "Unidirectional LSTM networks with 2, 6, 7, 8, and  9 layers."
+      ],
+      "hit": false,
+      "answer_score": 0.003997093023255814,
+      "context_chars": 35048,
+      "context_tokens_approx": 8762,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.11007857322692871
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "ecf37304ab84334d46491b0bd3d8bdc7cda33d54a15870f0",
+      "method": "Raw RAG",
+      "question": "How large is their data set?",
+      "answers": [
+        "a sample of  29,794 wikipedia articles and 2,794 arXiv papers"
+      ],
+      "hit": false,
+      "answer_score": 0.024125452352231604,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.08899116516113281
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "ecf37304ab84334d46491b0bd3d8bdc7cda33d54a15870f0",
+      "method": "Summary Memory (structured)",
+      "question": "How large is their data set?",
+      "answers": [
+        "a sample of  29,794 wikipedia articles and 2,794 arXiv papers"
+      ],
+      "hit": false,
+      "answer_score": 0.0039447731755424065,
+      "context_chars": 35107,
+      "context_tokens_approx": 8777,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.10646438598632812
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "1a1daeb5809cde7c7131d972f42ee43654a378c78d5182c8",
+      "method": "Raw RAG",
+      "question": "How were the human judgements assembled?",
+      "answers": [
+        "50 human annotators ranked a random sample of 100 translations by Adequacy, Fluency and overall ranking on a 5-point scale.",
+        "adequacy, precision and ranking values"
+      ],
+      "hit": false,
+      "answer_score": 0.03636363636363636,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.12052440643310547
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "1a1daeb5809cde7c7131d972f42ee43654a378c78d5182c8",
+      "method": "Summary Memory (structured)",
+      "question": "How were the human judgements assembled?",
+      "answers": [
+        "50 human annotators ranked a random sample of 100 translations by Adequacy, Fluency and overall ranking on a 5-point scale.",
+        "adequacy, precision and ranking values"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 32179,
+      "context_tokens_approx": 8045,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.14198780059814453
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "d1d93cefe6e2c643ecf128643f9362e3fa137ff54253a3ec",
+      "method": "Raw RAG",
+      "question": "Do they test their framework performance on commonly used language pairs, such as English-to-German?",
+      "answers": [
+        "Yes",
+        "Yes"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.09131479263305664
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "d1d93cefe6e2c643ecf128643f9362e3fa137ff54253a3ec",
+      "method": "Summary Memory (structured)",
+      "question": "Do they test their framework performance on commonly used language pairs, such as English-to-German?",
+      "answers": [
+        "Yes",
+        "Yes"
+      ],
+      "hit": false,
+      "answer_score": 0.0,
+      "context_chars": 26505,
+      "context_tokens_approx": 6626,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.11404609680175781
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "92da01e7242f30f5266e431b4269fee1b0ca5fcc23aee095",
+      "method": "Raw RAG",
+      "question": "How are models evaluated in this human-machine communication game?",
+      "answers": [
+        "by training an autocomplete system on 500K randomly sampled sentences from Yelp reviews",
+        "efficiency of a communication scheme $(q_{\\alpha },p_{\\beta })$ by the retention rate of tokens, which is measured as the fraction of tokens that are kept in the keywords, accuracy of a scheme is measured as the fraction of sentences generated by greedily decoding the model that exactly matches the target sentence"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.03649735450744629
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "92da01e7242f30f5266e431b4269fee1b0ca5fcc23aee095",
+      "method": "Summary Memory (structured)",
+      "question": "How are models evaluated in this human-machine communication game?",
+      "answers": [
+        "by training an autocomplete system on 500K randomly sampled sentences from Yelp reviews",
+        "efficiency of a communication scheme $(q_{\\alpha },p_{\\beta })$ by the retention rate of tokens, which is measured as the fraction of tokens that are kept in the keywords, accuracy of a scheme is measured as the fraction of sentences generated by greedily decoding the model that exactly matches the target sentence"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 19007,
+      "context_tokens_approx": 4752,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.056987762451171875
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "b5f62b7acf975c5454df077adf727c1bcc62985be5e5a660",
+      "method": "Raw RAG",
+      "question": "What evaluation metrics are looked at for classification tasks?",
+      "answers": [
+        "Precision, Recall, F-measure, accuracy",
+        "Precision, Recall and F-measure"
+      ],
+      "hit": false,
+      "answer_score": 0.00272108843537415,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.05110454559326172
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "b5f62b7acf975c5454df077adf727c1bcc62985be5e5a660",
+      "method": "Summary Memory (structured)",
+      "question": "What evaluation metrics are looked at for classification tasks?",
+      "answers": [
+        "Precision, Recall, F-measure, accuracy",
+        "Precision, Recall and F-measure"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 28272,
+      "context_tokens_approx": 7068,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.0706479549407959
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "c92d96ed55bc5dcd92f963d3c5d26e52661b74e71090f24a",
+      "method": "Raw RAG",
+      "question": "What are the source and target domains?",
+      "answers": [
+        "Book, electronics, beauty, music, IMDB, Yelp, cell phone, baby, DVDs, kitchen",
+        "we use set 1 of the source domain as the only source with sentiment label information during training, and we evaluate the trained model on set 1 of the target domain, Book (BK), Electronics (E), Beauty (BT), and Music (M)"
+      ],
+      "hit": false,
+      "answer_score": 0.0943683409436834,
+      "context_chars": 3901,
+      "context_tokens_approx": 975,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.1176755428314209
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "c92d96ed55bc5dcd92f963d3c5d26e52661b74e71090f24a",
+      "method": "Summary Memory (structured)",
+      "question": "What are the source and target domains?",
+      "answers": [
+        "Book, electronics, beauty, music, IMDB, Yelp, cell phone, baby, DVDs, kitchen",
+        "we use set 1 of the source domain as the only source with sentiment label information during training, and we evaluate the trained model on set 1 of the target domain, Book (BK), Electronics (E), Beauty (BT), and Music (M)"
+      ],
+      "hit": false,
+      "answer_score": 0.015319492037895587,
+      "context_chars": 32265,
+      "context_tokens_approx": 8066,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.1437845230102539
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "eeab2b9167f294f68d3058752acc01e1145eb7d89437d5c4",
+      "method": "Raw RAG",
+      "question": "what previous RNN models do they compare with?",
+      "answers": [
+        "Variational LSTM, CharCNN, Pointer Sentinel-LSTM, RHN, NAS Cell, SRU, QRNN, RAN, 4-layer skip-connection LSTM, AWD-LSTM, Quantized LSTM"
+      ],
+      "hit": false,
+      "answer_score": 0.0158102766798419,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.05322432518005371
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "eeab2b9167f294f68d3058752acc01e1145eb7d89437d5c4",
+      "method": "Summary Memory (structured)",
+      "question": "what previous RNN models do they compare with?",
+      "answers": [
+        "Variational LSTM, CharCNN, Pointer Sentinel-LSTM, RHN, NAS Cell, SRU, QRNN, RAN, 4-layer skip-connection LSTM, AWD-LSTM, Quantized LSTM"
+      ],
+      "hit": false,
+      "answer_score": 0.006124234470691163,
+      "context_chars": 29749,
+      "context_tokens_approx": 7437,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.07173657417297363
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "d5280384a4496ef3358dc45dc0199b9198bd0d927be302ef",
+      "method": "Raw RAG",
+      "question": "What neural network modules are included in NeuronBlocks?",
+      "answers": [
+        "Embedding Layer, Neural Network Layers, Loss Function, Metrics",
+        "Embedding Layer, Neural Network Layers, Loss Function, Metrics"
+      ],
+      "hit": false,
+      "answer_score": 0.021798365122615803,
+      "context_chars": 4804,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.03513956069946289
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "d5280384a4496ef3358dc45dc0199b9198bd0d927be302ef",
+      "method": "Summary Memory (structured)",
+      "question": "What neural network modules are included in NeuronBlocks?",
+      "answers": [
+        "Embedding Layer, Neural Network Layers, Loss Function, Metrics",
+        "Embedding Layer, Neural Network Layers, Loss Function, Metrics"
+      ],
+      "hit": false,
+      "answer_score": 0.0060583112457402504,
+      "context_chars": 17626,
+      "context_tokens_approx": 4406,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.05382895469665527
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "0b90a0a4b2cdceda62a9e2b165f0cfa1a34d34d800a46086",
+      "method": "Raw RAG",
+      "question": "what datasets did they use?",
+      "answers": [
+        "the Carnegie Mellon Pronouncing Dictionary BIBREF12, the multilingual pronunciation corpus collected by deri2016grapheme , ranscriptions extracted from Wiktionary",
+        "multilingual pronunciation corpus collected by deri2016grapheme"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 4805,
+      "context_tokens_approx": 1201,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.051003456115722656
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "0b90a0a4b2cdceda62a9e2b165f0cfa1a34d34d800a46086",
+      "method": "Summary Memory (structured)",
+      "question": "what datasets did they use?",
+      "answers": [
+        "the Carnegie Mellon Pronouncing Dictionary BIBREF12, the multilingual pronunciation corpus collected by deri2016grapheme , ranscriptions extracted from Wiktionary",
+        "multilingual pronunciation corpus collected by deri2016grapheme"
+      ],
+      "hit": true,
+      "answer_score": 1.0,
+      "context_chars": 28311,
+      "context_tokens_approx": 7078,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.06905913352966309
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "c9d48df129798d2aed0161fa805a289e5f75306af3e22336",
+      "method": "Raw RAG",
+      "question": "What were the baselines?",
+      "answers": [
+        "varied from Maximum Entropy Classifiers (BIBREF4) to Support Vector Machines (BIBREF5,BIBREF6,BIBREF7,BIBREF8), Recursive Neural Networks (BIBREF9,BIBREF10), Convolutional Neural Networks (BIBREF11) and most recently transfer learning-based architectures like Bidirectional Encoder Representation from Transformers (BERT) (BIBREF12)"
+      ],
+      "hit": false,
+      "answer_score": 0.02192448233861145,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.03929471969604492
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "c9d48df129798d2aed0161fa805a289e5f75306af3e22336",
+      "method": "Summary Memory (structured)",
+      "question": "What were the baselines?",
+      "answers": [
+        "varied from Maximum Entropy Classifiers (BIBREF4) to Support Vector Machines (BIBREF5,BIBREF6,BIBREF7,BIBREF8), Recursive Neural Networks (BIBREF9,BIBREF10), Convolutional Neural Networks (BIBREF11) and most recently transfer learning-based architectures like Bidirectional Encoder Representation from Transformers (BERT) (BIBREF12)"
+      ],
+      "hit": false,
+      "answer_score": 0.022405660377358493,
+      "context_chars": 20575,
+      "context_tokens_approx": 5144,
+      "retrieved_records": 6,
+      "retrieval_latency": 0.05368494987487793
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "443d051a54d96c296d9135dad3794d09f89ff91d6433d092",
+      "method": "Raw RAG",
+      "question": "What are the languages they use in their experiment?",
+      "answers": [
+        "English\nFrench\nSpanish\nGerman\nGreek\nBulgarian\nRussian\nTurkish\nArabic\nVietnamese\nThai\nChinese\nHindi\nSwahili\nUrdu\nFinnish",
+        "English, Spanish, Finnish"
+      ],
+      "hit": false,
+      "answer_score": 0.007741935483870968,
+      "context_chars": 4806,
+      "context_tokens_approx": 1202,
+      "retrieved_records": 4,
+      "retrieval_latency": 0.08846282958984375
+    },
+    {
+      "dataset": "qasper",
+      "example_id": "443d051a54d96c296d9135dad3794d09f89ff91d6433d092",
+      "method": "Summary Memory (structured)",
+      "question": "What are the languages they use in their experiment?",
+      "answers": [
+        "English\nFrench\nSpanish\nGerman\nGreek\nBulgarian\nRussian\nTurkish\nArabic\nVietnamese\nThai\nChinese\nHindi\nSwahili\nUrdu\nFinnish",
+        "English, Spanish, Finnish"
+      ],
+      "hit": false,
+      "answer_score": 0.0010869565217391304,
+      "context_chars": 34768,
+      "context_tokens_approx": 8692,
+      "retrieved_records": 7,
+      "retrieval_latency": 0.10803961753845215
+    }
+  ]
+}

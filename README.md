@@ -90,9 +90,75 @@ Force refresh:
 pixi run summary -- --refresh-summaries --rebuild-summary --eval
 ```
 
+## Local Evaluation For The Report
+
+Gemma4 is expected to run as a local OpenAI-compatible API:
+
+```bash
+http://127.0.0.1:8012/v1
+model: gemma4-31b-gguf
+```
+
+Run tests:
+
+```bash
+pixi run test
+```
+
+Run AliceQA retrieval-only evaluation without final LLM generation:
+
+```bash
+pixi run retrieval-eval
+```
+
+Run AliceQA local Gemma4 generation:
+
+```bash
+pixi run local-gemma4-eval
+```
+
+Download sampled LongBench data from the official THUDM LongBench Hugging Face dataset archive:
+
+```bash
+pixi run download-longbench
+```
+
+Build true Gemma4-generated structured memory for sampled LongBench documents:
+
+```bash
+pixi run build-longbench-structured-memory
+```
+
+Run LongBench sampled retrieval-only evaluation:
+
+```bash
+pixi run longbench-retrieval-eval
+```
+
+Run LongBench sampled retrieval-only evaluation with true structured memory:
+
+```bash
+pixi run longbench-structured-retrieval-eval
+```
+
+Run LongBench sampled local Gemma4 generation. The default task evaluates 50 examples per dataset:
+
+```bash
+pixi run longbench-gemma4-eval
+```
+
+Run LongBench sampled local Gemma4 generation with true structured memory. The default task evaluates 50 examples per dataset:
+
+```bash
+pixi run longbench-structured-gemma4-eval
+```
+
+Result files are written under `results/` and `results/tables/`.
+
 ## Notes
 
 - `nlp_baselines/create_database.py` now uses local sentence-transformer embeddings instead of OpenAI embeddings.
 - `nlp_baselines/compare_embeddings.py` is also local-only now.
 - Retrieval no longer depends on `chromadb`; it uses a lightweight local vector store persisted under `chroma/` and `chroma_summary/`.
 - The summary baseline is implemented as `structured summaries + supporting raw chunks`, not summary-only retrieval. This is intentional, because summary-only retrieval tends to lose exact facts and often underperforms raw RAG on detail questions.
+- The local Gemma4 wrapper sends `chat_template_kwargs={"enable_thinking": false}` to llama.cpp. This prevents short NLI/classification calls from returning empty `message.content` because all tokens were spent in `reasoning_content`.

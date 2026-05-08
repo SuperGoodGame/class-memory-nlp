@@ -1,0 +1,5 @@
+dataset,method,score_name,score,correct_or_hits,total,avg_answer_score,avg_context_chars,avg_context_tokens_approx,avg_retrieval_latency,avg_generation_latency
+narrativeqa,Raw RAG,accuracy,10.0,5,50,0.12554388887869325,4786.46,1196.6,0.4665734529495239,6.722937874794006
+narrativeqa,Summary Memory (structured),accuracy,12.0,6,50,0.16321673406354129,7997.74,1999.8,0.5224821710586548,9.318855028152466
+qasper,Raw RAG,accuracy,44.0,22,50,0.4039342063064067,4752.48,1188.24,0.10452428817749024,7.243676180839539
+qasper,Summary Memory (structured),accuracy,36.0,18,50,0.35580528013151763,7997.9,1999.9,0.1363035535812378,10.082125072479249
